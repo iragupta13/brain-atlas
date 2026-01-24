@@ -17,7 +17,7 @@ export default function App() {
 
           {/* NEW: Reset button (force visible text) */}
           <button
-            onClick={() => setResetKey((k) => k + 1)}
+            onClick={() => { setResetKey((k) => k + 1); setSelected(null); }}
             style={{
               marginTop: 12,
               width: "100%",
