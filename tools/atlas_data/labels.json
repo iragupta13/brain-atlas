@@ -1,0 +1,666 @@
+{
+  "1": {
+    "name": "Precentral_L",
+    "parent": "Other"
+  },
+  "2": {
+    "name": "Precentral_R",
+    "parent": "Other"
+  },
+  "3": {
+    "name": "Frontal_Sup_2_L",
+    "parent": "Frontal_Lobe"
+  },
+  "4": {
+    "name": "Frontal_Sup_2_R",
+    "parent": "Frontal_Lobe"
+  },
+  "5": {
+    "name": "Frontal_Mid_2_L",
+    "parent": "Frontal_Lobe"
+  },
+  "6": {
+    "name": "Frontal_Mid_2_R",
+    "parent": "Frontal_Lobe"
+  },
+  "7": {
+    "name": "Frontal_Inf_Oper_L",
+    "parent": "Frontal_Lobe"
+  },
+  "8": {
+    "name": "Frontal_Inf_Oper_R",
+    "parent": "Frontal_Lobe"
+  },
+  "9": {
+    "name": "Frontal_Inf_Tri_L",
+    "parent": "Frontal_Lobe"
+  },
+  "10": {
+    "name": "Frontal_Inf_Tri_R",
+    "parent": "Frontal_Lobe"
+  },
+  "11": {
+    "name": "Frontal_Inf_Orb_2_L",
+    "parent": "Frontal_Lobe"
+  },
+  "12": {
+    "name": "Frontal_Inf_Orb_2_R",
+    "parent": "Frontal_Lobe"
+  },
+  "13": {
+    "name": "Rolandic_Oper_L",
+    "parent": "Other"
+  },
+  "14": {
+    "name": "Rolandic_Oper_R",
+    "parent": "Other"
+  },
+  "15": {
+    "name": "Supp_Motor_Area_L",
+    "parent": "Other"
+  },
+  "16": {
+    "name": "Supp_Motor_Area_R",
+    "parent": "Other"
+  },
+  "17": {
+    "name": "Olfactory_L",
+    "parent": "Other"
+  },
+  "18": {
+    "name": "Olfactory_R",
+    "parent": "Other"
+  },
+  "19": {
+    "name": "Frontal_Sup_Medial_L",
+    "parent": "Frontal_Lobe"
+  },
+  "20": {
+    "name": "Frontal_Sup_Medial_R",
+    "parent": "Frontal_Lobe"
+  },
+  "21": {
+    "name": "Frontal_Med_Orb_L",
+    "parent": "Frontal_Lobe"
+  },
+  "22": {
+    "name": "Frontal_Med_Orb_R",
+    "parent": "Frontal_Lobe"
+  },
+  "23": {
+    "name": "Rectus_L",
+    "parent": "Other"
+  },
+  "24": {
+    "name": "Rectus_R",
+    "parent": "Other"
+  },
+  "25": {
+    "name": "OFCmed_L",
+    "parent": "Other"
+  },
+  "26": {
+    "name": "OFCmed_R",
+    "parent": "Other"
+  },
+  "27": {
+    "name": "OFCant_L",
+    "parent": "Other"
+  },
+  "28": {
+    "name": "OFCant_R",
+    "parent": "Other"
+  },
+  "29": {
+    "name": "OFCpost_L",
+    "parent": "Other"
+  },
+  "30": {
+    "name": "OFCpost_R",
+    "parent": "Other"
+  },
+  "31": {
+    "name": "OFClat_L",
+    "parent": "Other"
+  },
+  "32": {
+    "name": "OFClat_R",
+    "parent": "Other"
+  },
+  "33": {
+    "name": "Insula_L",
+    "parent": "Other"
+  },
+  "34": {
+    "name": "Insula_R",
+    "parent": "Other"
+  },
+  "37": {
+    "name": "Cingulate_Mid_L",
+    "parent": "Cingulate_Cortex"
+  },
+  "38": {
+    "name": "Cingulate_Mid_R",
+    "parent": "Cingulate_Cortex"
+  },
+  "39": {
+    "name": "Cingulate_Post_L",
+    "parent": "Cingulate_Cortex"
+  },
+  "40": {
+    "name": "Cingulate_Post_R",
+    "parent": "Cingulate_Cortex"
+  },
+  "41": {
+    "name": "Hippocampus_L",
+    "parent": "Medial_Temporal"
+  },
+  "42": {
+    "name": "Hippocampus_R",
+    "parent": "Medial_Temporal"
+  },
+  "43": {
+    "name": "ParaHippocampal_L",
+    "parent": "Medial_Temporal"
+  },
+  "44": {
+    "name": "ParaHippocampal_R",
+    "parent": "Medial_Temporal"
+  },
+  "45": {
+    "name": "Amygdala_L",
+    "parent": "Medial_Temporal"
+  },
+  "46": {
+    "name": "Amygdala_R",
+    "parent": "Medial_Temporal"
+  },
+  "47": {
+    "name": "Calcarine_L",
+    "parent": "Other"
+  },
+  "48": {
+    "name": "Calcarine_R",
+    "parent": "Other"
+  },
+  "49": {
+    "name": "Cuneus_L",
+    "parent": "Other"
+  },
+  "50": {
+    "name": "Cuneus_R",
+    "parent": "Other"
+  },
+  "51": {
+    "name": "Lingual_L",
+    "parent": "Other"
+  },
+  "52": {
+    "name": "Lingual_R",
+    "parent": "Other"
+  },
+  "53": {
+    "name": "Occipital_Sup_L",
+    "parent": "Occipital_Lobe"
+  },
+  "54": {
+    "name": "Occipital_Sup_R",
+    "parent": "Occipital_Lobe"
+  },
+  "55": {
+    "name": "Occipital_Mid_L",
+    "parent": "Occipital_Lobe"
+  },
+  "56": {
+    "name": "Occipital_Mid_R",
+    "parent": "Occipital_Lobe"
+  },
+  "57": {
+    "name": "Occipital_Inf_L",
+    "parent": "Occipital_Lobe"
+  },
+  "58": {
+    "name": "Occipital_Inf_R",
+    "parent": "Occipital_Lobe"
+  },
+  "59": {
+    "name": "Fusiform_L",
+    "parent": "Other"
+  },
+  "60": {
+    "name": "Fusiform_R",
+    "parent": "Other"
+  },
+  "61": {
+    "name": "Postcentral_L",
+    "parent": "Other"
+  },
+  "62": {
+    "name": "Postcentral_R",
+    "parent": "Other"
+  },
+  "63": {
+    "name": "Parietal_Sup_L",
+    "parent": "Parietal_Lobe"
+  },
+  "64": {
+    "name": "Parietal_Sup_R",
+    "parent": "Parietal_Lobe"
+  },
+  "65": {
+    "name": "Parietal_Inf_L",
+    "parent": "Parietal_Lobe"
+  },
+  "66": {
+    "name": "Parietal_Inf_R",
+    "parent": "Parietal_Lobe"
+  },
+  "67": {
+    "name": "SupraMarginal_L",
+    "parent": "Other"
+  },
+  "68": {
+    "name": "SupraMarginal_R",
+    "parent": "Other"
+  },
+  "69": {
+    "name": "Angular_L",
+    "parent": "Other"
+  },
+  "70": {
+    "name": "Angular_R",
+    "parent": "Other"
+  },
+  "71": {
+    "name": "Precuneus_L",
+    "parent": "Other"
+  },
+  "72": {
+    "name": "Precuneus_R",
+    "parent": "Other"
+  },
+  "73": {
+    "name": "Paracentral_Lobule_L",
+    "parent": "Other"
+  },
+  "74": {
+    "name": "Paracentral_Lobule_R",
+    "parent": "Other"
+  },
+  "75": {
+    "name": "Caudate_L",
+    "parent": "Basal_Ganglia"
+  },
+  "76": {
+    "name": "Caudate_R",
+    "parent": "Basal_Ganglia"
+  },
+  "77": {
+    "name": "Putamen_L",
+    "parent": "Basal_Ganglia"
+  },
+  "78": {
+    "name": "Putamen_R",
+    "parent": "Basal_Ganglia"
+  },
+  "79": {
+    "name": "Pallidum_L",
+    "parent": "Basal_Ganglia"
+  },
+  "80": {
+    "name": "Pallidum_R",
+    "parent": "Basal_Ganglia"
+  },
+  "83": {
+    "name": "Heschl_L",
+    "parent": "Other"
+  },
+  "84": {
+    "name": "Heschl_R",
+    "parent": "Other"
+  },
+  "85": {
+    "name": "Temporal_Sup_L",
+    "parent": "Temporal_Lobe"
+  },
+  "86": {
+    "name": "Temporal_Sup_R",
+    "parent": "Temporal_Lobe"
+  },
+  "87": {
+    "name": "Temporal_Pole_Sup_L",
+    "parent": "Temporal_Lobe"
+  },
+  "88": {
+    "name": "Temporal_Pole_Sup_R",
+    "parent": "Temporal_Lobe"
+  },
+  "89": {
+    "name": "Temporal_Mid_L",
+    "parent": "Temporal_Lobe"
+  },
+  "90": {
+    "name": "Temporal_Mid_R",
+    "parent": "Temporal_Lobe"
+  },
+  "91": {
+    "name": "Temporal_Pole_Mid_L",
+    "parent": "Temporal_Lobe"
+  },
+  "92": {
+    "name": "Temporal_Pole_Mid_R",
+    "parent": "Temporal_Lobe"
+  },
+  "93": {
+    "name": "Temporal_Inf_L",
+    "parent": "Temporal_Lobe"
+  },
+  "94": {
+    "name": "Temporal_Inf_R",
+    "parent": "Temporal_Lobe"
+  },
+  "95": {
+    "name": "Cerebellum_Crus1_L",
+    "parent": "Cerebellum"
+  },
+  "96": {
+    "name": "Cerebellum_Crus1_R",
+    "parent": "Cerebellum"
+  },
+  "97": {
+    "name": "Cerebellum_Crus2_L",
+    "parent": "Cerebellum"
+  },
+  "98": {
+    "name": "Cerebellum_Crus2_R",
+    "parent": "Cerebellum"
+  },
+  "99": {
+    "name": "Cerebellum_3_L",
+    "parent": "Cerebellum"
+  },
+  "100": {
+    "name": "Cerebellum_3_R",
+    "parent": "Cerebellum"
+  },
+  "101": {
+    "name": "Cerebellum_4_5_L",
+    "parent": "Cerebellum"
+  },
+  "102": {
+    "name": "Cerebellum_4_5_R",
+    "parent": "Cerebellum"
+  },
+  "103": {
+    "name": "Cerebellum_6_L",
+    "parent": "Cerebellum"
+  },
+  "104": {
+    "name": "Cerebellum_6_R",
+    "parent": "Cerebellum"
+  },
+  "105": {
+    "name": "Cerebellum_7b_L",
+    "parent": "Cerebellum"
+  },
+  "106": {
+    "name": "Cerebellum_7b_R",
+    "parent": "Cerebellum"
+  },
+  "107": {
+    "name": "Cerebellum_8_L",
+    "parent": "Cerebellum"
+  },
+  "108": {
+    "name": "Cerebellum_8_R",
+    "parent": "Cerebellum"
+  },
+  "109": {
+    "name": "Cerebellum_9_L",
+    "parent": "Cerebellum"
+  },
+  "110": {
+    "name": "Cerebellum_9_R",
+    "parent": "Cerebellum"
+  },
+  "111": {
+    "name": "Cerebellum_10_L",
+    "parent": "Cerebellum"
+  },
+  "112": {
+    "name": "Cerebellum_10_R",
+    "parent": "Cerebellum"
+  },
+  "113": {
+    "name": "Vermis_1_2",
+    "parent": "Other"
+  },
+  "114": {
+    "name": "Vermis_3",
+    "parent": "Other"
+  },
+  "115": {
+    "name": "Vermis_4_5",
+    "parent": "Other"
+  },
+  "116": {
+    "name": "Vermis_6",
+    "parent": "Other"
+  },
+  "117": {
+    "name": "Vermis_7",
+    "parent": "Other"
+  },
+  "118": {
+    "name": "Vermis_8",
+    "parent": "Other"
+  },
+  "119": {
+    "name": "Vermis_9",
+    "parent": "Other"
+  },
+  "120": {
+    "name": "Vermis_10",
+    "parent": "Other"
+  },
+  "121": {
+    "name": "Thal_AV_L",
+    "parent": "Other"
+  },
+  "122": {
+    "name": "Thal_AV_R",
+    "parent": "Other"
+  },
+  "123": {
+    "name": "Thal_LP_L",
+    "parent": "Other"
+  },
+  "124": {
+    "name": "Thal_LP_R",
+    "parent": "Other"
+  },
+  "125": {
+    "name": "Thal_VA_L",
+    "parent": "Other"
+  },
+  "126": {
+    "name": "Thal_VA_R",
+    "parent": "Other"
+  },
+  "127": {
+    "name": "Thal_VL_L",
+    "parent": "Other"
+  },
+  "128": {
+    "name": "Thal_VL_R",
+    "parent": "Other"
+  },
+  "129": {
+    "name": "Thal_VPL_L",
+    "parent": "Other"
+  },
+  "130": {
+    "name": "Thal_VPL_R",
+    "parent": "Other"
+  },
+  "131": {
+    "name": "Thal_IL_L",
+    "parent": "Other"
+  },
+  "132": {
+    "name": "Thal_IL_R",
+    "parent": "Other"
+  },
+  "133": {
+    "name": "Thal_Re_L",
+    "parent": "Other"
+  },
+  "134": {
+    "name": "Thal_Re_R",
+    "parent": "Other"
+  },
+  "135": {
+    "name": "Thal_MDm_L",
+    "parent": "Other"
+  },
+  "136": {
+    "name": "Thal_MDm_R",
+    "parent": "Other"
+  },
+  "137": {
+    "name": "Thal_MDl_L",
+    "parent": "Other"
+  },
+  "138": {
+    "name": "Thal_MDl_R",
+    "parent": "Other"
+  },
+  "139": {
+    "name": "Thal_LGN_L",
+    "parent": "Other"
+  },
+  "140": {
+    "name": "Thal_LGN_R",
+    "parent": "Other"
+  },
+  "141": {
+    "name": "Thal_MGN_L",
+    "parent": "Other"
+  },
+  "142": {
+    "name": "Thal_MGN_R",
+    "parent": "Other"
+  },
+  "143": {
+    "name": "Thal_PuI_L",
+    "parent": "Other"
+  },
+  "144": {
+    "name": "Thal_PuI_R",
+    "parent": "Other"
+  },
+  "145": {
+    "name": "Thal_PuM_L",
+    "parent": "Other"
+  },
+  "146": {
+    "name": "Thal_PuM_R",
+    "parent": "Other"
+  },
+  "147": {
+    "name": "Thal_PuA_L",
+    "parent": "Other"
+  },
+  "148": {
+    "name": "Thal_PuA_R",
+    "parent": "Other"
+  },
+  "149": {
+    "name": "Thal_PuL_L",
+    "parent": "Other"
+  },
+  "150": {
+    "name": "Thal_PuL_R",
+    "parent": "Other"
+  },
+  "151": {
+    "name": "ACC_sub_L",
+    "parent": "Other"
+  },
+  "152": {
+    "name": "ACC_sub_R",
+    "parent": "Other"
+  },
+  "153": {
+    "name": "ACC_pre_L",
+    "parent": "Other"
+  },
+  "154": {
+    "name": "ACC_pre_R",
+    "parent": "Other"
+  },
+  "155": {
+    "name": "ACC_sup_L",
+    "parent": "Other"
+  },
+  "156": {
+    "name": "ACC_sup_R",
+    "parent": "Other"
+  },
+  "157": {
+    "name": "N_Acc_L",
+    "parent": "Other"
+  },
+  "158": {
+    "name": "N_Acc_R",
+    "parent": "Other"
+  },
+  "159": {
+    "name": "VTA_L",
+    "parent": "Other"
+  },
+  "160": {
+    "name": "VTA_R",
+    "parent": "Other"
+  },
+  "161": {
+    "name": "SN_pc_L",
+    "parent": "Other"
+  },
+  "162": {
+    "name": "SN_pc_R",
+    "parent": "Other"
+  },
+  "163": {
+    "name": "SN_pr_L",
+    "parent": "Other"
+  },
+  "164": {
+    "name": "SN_pr_R",
+    "parent": "Other"
+  },
+  "165": {
+    "name": "Red_N_L",
+    "parent": "Other"
+  },
+  "166": {
+    "name": "Red_N_R",
+    "parent": "Other"
+  },
+  "167": {
+    "name": "LC_L",
+    "parent": "Other"
+  },
+  "168": {
+    "name": "LC_R",
+    "parent": "Other"
+  },
+  "169": {
+    "name": "Raphe_D",
+    "parent": "Other"
+  },
+  "170": {
+    "name": "Raphe_M",
+    "parent": "Other"
+  }
+}
