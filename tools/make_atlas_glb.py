@@ -66,7 +66,6 @@ def mesh_for_label(volume: np.ndarray, label_id: int, spacing=(1.0, 1.0, 1.0)):
     except Exception:
         pass
 
-
     # Drop extremely tiny regions that are basically noise
     if m.area < 50:
         return None

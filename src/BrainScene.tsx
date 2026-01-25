@@ -118,11 +118,15 @@ function SetInitialViewOnce({
 function ClickableModel({
   onPick,
   selectedName,
+  highlightedNames,
   onMetrics,
+  onMeshNames,
 }: {
   onPick: (info: PickInfo) => void;
   selectedName: string | null;
+  highlightedNames: Set<string>;
   onMetrics?: (m: ModelMetrics) => void;
+  onMeshNames?: (names: string[]) => void;
 }) {
   const gltf = useGLTF("/models/brain_atlas.glb");
 
@@ -156,13 +160,26 @@ function ClickableModel({
   }, [onMetrics, radius]);
 
   // Collect meshes for highlighting/material updates
+  const HIDDEN_REGIONS = ["Heschl_R"];
+
   const meshes = useMemo(() => {
     const out: THREE.Mesh[] = [];
     scene.traverse((obj) => {
-      if ((obj as THREE.Mesh).isMesh) out.push(obj as THREE.Mesh);
+      if ((obj as THREE.Mesh).isMesh) {
+        if (HIDDEN_REGIONS.includes(obj.name)) {
+          obj.visible = false;
+        } else {
+          out.push(obj as THREE.Mesh);
+        }
+      }
     });
     return out;
   }, [scene]);
+
+  // Report mesh names for search functionality
+  useEffect(() => {
+    onMeshNames?.(meshes.map((m) => m.name));
+  }, [meshes, onMeshNames]);
 
   // Apply lit material
   useEffect(() => {
@@ -176,18 +193,21 @@ function ClickableModel({
     }
   }, [meshes]);
 
-  // Highlight selected
+  // Highlight selected region (or search matches if nothing selected)
   useEffect(() => {
     for (const mesh of meshes) {
       const mat = mesh.material as THREE.MeshStandardMaterial;
-      if (selectedName && mesh.name === selectedName) {
+      const isSelected = selectedName && mesh.name === selectedName;
+      const isHighlighted = !selectedName && highlightedNames.has(mesh.name);
+
+      if (isSelected || isHighlighted) {
         mat.color.set("#4fffdc");
       } else {
         mat.color.set("#bdbdbd");
       }
       mat.needsUpdate = true;
     }
-  }, [meshes, selectedName]);
+  }, [meshes, selectedName, highlightedNames]);
 
   return (
     <group
@@ -209,11 +229,15 @@ function ClickableModel({
 export function BrainScene({
   onPick,
   selectedName,
+  highlightedNames = new Set(),
   resetKey,
+  onMeshNames,
 }: {
   onPick: (info: PickInfo) => void;
   selectedName: string | null;
+  highlightedNames?: Set<string>;
   resetKey: number;
+  onMeshNames?: (names: string[]) => void;
 }) {
   const controlsRef = useRef<any>(null);
 
@@ -254,11 +278,14 @@ export function BrainScene({
           <ClickableModel
             onPick={onPick}
             selectedName={selectedName}
+            highlightedNames={highlightedNames}
             onMetrics={(m) => {
               // Only set once to avoid unnecessary camera jumps
               setModelRadius((prev) => (prev === null ? m.radius : prev));
             }}
+            onMeshNames={onMeshNames}
           />
+
         </Suspense>
 
         <OrbitControls
