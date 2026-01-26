@@ -1,0 +1,1330 @@
+{
+  "Hippocampus_L": {
+    "summary": "Critical hub for memory formation and spatial navigation in the medial temporal lobe.",
+    "function": "Converts short-term memories into long-term memories through a process called consolidation. Essential for episodic memory (personal experiences) and spatial memory (mental maps). Works with the entorhinal cortex to process and store new information.",
+    "location": "Located in the medial temporal lobe, curved like a seahorse (hence the name, from Greek 'hippokampos'). Lies beneath the cerebral cortex, adjacent to the amygdala.",
+    "connections": ["ParaHippocampal_L", "Amygdala_L", "Cingulate_Post_L", "Temporal_Mid_L", "Frontal_Sup_Medial_L"],
+    "clinical": "Damage causes anterograde amnesia (inability to form new memories). One of the first regions affected in Alzheimer's disease. Chronic stress can cause hippocampal atrophy, linked to depression.",
+    "funFact": "One of only two brain regions known to generate new neurons in adults (neurogenesis), making it uniquely plastic throughout life."
+  },
+  "Hippocampus_R": {
+    "summary": "Right hemisphere hub for spatial memory and scene construction.",
+    "function": "Specializes in spatial memory and navigation. Helps construct mental scenes and imagines future scenarios. Works together with the left hippocampus but shows specialization for non-verbal, spatial information.",
+    "location": "Located in the right medial temporal lobe, mirroring the left hippocampus. Part of the limbic system.",
+    "connections": ["ParaHippocampal_R", "Amygdala_R", "Cingulate_Post_R", "Temporal_Mid_R", "Frontal_Sup_Medial_R"],
+    "clinical": "Damage can impair spatial navigation and memory for places. London taxi drivers famously show enlarged right posterior hippocampi due to extensive navigation training.",
+    "funFact": "The right hippocampus is particularly active when you're imagining yourself in a different place or time."
+  },
+  "Amygdala_L": {
+    "summary": "Emotional processing center specializing in fear and threat detection.",
+    "function": "Processes emotional significance of stimuli, especially fear and threat. Modulates memory consolidation for emotionally arousing events. Involved in social behavior and reading facial expressions.",
+    "location": "Almond-shaped structure (amygdala means 'almond' in Greek) in the medial temporal lobe, anterior to the hippocampus.",
+    "connections": ["Hippocampus_L", "Insula_L", "Temporal_Pole_Sup_L", "ACC_pre_L", "OFCmed_L"],
+    "clinical": "Hyperactivity linked to anxiety disorders and PTSD. Damage can result in inability to recognize fear in faces. Involved in addiction through its role in emotional memory.",
+    "funFact": "The amygdala can process threat information so fast that you may react before you're consciously aware of danger."
+  },
+  "Amygdala_R": {
+    "summary": "Right hemisphere emotional processor with role in implicit emotional processing.",
+    "function": "Processes emotional content, particularly unconscious or rapidly presented emotional stimuli. May be more involved in automatic, unconscious emotional processing compared to the left amygdala.",
+    "location": "Right medial temporal lobe, anterior to the hippocampus, within the limbic system.",
+    "connections": ["Hippocampus_R", "Insula_R", "Temporal_Pole_Sup_R", "ACC_pre_R", "OFCmed_R"],
+    "clinical": "Implicated in processing subliminal emotional information. Abnormalities associated with psychopathy and autism spectrum conditions.",
+    "funFact": "The right amygdala responds more to masked (unconsciously perceived) emotional faces."
+  },
+  "Precentral_L": {
+    "summary": "Primary motor cortex controlling voluntary movement of the right side of the body.",
+    "function": "Executes voluntary movements by sending signals down the corticospinal tract. Contains the motor homunculus - a distorted body map where areas like hands and face have disproportionately large representations.",
+    "location": "Precentral gyrus of the frontal lobe, just anterior to the central sulcus. Left hemisphere controls right body.",
+    "connections": ["Postcentral_L", "Supp_Motor_Area_L", "Thal_VL_L", "Putamen_L"],
+    "clinical": "Damage causes contralateral paralysis or weakness (right side of body). Stroke here can cause hemiplegia. Target for brain-computer interfaces.",
+    "funFact": "The area for hand control is so large that it takes up about a third of the motor cortex, reflecting our dexterity."
+  },
+  "Precentral_R": {
+    "summary": "Primary motor cortex controlling voluntary movement of the left side of the body.",
+    "function": "Controls voluntary movements of the left side of the body. Integrates sensory feedback from the postcentral gyrus to refine movements.",
+    "location": "Right precentral gyrus, anterior to the central sulcus in the frontal lobe.",
+    "connections": ["Postcentral_R", "Supp_Motor_Area_R", "Thal_VL_R", "Putamen_R"],
+    "clinical": "Lesions cause left-sided weakness or paralysis. Important for left-handed fine motor control.",
+    "funFact": "Musicians and athletes show enhanced motor cortex representations for their trained movements."
+  },
+  "Insula_L": {
+    "summary": "Hidden cortex involved in interoception, emotion, and awareness.",
+    "function": "Integrates body sensations (interoception) with emotional states. Involved in taste, disgust, empathy, and self-awareness. Plays role in decision-making and risk assessment.",
+    "location": "Deep within the lateral sulcus, hidden beneath the frontal, parietal, and temporal opercula. Also called the 'Island of Reil'.",
+    "connections": ["Amygdala_L", "Frontal_Inf_Oper_L", "Temporal_Sup_L", "ACC_pre_L"],
+    "clinical": "Damage can cause loss of taste, impaired disgust recognition, and changes in addictive behaviors. Involved in anxiety and panic disorders.",
+    "funFact": "The insula helps you feel your heartbeat and may be key to consciousness and the sense of self."
+  },
+  "Insula_R": {
+    "summary": "Right hemisphere hub for body awareness and autonomic control.",
+    "function": "Specializes in awareness of internal body states and autonomic nervous system regulation. Involved in processing pain and temperature. Right insula may be dominant for sympathetic ('fight or flight') responses.",
+    "location": "Deep within the right lateral sulcus, covered by the frontal and temporal opercula.",
+    "connections": ["Amygdala_R", "Frontal_Inf_Oper_R", "Temporal_Sup_R", "ACC_pre_R"],
+    "clinical": "Right insula damage can cause loss of body awareness and autonomic dysregulation. Implicated in chronic pain conditions.",
+    "funFact": "The right insula is particularly active when you're aware of your own heartbeat."
+  },
+  "Caudate_L": {
+    "summary": "Part of the basal ganglia involved in learning, motivation, and movement control.",
+    "function": "Critical for habit learning and procedural memory. Involved in goal-directed behavior and reward processing. Part of cortico-striatal loops that modulate motor and cognitive functions.",
+    "location": "C-shaped nucleus in the basal ganglia, curving around the lateral ventricle. Forms the striatum together with the putamen.",
+    "connections": ["Putamen_L", "Pallidum_L", "Frontal_Mid_2_L", "Thal_VA_L"],
+    "clinical": "Degeneration seen in Huntington's disease. Abnormalities linked to OCD, ADHD, and Tourette syndrome. Important for addiction circuitry.",
+    "funFact": "The caudate lights up when you're in love - it's part of the brain's reward system."
+  },
+  "Caudate_R": {
+    "summary": "Right basal ganglia structure for habit formation and cognitive control.",
+    "function": "Involved in learning new habits and automating behaviors. Participates in cognitive flexibility and response inhibition. Part of circuits for eye movement control.",
+    "location": "Right basal ganglia, C-shaped structure following the lateral ventricle.",
+    "connections": ["Putamen_R", "Pallidum_R", "Frontal_Mid_2_R", "Thal_VA_R"],
+    "clinical": "Atrophy in Huntington's disease causes motor and cognitive symptoms. Involved in various psychiatric conditions.",
+    "funFact": "Experienced chess players show caudate activation when recognizing familiar patterns, reflecting automated expertise."
+  },
+  "Putamen_L": {
+    "summary": "Basal ganglia nucleus essential for motor control and learning.",
+    "function": "Regulates movements and influences various types of learning. Part of the motor circuit that helps initiate and control movements. Involved in learning motor sequences.",
+    "location": "Lateral part of the lentiform nucleus in the basal ganglia, lateral to the globus pallidus.",
+    "connections": ["Caudate_L", "Pallidum_L", "Thal_VA_L", "Precentral_L"],
+    "clinical": "Affected in Parkinson's disease, causing movement difficulties. Damage can cause chorea (involuntary jerky movements).",
+    "funFact": "Professional musicians show enlarged putamens, reflecting years of motor skill practice."
+  },
+  "Putamen_R": {
+    "summary": "Right hemisphere motor nucleus for movement regulation.",
+    "function": "Controls movement patterns for the left side of the body. Involved in motor learning and habit formation. Integrates sensory-motor information.",
+    "location": "Right basal ganglia, part of the striatum and lentiform nucleus.",
+    "connections": ["Caudate_R", "Pallidum_R", "Thal_VA_R", "Precentral_R"],
+    "clinical": "Degenerates in Parkinson's disease. Lesions can cause movement disorders affecting the left body.",
+    "funFact": "The putamen is essential for learning to ride a bike - once you learn, you never forget thanks to this structure."
+  },
+  "Frontal_Sup_2_L": {
+    "summary": "Superior frontal region involved in working memory and cognitive control.",
+    "function": "Supports working memory, particularly spatial working memory. Involved in self-referential thinking and introspection. Part of the default mode network.",
+    "location": "Superior portion of the left frontal lobe, part of the prefrontal cortex.",
+    "connections": ["Frontal_Mid_2_L", "Frontal_Sup_Medial_L", "Parietal_Sup_L", "Cingulate_Mid_L"],
+    "clinical": "Damage can impair executive functions and working memory. Reduced activity seen in depression.",
+    "funFact": "This region is particularly active when you're thinking about yourself and your own thoughts."
+  },
+  "Frontal_Sup_2_R": {
+    "summary": "Right superior frontal cortex supporting attention and spatial cognition.",
+    "function": "Involved in sustained attention and spatial working memory. Contributes to motor planning and self-awareness. Part of networks supporting cognitive control.",
+    "location": "Superior portion of the right frontal lobe, extending along the superior frontal gyrus.",
+    "connections": ["Frontal_Mid_2_R", "Frontal_Sup_Medial_R", "Parietal_Sup_R", "Cingulate_Mid_R"],
+    "clinical": "Damage associated with attention deficits and impaired spatial cognition. Abnormalities seen in ADHD.",
+    "funFact": "Right frontal regions are particularly important for maintaining vigilance over long periods."
+  },
+  "Frontal_Mid_2_L": {
+    "summary": "Middle frontal gyrus critical for executive function and attention.",
+    "function": "Key area for executive functions including planning, decision-making, and cognitive flexibility. Houses parts of the dorsolateral prefrontal cortex (DLPFC), crucial for working memory.",
+    "location": "Middle portion of the left frontal lobe, between the superior and inferior frontal gyri.",
+    "connections": ["Frontal_Sup_2_L", "Frontal_Inf_Tri_L", "Parietal_Inf_L", "Caudate_L"],
+    "clinical": "Damage impairs planning, organization, and multitasking. Target for TMS treatment in depression. Abnormal in ADHD and schizophrenia.",
+    "funFact": "This region acts like a mental workspace where you can juggle multiple pieces of information at once."
+  },
+  "Frontal_Mid_2_R": {
+    "summary": "Right middle frontal region for attention control and spatial processing.",
+    "function": "Involved in spatial attention and the control of eye movements. Contributes to response inhibition and attentional reorienting. Part of the ventral attention network.",
+    "location": "Middle portion of the right frontal lobe, part of the lateral prefrontal cortex.",
+    "connections": ["Frontal_Sup_2_R", "Frontal_Inf_Tri_R", "Parietal_Inf_R", "Caudate_R"],
+    "clinical": "Damage can cause spatial neglect and attention deficits. Involved in ADHD pathology.",
+    "funFact": "This region helps you stop yourself from doing something you've already started - like not pressing a button at the last moment."
+  },
+  "Occipital_Sup_L": {
+    "summary": "Higher-level visual processing area for complex visual analysis.",
+    "function": "Processes complex visual information beyond basic features. Involved in visual attention and awareness. Contributes to recognition of objects and spatial relationships.",
+    "location": "Superior portion of the left occipital lobe, posterior to the parietal lobe.",
+    "connections": ["Occipital_Mid_L", "Cuneus_L", "Parietal_Sup_L", "Angular_L"],
+    "clinical": "Damage can cause visual processing deficits and agnosia. May contribute to visual hallucinations in some conditions.",
+    "funFact": "This area helps you understand what you're looking at, not just see it."
+  },
+  "Occipital_Sup_R": {
+    "summary": "Right superior visual cortex for spatial vision and attention.",
+    "function": "Processes visual information with emphasis on spatial aspects. Involved in guiding movements based on visual input. Part of the dorsal visual stream.",
+    "location": "Superior portion of the right occipital lobe, at the posterior pole of the brain.",
+    "connections": ["Occipital_Mid_R", "Cuneus_R", "Parietal_Sup_R", "Angular_R"],
+    "clinical": "Damage can impair visuospatial processing and motion perception. Associated with Balint's syndrome when bilateral.",
+    "funFact": "This region helps you reach for objects accurately - it calculates where things are in space."
+  },
+  "Temporal_Sup_L": {
+    "summary": "Auditory processing and language comprehension center.",
+    "function": "Contains the primary auditory cortex and Wernicke's area for language comprehension. Processes speech sounds and complex auditory information. Involved in understanding spoken language.",
+    "location": "Superior temporal gyrus of the left temporal lobe, contains Heschl's gyrus.",
+    "connections": ["Temporal_Mid_L", "Heschl_L", "Frontal_Inf_Oper_L", "Angular_L"],
+    "clinical": "Damage to Wernicke's area causes fluent aphasia - inability to understand or produce meaningful language. Important for auditory processing disorders.",
+    "funFact": "This region can distinguish between thousands of different words in less than a second."
+  },
+  "Temporal_Sup_R": {
+    "summary": "Right auditory cortex specializing in music and prosody.",
+    "function": "Processes non-speech sounds, music, and emotional aspects of speech (prosody). Involved in recognizing voices and environmental sounds. Important for understanding tone and melody.",
+    "location": "Superior temporal gyrus of the right temporal lobe, including auditory cortex.",
+    "connections": ["Temporal_Mid_R", "Heschl_R", "Frontal_Inf_Oper_R", "Insula_R"],
+    "clinical": "Damage impairs music perception and recognition of emotional tone in speech. Can cause amusia (inability to perceive music).",
+    "funFact": "Musicians often show enhanced activation in this region, especially when listening to their trained instrument."
+  },
+  "Cingulate_Mid_L": {
+    "summary": "Part of the cingulate cortex involved in motor control and cognitive processing.",
+    "function": "Involved in motor control, especially for complex actions. Processes conflict and errors. Part of the salience network that detects important information.",
+    "location": "Middle portion of the cingulate gyrus, above the corpus callosum.",
+    "connections": ["Cingulate_Post_L", "ACC_sup_L", "Supp_Motor_Area_L", "Parietal_Sup_L"],
+    "clinical": "Abnormalities linked to schizophrenia and depression. Important for pain processing.",
+    "funFact": "This region activates when you realize you've made a mistake, even before you're fully aware of it."
+  },
+  "Cingulate_Mid_R": {
+    "summary": "Right midcingulate region for action monitoring and motivation.",
+    "function": "Monitors actions and detects conflicts between competing responses. Involved in pain processing and motivated behavior. Bridges cognitive and motor functions.",
+    "location": "Middle portion of the right cingulate gyrus, dorsal to the corpus callosum.",
+    "connections": ["Cingulate_Post_R", "ACC_sup_R", "Supp_Motor_Area_R", "Parietal_Sup_R"],
+    "clinical": "Abnormalities associated with apathy and akinetic mutism. Involved in chronic pain conditions.",
+    "funFact": "The midcingulate cortex has been called the 'hub of willpower' - it activates when you push through difficulty."
+  },
+  "Cerebellum_Crus1_L": {
+    "summary": "Cerebellar region contributing to cognitive and language functions.",
+    "function": "Unlike other cerebellar regions, Crus I is heavily involved in cognitive tasks. Contributes to language processing, working memory, and executive functions. Part of the cognitive cerebellum.",
+    "location": "Lateral posterior cerebellum, part of the cerebellar hemispheres.",
+    "connections": ["Cerebellum_Crus2_L", "Cerebellum_6_L", "Frontal_Mid_2_L", "Parietal_Inf_L"],
+    "clinical": "Damage can cause cognitive deficits and language problems, not just motor issues. Involved in autism spectrum conditions.",
+    "funFact": "The cerebellum contains more neurons than the rest of the brain combined, and Crus I helps with thinking, not just moving."
+  },
+  "Cerebellum_Crus1_R": {
+    "summary": "Right cerebellar region for cognitive processing and timing.",
+    "function": "Involved in cognitive functions traditionally associated with the cerebral cortex. Contributes to attention, working memory, and language. Helps with precise timing of thoughts and actions.",
+    "location": "Lateral aspect of the right posterior cerebellum.",
+    "connections": ["Cerebellum_Crus2_R", "Cerebellum_6_R", "Frontal_Mid_2_R", "Parietal_Inf_R"],
+    "clinical": "Cerebellar cognitive affective syndrome can result from damage here. Implicated in autism and dyslexia.",
+    "funFact": "The right cerebellum connects primarily with the left cerebral hemisphere, creating a crossed organization."
+  },
+  "Thal_VL_L": {
+    "summary": "Thalamic relay nucleus for motor information.",
+    "function": "Relays motor information from the basal ganglia and cerebellum to the motor cortex. Essential for voluntary movement control. Filters and modulates motor signals.",
+    "location": "Ventrolateral nucleus of the left thalamus, part of the motor thalamus.",
+    "connections": ["Precentral_L", "Supp_Motor_Area_L", "Pallidum_L", "Cerebellum_6_L"],
+    "clinical": "Deep brain stimulation target for Parkinson's disease and essential tremor. Lesions can cause movement disorders.",
+    "funFact": "This tiny region is a major crossroads where signals from multiple brain systems converge before reaching the motor cortex."
+  },
+  "Thal_VL_R": {
+    "summary": "Right motor thalamus relaying movement commands.",
+    "function": "Transmits motor information from cerebellum and basal ganglia to right motor cortex. Essential for smooth, coordinated left-sided movements. Integrates multiple motor signals.",
+    "location": "Ventrolateral nucleus of the right thalamus.",
+    "connections": ["Precentral_R", "Supp_Motor_Area_R", "Pallidum_R", "Cerebellum_6_R"],
+    "clinical": "Target for deep brain stimulation in movement disorders. Lesions cause contralateral motor deficits.",
+    "funFact": "Surgeons can lesion this area to stop tremors - the effects are often immediate and dramatic."
+  },
+  "Angular_L": {
+    "summary": "Multimodal integration hub for language, mathematics, and spatial cognition.",
+    "function": "Integrates information from multiple senses. Critical for reading, writing, and mathematical reasoning. Involved in semantic processing and understanding metaphors.",
+    "location": "Posterior part of the inferior parietal lobule, at the junction of temporal, parietal, and occipital lobes.",
+    "connections": ["SupraMarginal_L", "Temporal_Mid_L", "Occipital_Mid_L", "Frontal_Inf_Tri_L"],
+    "clinical": "Damage causes Gerstmann syndrome: difficulty with writing, calculating, and distinguishing left from right. Involved in dyslexia and dyscalculia.",
+    "funFact": "This region lights up when you 'get' a joke or understand a metaphor - it's crucial for abstract thinking."
+  },
+  "Angular_R": {
+    "summary": "Right angular gyrus for spatial attention and social cognition.",
+    "function": "Involved in spatial attention, especially reorienting attention to unexpected stimuli. Contributes to theory of mind and understanding others' perspectives. Part of the default mode network.",
+    "location": "Posterior inferior parietal lobe of the right hemisphere, at the parieto-temporal-occipital junction.",
+    "connections": ["SupraMarginal_R", "Temporal_Mid_R", "Occipital_Mid_R", "Precuneus_R"],
+    "clinical": "Damage can cause spatial neglect and impaired social cognition. Involved in out-of-body experiences when stimulated.",
+    "funFact": "Stimulating this region can make people feel like they're floating outside their own body."
+  },
+  "ACC_pre_L": {
+    "summary": "Pregenual anterior cingulate cortex involved in emotion regulation.",
+    "function": "Regulates emotional responses and connects emotion with cognition. Involved in processing rewards and punishments. Part of the limbic system and salience network.",
+    "location": "Anterior portion of the cingulate gyrus, just in front of the genu (knee) of the corpus callosum.",
+    "connections": ["Amygdala_L", "Insula_L", "OFCmed_L", "Frontal_Sup_Medial_L"],
+    "clinical": "Abnormalities strongly linked to depression and anxiety. Target for deep brain stimulation in treatment-resistant depression.",
+    "funFact": "Activity in this region can predict whether an antidepressant will work for a particular person."
+  },
+  "ACC_pre_R": {
+    "summary": "Right pregenual cingulate for emotional processing and autonomic control.",
+    "function": "Modulates emotional responses and autonomic nervous system activity. Involved in processing positive emotions and rewards. Helps regulate stress responses.",
+    "location": "Anterior cingulate cortex of the right hemisphere, near the genu of corpus callosum.",
+    "connections": ["Amygdala_R", "Insula_R", "OFCmed_R", "Frontal_Sup_Medial_R"],
+    "clinical": "Reduced activity associated with depression and PTSD. Involved in emotional blunting.",
+    "funFact": "The pregenual ACC is more active when you feel loved and socially connected."
+  },
+  "ACC_sub_L": {
+    "summary": "Subgenual anterior cingulate cortex critical for mood regulation.",
+    "function": "Key region for regulating mood and emotional responses. Strongly connected to the amygdala and hypothalamus. Modulates autonomic and endocrine responses to emotional stimuli.",
+    "location": "Below the genu of the corpus callosum, in the medial prefrontal cortex.",
+    "connections": ["Amygdala_L", "Hippocampus_L", "OFCmed_L", "Thal_MDm_L"],
+    "clinical": "Hyperactive in depression - deep brain stimulation here can relieve treatment-resistant depression. Abnormal in bipolar disorder.",
+    "funFact": "This small region, area 25, has been called the 'sadness center' of the brain."
+  },
+  "ACC_sub_R": {
+    "summary": "Right subgenual cingulate for mood and visceral responses.",
+    "function": "Regulates mood states and connects emotional processing with bodily responses. Involved in processing sadness and negative emotions. Modulates autonomic function.",
+    "location": "Subgenual anterior cingulate of the right hemisphere, ventral to corpus callosum.",
+    "connections": ["Amygdala_R", "Hippocampus_R", "OFCmed_R", "Thal_MDm_R"],
+    "clinical": "Metabolic abnormalities seen in mood disorders. Target for experimental depression treatments.",
+    "funFact": "The subgenual cingulate connects your emotions to your gut - explaining why sadness can feel physical."
+  },
+  "ACC_sup_L": {
+    "summary": "Dorsal anterior cingulate for cognitive control and conflict monitoring.",
+    "function": "Monitors for conflicts between competing responses and signals need for increased control. Involved in error detection and performance monitoring. Part of the cognitive control network.",
+    "location": "Dorsal (upper) portion of the anterior cingulate gyrus, above the corpus callosum.",
+    "connections": ["Frontal_Sup_Medial_L", "Cingulate_Mid_L", "Frontal_Mid_2_L", "Insula_L"],
+    "clinical": "Abnormalities linked to OCD, schizophrenia, and ADHD. Important for understanding addiction and impulse control disorders.",
+    "funFact": "This region activates when you feel the 'oops' of making a mistake - even before you know you made one."
+  },
+  "ACC_sup_R": {
+    "summary": "Right dorsal cingulate for attention and response selection.",
+    "function": "Involved in attention allocation and selecting between competing responses. Processes pain and anticipates negative outcomes. Part of the salience network.",
+    "location": "Dorsal anterior cingulate of the right hemisphere.",
+    "connections": ["Frontal_Sup_Medial_R", "Cingulate_Mid_R", "Frontal_Mid_2_R", "Insula_R"],
+    "clinical": "Involved in attention disorders and chronic pain conditions. Abnormal in anxiety disorders.",
+    "funFact": "The dorsal ACC is sometimes called the brain's 'alarm system' - it alerts you when something needs attention."
+  },
+  "Calcarine_L": {
+    "summary": "Primary visual cortex where visual information first arrives.",
+    "function": "Receives direct input from the eyes via the thalamus. Processes basic visual features like edges, orientation, and contrast. Beginning of conscious visual perception.",
+    "location": "Banks of the calcarine sulcus in the medial occipital lobe. Also called V1 or striate cortex.",
+    "connections": ["Cuneus_L", "Lingual_L", "Occipital_Mid_L", "Thal_LGN_L"],
+    "clinical": "Damage causes cortical blindness in the opposite visual field. Can cause visual hallucinations (Charles Bonnet syndrome).",
+    "funFact": "The primary visual cortex has a complete map of your visual world - but it's upside down and backwards."
+  },
+  "Calcarine_R": {
+    "summary": "Right primary visual cortex processing the left visual field.",
+    "function": "Processes visual information from the left visual field. Detects basic features like lines, edges, and motion. First cortical stage of visual processing.",
+    "location": "Medial surface of the right occipital lobe, surrounding the calcarine fissure.",
+    "connections": ["Cuneus_R", "Lingual_R", "Occipital_Mid_R", "Thal_LGN_R"],
+    "clinical": "Damage causes left visual field blindness (homonymous hemianopia). Lesions can cause vivid visual hallucinations.",
+    "funFact": "Even when blind, some people can still sense movement - this 'blindsight' bypasses V1 entirely."
+  },
+  "Cerebellum_10_L": {
+    "summary": "Cerebellar region involved in vestibular processing and balance.",
+    "function": "Processes information from the vestibular system for balance and spatial orientation. Involved in coordinating eye movements with head position. Part of the vestibulocerebellum.",
+    "location": "Most inferior part of the left cerebellar hemisphere, near the flocculus.",
+    "connections": ["Vermis_10", "Cerebellum_9_L", "Thal_VL_L"],
+    "clinical": "Damage causes vertigo and balance problems. Important in motion sickness and vestibular disorders.",
+    "funFact": "This region helps you stay balanced even with your eyes closed - it processes signals from your inner ear."
+  },
+  "Cerebellum_10_R": {
+    "summary": "Right cerebellar lobule for balance and vestibular integration.",
+    "function": "Integrates vestibular signals for maintaining balance and posture. Coordinates eye movements during head motion. Essential for the vestibulo-ocular reflex.",
+    "location": "Inferior portion of the right cerebellar hemisphere.",
+    "connections": ["Vermis_10", "Cerebellum_9_R", "Thal_VL_R"],
+    "clinical": "Lesions cause imbalance and nystagmus. Involved in vestibular migraine.",
+    "funFact": "Astronauts experience changes in this region during spaceflight as their vestibular system adapts to zero gravity."
+  },
+  "Cerebellum_3_L": {
+    "summary": "Anterior cerebellar lobule for leg and trunk motor control.",
+    "function": "Controls movements of the legs and trunk. Receives proprioceptive information from the lower body. Part of the spinocerebellum that regulates posture and gait.",
+    "location": "Anterior lobe of the left cerebellum.",
+    "connections": ["Vermis_3", "Cerebellum_4_5_L", "Thal_VL_L"],
+    "clinical": "Damage causes gait ataxia and difficulty with leg coordination. Affected early in alcoholic cerebellar degeneration.",
+    "funFact": "This region is heavily connected to your spinal cord, constantly adjusting your posture without conscious effort."
+  },
+  "Cerebellum_3_R": {
+    "summary": "Right anterior cerebellum for lower body coordination.",
+    "function": "Coordinates movements of the trunk and lower limbs. Integrates proprioceptive feedback for smooth movements. Important for maintaining posture.",
+    "location": "Anterior lobe of the right cerebellum.",
+    "connections": ["Vermis_3", "Cerebellum_4_5_R", "Thal_VL_R"],
+    "clinical": "Damage causes ataxic gait and postural instability. Affected in multiple system atrophy.",
+    "funFact": "Chronic alcohol abuse particularly damages this region, explaining the characteristic unsteady gait of alcoholics."
+  },
+  "Cerebellum_4_5_L": {
+    "summary": "Cerebellar lobules IV-V for arm and hand coordination.",
+    "function": "Controls fine movements of the upper limbs. Integrates sensory feedback for precise hand movements. Important for motor learning and adaptation.",
+    "location": "Anterior lobe of the left cerebellum, posterior to lobule III.",
+    "connections": ["Cerebellum_3_L", "Cerebellum_6_L", "Vermis_4_5", "Thal_VL_L"],
+    "clinical": "Damage causes limb ataxia and intention tremor. Affected in spinocerebellar ataxias.",
+    "funFact": "This region is essential for activities requiring precision, like threading a needle or playing piano."
+  },
+  "Cerebellum_4_5_R": {
+    "summary": "Right cerebellar lobules IV-V for upper limb control.",
+    "function": "Coordinates movements of the left arm and hand. Processes proprioceptive information from upper limbs. Involved in motor adaptation and learning.",
+    "location": "Anterior lobe of the right cerebellum.",
+    "connections": ["Cerebellum_3_R", "Cerebellum_6_R", "Vermis_4_5", "Thal_VL_R"],
+    "clinical": "Lesions cause left upper limb ataxia. Involved in essential tremor.",
+    "funFact": "When you learn a new motor skill, this region shows increased activity until the skill becomes automatic."
+  },
+  "Cerebellum_6_L": {
+    "summary": "Cerebellar lobule VI bridging motor and cognitive functions.",
+    "function": "Transition zone between motor and cognitive cerebellar regions. Involved in both movement control and cognitive tasks like language and attention.",
+    "location": "Superior posterior lobe of the left cerebellum, between anterior and posterior lobes.",
+    "connections": ["Cerebellum_4_5_L", "Cerebellum_Crus1_L", "Vermis_6", "Thal_VL_L"],
+    "clinical": "Damage can cause both motor and cognitive symptoms. Implicated in developmental coordination disorder.",
+    "funFact": "This region activates when you imagine performing a movement without actually moving - it plans actions."
+  },
+  "Cerebellum_6_R": {
+    "summary": "Right cerebellar lobule VI for motor-cognitive integration.",
+    "function": "Integrates motor control with cognitive processing. Involved in movement planning and timing. Contributes to language and spatial processing.",
+    "location": "Superior posterior lobe of the right cerebellum.",
+    "connections": ["Cerebellum_4_5_R", "Cerebellum_Crus1_R", "Vermis_6", "Thal_VL_R"],
+    "clinical": "Affected in cerebellar cognitive affective syndrome. Abnormalities seen in autism.",
+    "funFact": "Professional athletes show enhanced development of this region from years of coordinated practice."
+  },
+  "Cerebellum_7b_L": {
+    "summary": "Left cerebellar lobule VIIb for cognitive processing.",
+    "function": "Involved in higher cognitive functions rather than pure motor control. Contributes to working memory and executive functions. Part of the cognitive cerebellum.",
+    "location": "Posterior lobe of the left cerebellum.",
+    "connections": ["Cerebellum_Crus2_L", "Cerebellum_8_L", "Vermis_7", "Frontal_Mid_2_L"],
+    "clinical": "Damage can cause cognitive deficits including problems with planning and timing.",
+    "funFact": "The more posterior cerebellar regions like this are evolutionarily newer and support our unique human cognitive abilities."
+  },
+  "Cerebellum_7b_R": {
+    "summary": "Right cerebellar VIIb for cognitive and attentional functions.",
+    "function": "Contributes to cognitive tasks including attention and working memory. Involved in timing and sequence processing. Connected to prefrontal cortex.",
+    "location": "Posterior lobe of the right cerebellum.",
+    "connections": ["Cerebellum_Crus2_R", "Cerebellum_8_R", "Vermis_7", "Frontal_Mid_2_R"],
+    "clinical": "Abnormalities linked to cognitive symptoms in cerebellar disorders. Involved in ADHD.",
+    "funFact": "This region helps you estimate time intervals - damage here can impair your sense of timing."
+  },
+  "Cerebellum_8_L": {
+    "summary": "Cerebellar lobule VIII for sensorimotor integration.",
+    "function": "Integrates sensory information with motor commands. Involved in sensorimotor tasks and some cognitive functions. Part of the default mode cerebellar network.",
+    "location": "Inferior posterior lobe of the left cerebellum.",
+    "connections": ["Cerebellum_7b_L", "Cerebellum_9_L", "Vermis_8", "Parietal_Sup_L"],
+    "clinical": "Lesions affect coordination and may impact some cognitive functions.",
+    "funFact": "This region is active when you're mind-wandering, suggesting a role in the brain's default mode."
+  },
+  "Cerebellum_8_R": {
+    "summary": "Right cerebellar VIII for somatosensory processing.",
+    "function": "Processes somatosensory information for motor control. Involved in body image and proprioception. Contributes to sensorimotor integration.",
+    "location": "Inferior posterior lobe of the right cerebellum.",
+    "connections": ["Cerebellum_7b_R", "Cerebellum_9_R", "Vermis_8", "Parietal_Sup_R"],
+    "clinical": "Damage affects sensorimotor coordination. Involved in body representation disorders.",
+    "funFact": "This region contains a second body map in the cerebellum, separate from the one in the anterior lobe."
+  },
+  "Cerebellum_9_L": {
+    "summary": "Cerebellar lobule IX for default mode and vestibular processing.",
+    "function": "Part of the cerebellar default mode network. Involved in vestibular processing and self-referential thought. Contributes to social cognition.",
+    "location": "Inferior posterior cerebellum, near the uvula.",
+    "connections": ["Cerebellum_8_L", "Cerebellum_10_L", "Vermis_9", "Cingulate_Post_L"],
+    "clinical": "Abnormalities linked to autism and social cognitive deficits.",
+    "funFact": "This region activates during daydreaming and thinking about yourself - connecting cerebellum to self-awareness."
+  },
+  "Cerebellum_9_R": {
+    "summary": "Right cerebellar IX for vestibular and social processing.",
+    "function": "Processes vestibular information and contributes to default mode network function. Involved in social cognition and theory of mind. Part of posterior cerebellum.",
+    "location": "Inferior posterior lobe of the right cerebellum.",
+    "connections": ["Cerebellum_8_R", "Cerebellum_10_R", "Vermis_9", "Cingulate_Post_R"],
+    "clinical": "Implicated in autism spectrum conditions. Damage can affect social understanding.",
+    "funFact": "Research suggests the cerebellum helps us predict others' actions - essential for smooth social interaction."
+  },
+  "Cerebellum_Crus2_L": {
+    "summary": "Left cerebellar Crus II for executive and language functions.",
+    "function": "Heavily involved in executive functions and language processing. Contributes to verbal working memory and semantic processing. Part of the cognitive cerebellum.",
+    "location": "Lateral posterior cerebellum, posterior to Crus I.",
+    "connections": ["Cerebellum_Crus1_L", "Cerebellum_7b_L", "Frontal_Inf_Tri_L", "Temporal_Mid_L"],
+    "clinical": "Damage can cause executive dysfunction and language problems. Implicated in autism and dyslexia.",
+    "funFact": "This region is more active during verbal tasks than motor tasks - the cerebellum does much more than coordinate movement."
+  },
+  "Cerebellum_Crus2_R": {
+    "summary": "Right cerebellar Crus II for cognitive and spatial functions.",
+    "function": "Involved in spatial cognition and executive functions. Contributes to attention and working memory. Connected to prefrontal and parietal cortex.",
+    "location": "Lateral posterior cerebellum of the right hemisphere.",
+    "connections": ["Cerebellum_Crus1_R", "Cerebellum_7b_R", "Frontal_Mid_2_R", "Parietal_Inf_R"],
+    "clinical": "Cerebellar cognitive affective syndrome can result from damage here. Involved in autism.",
+    "funFact": "The right Crus II is particularly involved in spatial working memory - remembering where things are."
+  },
+  "Cingulate_Post_L": {
+    "summary": "Posterior cingulate cortex - hub of the default mode network.",
+    "function": "Central node of the default mode network, active during self-reflection and memory retrieval. Involved in autobiographical memory and thinking about the past and future.",
+    "location": "Posterior portion of the cingulate gyrus, behind the central sulcus.",
+    "connections": ["Hippocampus_L", "Precuneus_L", "Angular_L", "Frontal_Sup_Medial_L"],
+    "clinical": "One of the earliest regions affected in Alzheimer's disease. Reduced activity correlates with memory impairment.",
+    "funFact": "The posterior cingulate is most active when you're thinking about nothing in particular - it's your daydreaming center."
+  },
+  "Cingulate_Post_R": {
+    "summary": "Right posterior cingulate for memory and self-referential processing.",
+    "function": "Part of the default mode network supporting autobiographical memory and introspection. Involved in spatial memory and navigation. Integrates internal and external information.",
+    "location": "Posterior cingulate gyrus of the right hemisphere.",
+    "connections": ["Hippocampus_R", "Precuneus_R", "Angular_R", "Frontal_Sup_Medial_R"],
+    "clinical": "Early involvement in Alzheimer's disease. Shows reduced metabolism in mild cognitive impairment.",
+    "funFact": "Activity in this region decreases when you're focused on a challenging task - it turns off when you're concentrating."
+  },
+  "Cuneus_L": {
+    "summary": "Visual processing area for the lower visual field.",
+    "function": "Processes visual information from the lower part of the visual field. Involved in basic visual processing and visual attention. Part of the dorsal visual stream.",
+    "location": "Medial surface of the occipital lobe, above the calcarine sulcus. Wedge-shaped (cuneus means 'wedge').",
+    "connections": ["Calcarine_L", "Lingual_L", "Occipital_Sup_L", "Precuneus_L"],
+    "clinical": "Damage can cause lower visual field defects. Involved in some visual processing disorders.",
+    "funFact": "The cuneus processes what you see below eye level - useful for watching your step while walking."
+  },
+  "Cuneus_R": {
+    "summary": "Right cuneus for lower visual field processing.",
+    "function": "Processes visual information from the left lower visual field. Involved in visual processing and visual spatial attention. Contributes to visual perception.",
+    "location": "Medial occipital cortex of the right hemisphere, superior to the calcarine fissure.",
+    "connections": ["Calcarine_R", "Lingual_R", "Occipital_Sup_R", "Precuneus_R"],
+    "clinical": "Lesions cause left lower quadrant visual field loss. Can be involved in migraine aura.",
+    "funFact": "During meditation, the cuneus shows altered activity patterns - visual processing changes when eyes are closed."
+  },
+  "Frontal_Inf_Oper_L": {
+    "summary": "Broca's area - essential for speech production and language.",
+    "function": "Contains Broca's area, critical for speech production and language processing. Involved in phonological processing and verbal working memory. Also involved in action understanding.",
+    "location": "Posterior part of the inferior frontal gyrus, pars opercularis. Adjacent to motor cortex.",
+    "connections": ["Temporal_Sup_L", "Insula_L", "Precentral_L", "Frontal_Inf_Tri_L"],
+    "clinical": "Damage causes Broca's aphasia - non-fluent speech with intact comprehension. Important for stroke recovery.",
+    "funFact": "Broca's area contains mirror neurons that fire both when you perform an action and when you see someone else do it."
+  },
+  "Frontal_Inf_Oper_R": {
+    "summary": "Right inferior frontal operculum for response inhibition.",
+    "function": "Critical for response inhibition - stopping yourself from doing something. Involved in attention and processing prosody (emotional tone of speech). Part of the ventral attention network.",
+    "location": "Posterior inferior frontal gyrus of the right hemisphere.",
+    "connections": ["Temporal_Sup_R", "Insula_R", "Precentral_R", "Frontal_Inf_Tri_R"],
+    "clinical": "Damage impairs ability to stop actions. Abnormal in ADHD and impulse control disorders.",
+    "funFact": "This region is the brain's 'brake pedal' - it's essential for self-control and resisting temptations."
+  },
+  "Frontal_Inf_Orb_2_L": {
+    "summary": "Left orbital inferior frontal cortex for semantic processing.",
+    "function": "Involved in semantic processing and controlled semantic retrieval. Contributes to language comprehension and emotional processing. Part of the language network.",
+    "location": "Orbital part of the left inferior frontal gyrus, above the eye socket.",
+    "connections": ["Temporal_Mid_L", "Frontal_Inf_Tri_L", "OFClat_L", "Amygdala_L"],
+    "clinical": "Damage can cause word-finding difficulties. Involved in semantic dementia.",
+    "funFact": "This region activates when you're trying to think of a word that's 'on the tip of your tongue.'"
+  },
+  "Frontal_Inf_Orb_2_R": {
+    "summary": "Right orbital frontal cortex for social and emotional processing.",
+    "function": "Involved in social cognition and emotional processing. Contributes to understanding others' intentions and emotions. Part of the social brain network.",
+    "location": "Orbital part of the right inferior frontal gyrus.",
+    "connections": ["Temporal_Pole_Sup_R", "Frontal_Inf_Tri_R", "OFClat_R", "Amygdala_R"],
+    "clinical": "Damage can cause inappropriate social behavior. Involved in autism and psychopathy.",
+    "funFact": "This region helps you understand social cues like sarcasm and irony."
+  },
+  "Frontal_Inf_Tri_L": {
+    "summary": "Left triangular inferior frontal cortex for semantic processing.",
+    "function": "Part of Broca's region involved in semantic processing and language production. Important for semantic selection and verbal fluency. Contributes to syntax processing.",
+    "location": "Triangular part of the left inferior frontal gyrus (pars triangularis).",
+    "connections": ["Frontal_Inf_Oper_L", "Temporal_Mid_L", "Angular_L", "Frontal_Mid_2_L"],
+    "clinical": "Damage contributes to language deficits. Important for semantic aspects of language disorders.",
+    "funFact": "This region is larger on the left side in most people - one of the brain asymmetries that makes humans unique."
+  },
+  "Frontal_Inf_Tri_R": {
+    "summary": "Right triangular frontal cortex for prosody and attention.",
+    "function": "Involved in processing emotional prosody and attention reorienting. Contributes to understanding non-literal language like metaphors. Part of the right hemisphere language network.",
+    "location": "Triangular part of the right inferior frontal gyrus.",
+    "connections": ["Frontal_Inf_Oper_R", "Temporal_Mid_R", "Angular_R", "Frontal_Mid_2_R"],
+    "clinical": "Damage can impair understanding of emotional tone in speech. Involved in pragmatic language disorders.",
+    "funFact": "While the left side handles the words, this right side helps you understand what someone really means."
+  },
+  "Frontal_Med_Orb_L": {
+    "summary": "Medial orbitofrontal cortex for reward and value processing.",
+    "function": "Processes reward value and makes value-based decisions. Involved in subjective pleasure and emotional regulation. Part of the brain's reward system.",
+    "location": "Medial portion of the orbitofrontal cortex, above the eye sockets.",
+    "connections": ["ACC_sub_L", "Amygdala_L", "Hippocampus_L", "Thal_MDm_L"],
+    "clinical": "Damage causes changes in personality and decision-making. Abnormal in depression and addiction.",
+    "funFact": "This region encodes how much you like something - from food to music to art."
+  },
+  "Frontal_Med_Orb_R": {
+    "summary": "Right medial orbital cortex for value judgments.",
+    "function": "Evaluates subjective value of rewards and outcomes. Involved in emotional decision-making and social cognition. Contributes to understanding others' mental states.",
+    "location": "Medial orbitofrontal cortex of the right hemisphere.",
+    "connections": ["ACC_sub_R", "Amygdala_R", "Hippocampus_R", "Thal_MDm_R"],
+    "clinical": "Damage associated with poor decision-making and impulsivity. Involved in addiction circuits.",
+    "funFact": "When you regret a decision, this region becomes more active - it tracks what could have been."
+  },
+  "Frontal_Sup_Medial_L": {
+    "summary": "Medial prefrontal cortex for self-referential processing.",
+    "function": "Central to self-referential thinking and mentalizing about others. Part of the default mode network. Involved in social cognition and moral reasoning.",
+    "location": "Medial surface of the superior frontal gyrus, part of medial prefrontal cortex.",
+    "connections": ["ACC_pre_L", "Cingulate_Post_L", "Hippocampus_L", "Angular_L"],
+    "clinical": "Abnormalities linked to depression and autism. Important for understanding social cognition disorders.",
+    "funFact": "This region is active when you think about yourself - it's your neural autobiography writer."
+  },
+  "Frontal_Sup_Medial_R": {
+    "summary": "Right medial frontal cortex for social cognition.",
+    "function": "Involved in theory of mind - understanding others' thoughts and feelings. Part of the default mode network. Contributes to self-awareness and introspection.",
+    "location": "Medial surface of the right superior frontal gyrus.",
+    "connections": ["ACC_pre_R", "Cingulate_Post_R", "Hippocampus_R", "Angular_R"],
+    "clinical": "Implicated in autism spectrum conditions. Abnormal activity in schizophrenia.",
+    "funFact": "When you imagine what someone else is thinking, this region simulates their mental state."
+  },
+  "Fusiform_L": {
+    "summary": "Fusiform gyrus essential for face and word recognition.",
+    "function": "Contains the fusiform face area (FFA) for face recognition and visual word form area for reading. Critical for expert visual recognition of any category you're trained to distinguish.",
+    "location": "Inferior temporal cortex, on the bottom surface of the temporal lobe.",
+    "connections": ["Occipital_Inf_L", "Temporal_Mid_L", "Hippocampus_L", "Amygdala_L"],
+    "clinical": "Damage can cause prosopagnosia (face blindness) or acquired dyslexia. Abnormal activation in autism.",
+    "funFact": "Car experts use this region to recognize cars the same way most people use it to recognize faces."
+  },
+  "Fusiform_R": {
+    "summary": "Right fusiform gyrus dominant for face processing.",
+    "function": "Primary region for face perception and recognition. Responds more strongly to faces than any other visual category. Important for emotional face processing.",
+    "location": "Inferior temporal lobe of the right hemisphere, on the ventral surface.",
+    "connections": ["Occipital_Inf_R", "Temporal_Mid_R", "Hippocampus_R", "Amygdala_R"],
+    "clinical": "Damage causes prosopagnosia. Reduced activation in autism. Hyperactivation for own-race faces.",
+    "funFact": "The right fusiform is so specialized for faces that it responds more to an upside-down face than a right-side-up house."
+  },
+  "Heschl_L": {
+    "summary": "Primary auditory cortex - where hearing begins in the brain.",
+    "function": "First cortical region to process auditory information. Analyzes basic sound features like frequency and intensity. Encodes the building blocks of speech and music.",
+    "location": "Heschl's gyrus, on the superior temporal plane within the lateral sulcus.",
+    "connections": ["Temporal_Sup_L", "Temporal_Mid_L", "Insula_L", "Thal_MGN_L"],
+    "clinical": "Damage causes cortical deafness. Important for auditory processing disorders and tinnitus.",
+    "funFact": "Musicians have larger Heschl's gyri, especially those who started training early in life."
+  },
+  "Heschl_R": {
+    "summary": "Right primary auditory cortex for pitch and music.",
+    "function": "Processes auditory information with specialization for pitch, timbre, and music. Analyzes spectral features of sounds. Important for music perception.",
+    "location": "Heschl's gyrus of the right hemisphere, on the superior temporal plane.",
+    "connections": ["Temporal_Sup_R", "Temporal_Mid_R", "Insula_R", "Thal_MGN_R"],
+    "clinical": "Lesions can cause amusia (inability to perceive music). Important for tinnitus.",
+    "funFact": "The right auditory cortex is better at detecting small pitch changes - crucial for enjoying music."
+  },
+  "LC_L": {
+    "summary": "Locus coeruleus - the brain's noradrenaline factory.",
+    "function": "Primary source of noradrenaline (norepinephrine) in the brain. Regulates arousal, attention, and stress responses. Modulates activity across the entire cortex.",
+    "location": "Small nucleus in the brainstem pons, near the floor of the fourth ventricle. Despite tiny size, projects throughout the brain.",
+    "connections": ["Amygdala_L", "Hippocampus_L", "Frontal_Sup_2_L", "Thal_Re_L"],
+    "clinical": "Degenerates early in Alzheimer's and Parkinson's diseases. Target for understanding arousal and attention disorders.",
+    "funFact": "Named 'blue spot' (locus coeruleus) because it contains melanin that gives it a bluish color."
+  },
+  "LC_R": {
+    "summary": "Right locus coeruleus for arousal and vigilance.",
+    "function": "Releases norepinephrine to modulate alertness and attention. Responds to novel or important stimuli. Critical for the stress response and fight-or-flight.",
+    "location": "Brainstem pons of the right side, paired structure with left LC.",
+    "connections": ["Amygdala_R", "Hippocampus_R", "Frontal_Sup_2_R", "Thal_Re_R"],
+    "clinical": "Early degeneration in neurodegenerative diseases. Involved in PTSD and panic disorder.",
+    "funFact": "The locus coeruleus fires when you're surprised - it's your brain's novelty detector."
+  },
+  "Lingual_L": {
+    "summary": "Visual cortex for color and form processing.",
+    "function": "Processes visual information, particularly color and complex forms. Involved in visual word recognition and letter identification. Part of the ventral visual stream.",
+    "location": "Medial occipitotemporal cortex, below the calcarine sulcus.",
+    "connections": ["Calcarine_L", "Fusiform_L", "Occipital_Mid_L", "ParaHippocampal_L"],
+    "clinical": "Damage can cause color perception deficits (cerebral achromatopsia). Important for reading disorders.",
+    "funFact": "This region helps you see in color - damage here can make the world appear in shades of gray."
+  },
+  "Lingual_R": {
+    "summary": "Right lingual gyrus for visual processing and imagery.",
+    "function": "Processes visual information including color and complex patterns. Involved in visual imagery and dreaming. Contributes to scene perception.",
+    "location": "Medial occipitotemporal region of the right hemisphere.",
+    "connections": ["Calcarine_R", "Fusiform_R", "Occipital_Mid_R", "ParaHippocampal_R"],
+    "clinical": "Lesions can cause visual field defects and color blindness. Active during visual hallucinations.",
+    "funFact": "The lingual gyrus is highly active during vivid dreams - it creates the visual content of your dreams."
+  },
+  "N_Acc_L": {
+    "summary": "Nucleus accumbens - center of the brain's reward system.",
+    "function": "Key structure for reward processing, motivation, and pleasure. Releases dopamine in response to rewards. Critical for goal-directed behavior and addiction.",
+    "location": "Ventral striatum, where the caudate and putamen meet. Part of the basal ganglia.",
+    "connections": ["VTA_L", "OFCmed_L", "Amygdala_L", "Hippocampus_L"],
+    "clinical": "Hyperactivity drives addiction. Target for deep brain stimulation in treatment-resistant depression and OCD.",
+    "funFact": "All addictive drugs, from caffeine to cocaine, increase dopamine release in the nucleus accumbens."
+  },
+  "N_Acc_R": {
+    "summary": "Right nucleus accumbens for reward and motivation.",
+    "function": "Processes rewards and motivates goal-directed behavior. Involved in anticipation of pleasure. Central to the brain's reward circuitry.",
+    "location": "Ventral striatum of the right hemisphere.",
+    "connections": ["VTA_R", "OFCmed_R", "Amygdala_R", "Hippocampus_R"],
+    "clinical": "Dysfunction in addiction and depression. Target for addiction research and treatment.",
+    "funFact": "This region lights up not just when you get a reward, but when you're anticipating one - expectation feels good."
+  },
+  "OFCant_L": {
+    "summary": "Anterior orbitofrontal cortex for complex reward evaluation.",
+    "function": "Evaluates complex, abstract rewards and outcomes. Involved in social decision-making and moral judgments. Part of the brain's value system.",
+    "location": "Anterior portion of the orbitofrontal cortex, behind the forehead.",
+    "connections": ["OFCmed_L", "OFClat_L", "ACC_pre_L", "Amygdala_L"],
+    "clinical": "Damage affects social behavior and decision-making. Implicated in addiction and compulsive behaviors.",
+    "funFact": "This region helps you value abstract rewards like social approval and long-term goals over immediate pleasures."
+  },
+  "OFCant_R": {
+    "summary": "Right anterior orbital cortex for reward and social behavior.",
+    "function": "Processes reward value in social contexts. Involved in evaluating social rewards and punishments. Contributes to appropriate social behavior.",
+    "location": "Anterior orbitofrontal cortex of the right hemisphere.",
+    "connections": ["OFCmed_R", "OFClat_R", "ACC_pre_R", "Amygdala_R"],
+    "clinical": "Damage causes socially inappropriate behavior. Abnormal in psychopathy and addiction.",
+    "funFact": "People with damage here may laugh at inappropriate moments or make embarrassing social comments without realizing it."
+  },
+  "OFClat_L": {
+    "summary": "Lateral orbitofrontal cortex for punishment and behavioral adjustment.",
+    "function": "Processes negative outcomes and punishments. Involved in changing behavior when circumstances change. Important for reversal learning.",
+    "location": "Lateral portion of the orbitofrontal cortex.",
+    "connections": ["OFCant_L", "Frontal_Inf_Orb_2_L", "Insula_L", "Caudate_L"],
+    "clinical": "Abnormalities linked to impulsivity and addiction. Important for understanding OCD.",
+    "funFact": "This region helps you learn from mistakes - it updates your behavior when something doesn't work out."
+  },
+  "OFClat_R": {
+    "summary": "Right lateral orbital cortex for behavioral control.",
+    "function": "Monitors negative outcomes and adjusts behavior accordingly. Involved in response inhibition and behavioral flexibility. Processes social punishments.",
+    "location": "Lateral orbitofrontal cortex of the right hemisphere.",
+    "connections": ["OFCant_R", "Frontal_Inf_Orb_2_R", "Insula_R", "Caudate_R"],
+    "clinical": "Dysfunction in OCD and impulse control disorders. Important for addiction.",
+    "funFact": "When you feel embarrassed about a social mistake, this region is helping you learn not to repeat it."
+  },
+  "OFCmed_L": {
+    "summary": "Medial orbitofrontal cortex for subjective value and emotion.",
+    "function": "Encodes subjective value of rewards and emotional stimuli. Involved in positive emotions and reward-related decision making. Part of the limbic system.",
+    "location": "Medial portion of the orbitofrontal cortex, near the midline.",
+    "connections": ["ACC_sub_L", "Amygdala_L", "Hippocampus_L", "N_Acc_L"],
+    "clinical": "Reduced activity in depression. Damage causes emotional blunting and poor decision-making.",
+    "funFact": "Activity in this region correlates with how much you enjoy something - it's your pleasure meter."
+  },
+  "OFCmed_R": {
+    "summary": "Right medial orbital cortex for value and emotional processing.",
+    "function": "Processes subjective value of experiences and outcomes. Involved in hedonic (pleasure) experiences. Integrates emotion with decision-making.",
+    "location": "Medial orbitofrontal cortex of the right hemisphere.",
+    "connections": ["ACC_sub_R", "Amygdala_R", "Hippocampus_R", "N_Acc_R"],
+    "clinical": "Abnormal in depression and anhedonia. Important for understanding reward-related disorders.",
+    "funFact": "When you savor a delicious meal, this region is encoding exactly how pleasurable it is."
+  },
+  "OFCpost_L": {
+    "summary": "Posterior orbitofrontal cortex for sensory-emotion integration.",
+    "function": "Integrates sensory information with emotional value. Processes taste and smell rewards. Involved in evaluating the pleasantness of sensory experiences.",
+    "location": "Posterior portion of the orbitofrontal cortex, closer to primary sensory areas.",
+    "connections": ["OFCmed_L", "Insula_L", "Amygdala_L", "Olfactory_L"],
+    "clinical": "Damage affects appreciation of food and other sensory pleasures. Involved in eating disorders.",
+    "funFact": "This region decides whether food tastes good - it's why the same food tastes better when you're hungry."
+  },
+  "OFCpost_R": {
+    "summary": "Right posterior orbital cortex for sensory reward processing.",
+    "function": "Evaluates pleasantness of sensory stimuli including taste and smell. Integrates visceral sensations with reward value. Important for food preferences.",
+    "location": "Posterior orbitofrontal cortex of the right hemisphere.",
+    "connections": ["OFCmed_R", "Insula_R", "Amygdala_R", "Olfactory_R"],
+    "clinical": "Altered in eating disorders and obesity. Involved in sensory processing abnormalities.",
+    "funFact": "Restaurants know that pleasant smells activate this region, making food seem more delicious."
+  },
+  "Occipital_Inf_L": {
+    "summary": "Inferior occipital cortex for object recognition.",
+    "function": "Processes visual information for object recognition. Part of the ventral visual stream. Involved in identifying visual stimuli before they reach higher areas.",
+    "location": "Inferior portion of the occipital lobe, on the lateral surface.",
+    "connections": ["Fusiform_L", "Occipital_Mid_L", "Temporal_Inf_L", "Lingual_L"],
+    "clinical": "Damage can cause visual agnosia - inability to recognize objects despite intact vision.",
+    "funFact": "This region processes the visual features of objects that allow you to recognize them later."
+  },
+  "Occipital_Inf_R": {
+    "summary": "Right inferior occipital cortex for visual processing.",
+    "function": "Early stage of the ventral visual stream for object and face processing. Processes complex visual features. Provides input to fusiform face area.",
+    "location": "Inferior occipital lobe of the right hemisphere.",
+    "connections": ["Fusiform_R", "Occipital_Mid_R", "Temporal_Inf_R", "Lingual_R"],
+    "clinical": "Lesions contribute to prosopagnosia when combined with fusiform damage. Important for visual recognition.",
+    "funFact": "Visual information passes through here on its way to the 'what' pathway that identifies objects."
+  },
+  "Occipital_Mid_L": {
+    "summary": "Middle occipital cortex for intermediate visual processing.",
+    "function": "Intermediate visual processing area. Involved in motion perception and visual attention. Part of both dorsal and ventral visual streams.",
+    "location": "Middle portion of the occipital lobe, lateral occipital complex.",
+    "connections": ["Occipital_Sup_L", "Occipital_Inf_L", "Temporal_Mid_L", "Parietal_Sup_L"],
+    "clinical": "Damage can cause motion blindness (akinetopsia). Important for visual processing disorders.",
+    "funFact": "This region contains area MT/V5, which is specialized for seeing motion - cars, people, balls in flight."
+  },
+  "Occipital_Mid_R": {
+    "summary": "Right middle occipital cortex for motion and spatial vision.",
+    "function": "Processes visual motion and spatial information. Involved in tracking moving objects and visual attention. Contains motion-sensitive area MT/V5.",
+    "location": "Middle occipital lobe of the right hemisphere.",
+    "connections": ["Occipital_Sup_R", "Occipital_Inf_R", "Temporal_Mid_R", "Parietal_Sup_R"],
+    "clinical": "Lesions can cause motion blindness. Important for visually guided movements.",
+    "funFact": "Damage here can make the world appear as a series of still images, like watching a slideshow instead of a movie."
+  },
+  "Olfactory_L": {
+    "summary": "Olfactory cortex for smell processing.",
+    "function": "Primary region for processing smell information. Unique among senses in connecting directly to limbic system without thalamic relay. Involved in odor identification and memory.",
+    "location": "Olfactory sulcus and anterior perforated substance, ventral frontal lobe.",
+    "connections": ["Amygdala_L", "Hippocampus_L", "OFCpost_L", "Insula_L"],
+    "clinical": "Loss of smell (anosmia) can be early sign of Parkinson's and Alzheimer's. Important for COVID-19 related smell loss.",
+    "funFact": "Smell is the only sense with a direct connection to memory centers - that's why scents trigger vivid memories."
+  },
+  "Olfactory_R": {
+    "summary": "Right olfactory cortex for odor processing.",
+    "function": "Processes odor information and connects to emotional and memory systems. Involved in odor identification and hedonic (pleasant/unpleasant) judgments.",
+    "location": "Ventral surface of the right frontal lobe, near the orbital cortex.",
+    "connections": ["Amygdala_R", "Hippocampus_R", "OFCpost_R", "Insula_R"],
+    "clinical": "Smell dysfunction is an early marker of neurodegeneration. Important for quality of life.",
+    "funFact": "Humans can distinguish over a trillion different odors - more than we have words for colors."
+  },
+  "Pallidum_L": {
+    "summary": "Globus pallidus - output station of the basal ganglia.",
+    "function": "Main output nucleus of the basal ganglia. Regulates motor activity by inhibiting the thalamus. Critical for movement initiation and termination.",
+    "location": "Medial part of the lentiform nucleus, deep in the brain.",
+    "connections": ["Putamen_L", "Caudate_L", "Thal_VA_L", "SN_pr_L"],
+    "clinical": "Target for deep brain stimulation in Parkinson's disease and dystonia. Lesions cause movement disorders.",
+    "funFact": "The pallidum keeps your muscles from moving until you want them to - it's constantly applying the brakes."
+  },
+  "Pallidum_R": {
+    "summary": "Right globus pallidus for motor control.",
+    "function": "Output relay of right basal ganglia controlling left body movements. Tonically inhibits thalamus to prevent unwanted movements. Releases inhibition to allow intended movements.",
+    "location": "Medial lentiform nucleus of the right hemisphere.",
+    "connections": ["Putamen_R", "Caudate_R", "Thal_VA_R", "SN_pr_R"],
+    "clinical": "Deep brain stimulation target for movement disorders. Lesions cause contralateral motor symptoms.",
+    "funFact": "In Parkinson's disease, the pallidum becomes overactive, which is why DBS here can relieve symptoms."
+  },
+  "ParaHippocampal_L": {
+    "summary": "Parahippocampal gyrus for memory encoding and scene processing.",
+    "function": "Critical for encoding new memories and recognizing places. Contains the parahippocampal place area (PPA) for scene recognition. Gateway to the hippocampus.",
+    "location": "Medial temporal lobe, surrounding the hippocampus.",
+    "connections": ["Hippocampus_L", "Fusiform_L", "Cingulate_Post_L", "Amygdala_L"],
+    "clinical": "Damage impairs memory formation and place recognition. Early involvement in Alzheimer's disease.",
+    "funFact": "This region activates strongly when you see pictures of places - it's your brain's GPS system."
+  },
+  "ParaHippocampal_R": {
+    "summary": "Right parahippocampal region for spatial memory and scenes.",
+    "function": "Involved in spatial memory and scene recognition. Processes contextual information for memories. Important for navigation and landmark recognition.",
+    "location": "Medial temporal lobe of the right hemisphere, adjacent to the hippocampus.",
+    "connections": ["Hippocampus_R", "Fusiform_R", "Cingulate_Post_R", "Amygdala_R"],
+    "clinical": "Damage causes difficulty recognizing familiar places. Important for topographical disorientation.",
+    "funFact": "London taxi drivers have enlarged parahippocampal regions from memorizing the city's complex street layout."
+  },
+  "Paracentral_Lobule_L": {
+    "summary": "Paracentral lobule for leg motor and sensory functions.",
+    "function": "Contains motor and sensory representations of the leg and foot. Controls voluntary leg movements and processes leg sensations. Involved in bladder control.",
+    "location": "Medial surface of frontal and parietal lobes, around the central sulcus.",
+    "connections": ["Precentral_L", "Postcentral_L", "Supp_Motor_Area_L", "Cingulate_Mid_L"],
+    "clinical": "Damage causes contralateral leg weakness and sensory loss. Can cause urinary incontinence.",
+    "funFact": "The leg representation is tucked into this fold on the brain's medial surface, hidden from the outside view."
+  },
+  "Paracentral_Lobule_R": {
+    "summary": "Right paracentral lobule for left leg function.",
+    "function": "Controls left leg movements and processes left leg sensations. Involved in lower limb coordination and bladder control. Contains leg areas of motor and sensory cortex.",
+    "location": "Medial surface of the right hemisphere, straddling the central sulcus.",
+    "connections": ["Precentral_R", "Postcentral_R", "Supp_Motor_Area_R", "Cingulate_Mid_R"],
+    "clinical": "Lesions cause left leg weakness and numbness. Bilateral damage can cause incontinence.",
+    "funFact": "Both legs' representations are neighbors across the brain's midline, explaining why bilateral injuries are common."
+  },
+  "Parietal_Inf_L": {
+    "summary": "Left inferior parietal lobule for tool use and calculation.",
+    "function": "Involved in skilled hand movements, tool use, and mathematical reasoning. Important for reading and writing. Part of the mirror neuron system.",
+    "location": "Lower part of the left parietal lobe, including the supramarginal and angular gyri.",
+    "connections": ["Parietal_Sup_L", "Angular_L", "SupraMarginal_L", "Frontal_Mid_2_L"],
+    "clinical": "Damage causes apraxia (inability to perform skilled movements) and acalculia. Important for dyslexia.",
+    "funFact": "This region is significantly expanded in humans compared to other primates - it's key to our unique abilities."
+  },
+  "Parietal_Inf_R": {
+    "summary": "Right inferior parietal lobule for spatial attention.",
+    "function": "Critical for spatial attention and awareness. Involved in body image and sense of agency. Part of the ventral attention network.",
+    "location": "Lower parietal lobe of the right hemisphere.",
+    "connections": ["Parietal_Sup_R", "Angular_R", "SupraMarginal_R", "Frontal_Mid_2_R"],
+    "clinical": "Damage causes hemispatial neglect - ignoring the left side of space. Involved in alien hand syndrome.",
+    "funFact": "Damage here can make you completely unaware of half the world - patients may not eat food on one side of their plate."
+  },
+  "Parietal_Sup_L": {
+    "summary": "Superior parietal lobule for attention and spatial processing.",
+    "function": "Involved in spatial attention and visuomotor coordination. Important for reaching and grasping movements. Part of the dorsal attention network.",
+    "location": "Upper portion of the left parietal lobe, behind the postcentral gyrus.",
+    "connections": ["Parietal_Inf_L", "Postcentral_L", "Precuneus_L", "Frontal_Sup_2_L"],
+    "clinical": "Damage causes optic ataxia - inability to reach accurately for objects. Important for visuomotor disorders.",
+    "funFact": "This region calculates how to move your hand to grasp objects - it's doing complex geometry constantly."
+  },
+  "Parietal_Sup_R": {
+    "summary": "Right superior parietal cortex for spatial cognition.",
+    "function": "Dominant for spatial attention and processing. Involved in mental rotation and spatial working memory. Controls spatial aspects of attention.",
+    "location": "Superior parietal lobe of the right hemisphere.",
+    "connections": ["Parietal_Inf_R", "Postcentral_R", "Precuneus_R", "Frontal_Sup_2_R"],
+    "clinical": "Damage causes severe spatial attention deficits. Important for understanding neglect syndrome.",
+    "funFact": "When you rotate an object in your mind, this region is doing the mental heavy lifting."
+  },
+  "Postcentral_L": {
+    "summary": "Primary somatosensory cortex for touch sensation from the right body.",
+    "function": "Processes touch, pressure, temperature, and pain from the right side of the body. Contains the sensory homunculus with distorted body map. First cortical stage of tactile perception.",
+    "location": "Postcentral gyrus, just behind the central sulcus in the parietal lobe.",
+    "connections": ["Precentral_L", "Parietal_Sup_L", "Thal_VPL_L", "Insula_L"],
+    "clinical": "Damage causes numbness and loss of fine touch discrimination on the right side. Important for sensory recovery after stroke.",
+    "funFact": "Your lips and fingers have huge representations here because they're so sensitive - larger than your whole back."
+  },
+  "Postcentral_R": {
+    "summary": "Right somatosensory cortex for left body sensation.",
+    "function": "Receives and processes tactile information from the left body. Contains detailed map of left body surface. Discriminates touch qualities like texture and shape.",
+    "location": "Postcentral gyrus of the right parietal lobe.",
+    "connections": ["Precentral_R", "Parietal_Sup_R", "Thal_VPL_R", "Insula_R"],
+    "clinical": "Lesions cause left-sided sensory loss. Important for understanding somatosensory processing.",
+    "funFact": "The sensory map here is so precise that stimulating specific points creates sensations in corresponding body parts."
+  },
+  "Precuneus_L": {
+    "summary": "Precuneus - hub for self-awareness and memory retrieval.",
+    "function": "Key node of the default mode network. Involved in self-reflection, episodic memory retrieval, and visual-spatial imagery. Highly active during rest.",
+    "location": "Medial surface of the parietal lobe, anterior to the occipital lobe.",
+    "connections": ["Cingulate_Post_L", "Angular_L", "Frontal_Sup_Medial_L", "Hippocampus_L"],
+    "clinical": "Reduced metabolism early sign of Alzheimer's. Involved in disorders of consciousness.",
+    "funFact": "The precuneus has one of the highest metabolic rates in the brain - it's always busy, even at rest."
+  },
+  "Precuneus_R": {
+    "summary": "Right precuneus for self-awareness and imagery.",
+    "function": "Central to the default mode network. Involved in self-referential processing, mental imagery, and episodic memory. Active during mind-wandering.",
+    "location": "Medial parietal cortex of the right hemisphere.",
+    "connections": ["Cingulate_Post_R", "Angular_R", "Frontal_Sup_Medial_R", "Hippocampus_R"],
+    "clinical": "Deactivation associated with loss of consciousness. Early changes in Alzheimer's disease.",
+    "funFact": "When you visualize something in your mind's eye, the precuneus is creating that mental image."
+  },
+  "Raphe_D": {
+    "summary": "Dorsal raphe nucleus - the brain's serotonin factory.",
+    "function": "Primary source of serotonin in the brain. Regulates mood, sleep, appetite, and arousal. Projects throughout the entire forebrain.",
+    "location": "Brainstem, in the midline of the midbrain and pons.",
+    "connections": ["Amygdala_L", "Hippocampus_L", "Frontal_Sup_Medial_L", "ACC_pre_L"],
+    "clinical": "Target of antidepressants (SSRIs). Abnormalities linked to depression, anxiety, and sleep disorders.",
+    "funFact": "Despite being tiny, the dorsal raphe sends serotonin to almost every part of the brain."
+  },
+  "Raphe_M": {
+    "summary": "Median raphe nucleus for serotonin and behavioral state.",
+    "function": "Produces serotonin and regulates behavioral states. Involved in sleep-wake cycles and theta rhythm generation. Projects primarily to hippocampus and limbic structures.",
+    "location": "Brainstem midline, in the pons.",
+    "connections": ["Hippocampus_L", "Hippocampus_R", "Amygdala_L", "Cingulate_Mid_L"],
+    "clinical": "Implicated in depression and anxiety. Important for understanding SSRI mechanisms.",
+    "funFact": "The raphe nuclei help generate the theta rhythm - the brain wave associated with memory formation and REM sleep."
+  },
+  "Rectus_L": {
+    "summary": "Gyrus rectus for social cognition and personality.",
+    "function": "Involved in social cognition, personality, and emotional regulation. Part of the medial orbitofrontal cortex. Contributes to self-awareness and social behavior.",
+    "location": "Straight gyrus on the ventromedial surface of the frontal lobe, next to the midline.",
+    "connections": ["OFCmed_L", "ACC_sub_L", "Olfactory_L", "Amygdala_L"],
+    "clinical": "Damage associated with personality changes and poor social judgment. Famous case of Phineas Gage involved this area.",
+    "funFact": "This region helps make you 'you' - damage can fundamentally change personality while leaving intellect intact."
+  },
+  "Rectus_R": {
+    "summary": "Right gyrus rectus for social and emotional processing.",
+    "function": "Processes social and emotional information. Involved in self-referential processing and social decision-making. Part of the ventromedial prefrontal cortex.",
+    "location": "Ventromedial frontal lobe of the right hemisphere.",
+    "connections": ["OFCmed_R", "ACC_sub_R", "Olfactory_R", "Amygdala_R"],
+    "clinical": "Damage affects social behavior and emotional regulation. Important for understanding sociopathy.",
+    "funFact": "The size of this region correlates with the size of your social network - bigger region, more friends."
+  },
+  "Red_N_L": {
+    "summary": "Red nucleus for motor coordination.",
+    "function": "Involved in motor coordination, particularly for arm movements. Part of the rubrospinal tract. Important for motor learning and adaptation.",
+    "location": "Midbrain, appears pinkish-red due to high iron content and blood supply.",
+    "connections": ["Cerebellum_4_5_L", "Precentral_L", "Thal_VL_L"],
+    "clinical": "Lesions can cause tremor and motor incoordination. Important for understanding motor system disorders.",
+    "funFact": "Named for its pink color, the red nucleus is one of the few brain regions visible to the naked eye in fresh tissue."
+  },
+  "Red_N_R": {
+    "summary": "Right red nucleus for left upper limb control.",
+    "function": "Coordinates movements of the left upper limb. Receives cerebellar input and sends motor commands. Involved in motor learning.",
+    "location": "Right midbrain, paired structure with left red nucleus.",
+    "connections": ["Cerebellum_4_5_R", "Precentral_R", "Thal_VL_R"],
+    "clinical": "Lesions cause contralateral motor symptoms. Can cause rubral tremor.",
+    "funFact": "The red nucleus becomes less important in adults but is crucial for motor development in infants."
+  },
+  "Rolandic_Oper_L": {
+    "summary": "Rolandic operculum for sensorimotor integration of speech.",
+    "function": "Integrates sensory and motor information for speech production. Involved in orofacial movements and swallowing. Part of the speech motor network.",
+    "location": "Frontal and parietal operculum, around the central sulcus (Rolandic fissure).",
+    "connections": ["Precentral_L", "Postcentral_L", "Insula_L", "Frontal_Inf_Oper_L"],
+    "clinical": "Damage can cause speech articulation problems. Important for swallowing disorders (dysphagia).",
+    "funFact": "This region coordinates over 100 muscles needed for speech - the most complex motor skill humans have."
+  },
+  "Rolandic_Oper_R": {
+    "summary": "Right rolandic operculum for face and throat control.",
+    "function": "Controls movements of the face, tongue, and throat on the left side. Involved in emotional expression and non-verbal vocalizations.",
+    "location": "Opercular cortex surrounding the right central sulcus.",
+    "connections": ["Precentral_R", "Postcentral_R", "Insula_R", "Frontal_Inf_Oper_R"],
+    "clinical": "Lesions affect facial expression and swallowing. Important for emotional prosody.",
+    "funFact": "This region is particularly important for expressing emotion through facial movements and voice tone."
+  },
+  "SN_pc_L": {
+    "summary": "Substantia nigra pars compacta - dopamine center for movement.",
+    "function": "Produces dopamine essential for movement initiation. Part of the basal ganglia circuit. Loss of neurons here causes Parkinson's disease.",
+    "location": "Midbrain, darkly pigmented due to neuromelanin (hence 'black substance').",
+    "connections": ["Caudate_L", "Putamen_L", "Pallidum_L", "SN_pr_L"],
+    "clinical": "Death of dopamine neurons here causes Parkinson's disease. Target for experimental treatments and deep brain stimulation nearby.",
+    "funFact": "By the time Parkinson's symptoms appear, about 60-80% of these dopamine neurons are already lost."
+  },
+  "SN_pc_R": {
+    "summary": "Right substantia nigra pars compacta for dopamine production.",
+    "function": "Supplies dopamine to the right striatum for motor control. Essential for initiating and coordinating movements. Loss causes contralateral parkinsonian symptoms.",
+    "location": "Right midbrain, part of the substantia nigra.",
+    "connections": ["Caudate_R", "Putamen_R", "Pallidum_R", "SN_pr_R"],
+    "clinical": "Degeneration causes Parkinson's disease. Target of dopamine replacement therapy.",
+    "funFact": "The dark pigment in this region accumulates over life - it's darker in older brains."
+  },
+  "SN_pr_L": {
+    "summary": "Substantia nigra pars reticulata - output station of basal ganglia.",
+    "function": "Major output nucleus of the basal ganglia. Controls thalamic activity through inhibition. Important for eye movements and motor function.",
+    "location": "Midbrain, ventral to the pars compacta.",
+    "connections": ["Caudate_L", "Pallidum_L", "Thal_VA_L", "SN_pc_L"],
+    "clinical": "Dysfunction contributes to movement disorders. Important for understanding basal ganglia circuitry.",
+    "funFact": "Unlike pars compacta, this region uses GABA rather than dopamine - it's the inhibitory output."
+  },
+  "SN_pr_R": {
+    "summary": "Right substantia nigra pars reticulata for motor output.",
+    "function": "Provides inhibitory output from right basal ganglia. Controls thalamic activity and eye movements. Works with pallidum to regulate motor function.",
+    "location": "Midbrain, ventral portion of the right substantia nigra.",
+    "connections": ["Caudate_R", "Pallidum_R", "Thal_VA_R", "SN_pc_R"],
+    "clinical": "Involved in movement disorders and eye movement abnormalities.",
+    "funFact": "This region helps control rapid eye movements - it releases the 'brake' to allow your eyes to jump to new targets."
+  },
+  "Supp_Motor_Area_L": {
+    "summary": "Supplementary motor area for movement planning and sequencing.",
+    "function": "Plans and sequences complex movements. Active before voluntary movement begins. Involved in bimanual coordination and learning motor sequences.",
+    "location": "Medial surface of the frontal lobe, anterior to the leg area of motor cortex.",
+    "connections": ["Precentral_L", "Cingulate_Mid_L", "Thal_VL_L", "Caudate_L"],
+    "clinical": "Damage causes difficulty initiating movements and sequencing actions. SMA syndrome causes temporary mutism.",
+    "funFact": "Activity in SMA begins up to a second before you actually move - your brain plans ahead."
+  },
+  "Supp_Motor_Area_R": {
+    "summary": "Right SMA for movement initiation and planning.",
+    "function": "Plans voluntary movements for the left body. Involved in internally generated movements and motor learning. Coordinates with left SMA for bimanual tasks.",
+    "location": "Medial frontal cortex of the right hemisphere.",
+    "connections": ["Precentral_R", "Cingulate_Mid_R", "Thal_VL_R", "Caudate_R"],
+    "clinical": "Lesions can cause akinesia (difficulty initiating movement). Important for motor planning disorders.",
+    "funFact": "Imagining a movement activates SMA almost as much as actually performing it - basis for motor imagery training."
+  },
+  "SupraMarginal_L": {
+    "summary": "Supramarginal gyrus for phonological processing and empathy.",
+    "function": "Involved in phonological processing and reading. Important for distinguishing speech sounds. Also involved in empathy and perspective-taking.",
+    "location": "Anterior part of the inferior parietal lobule, surrounding the end of the lateral fissure.",
+    "connections": ["Angular_L", "Temporal_Sup_L", "Frontal_Inf_Oper_L", "Parietal_Inf_L"],
+    "clinical": "Damage causes phonological deficits and conduction aphasia. Important for dyslexia research.",
+    "funFact": "When you sound out a word while reading, this region is converting letters to sounds."
+  },
+  "SupraMarginal_R": {
+    "summary": "Right supramarginal gyrus for spatial processing and empathy.",
+    "function": "Involved in spatial attention and body awareness. Important for distinguishing self from others. Contributes to empathy by helping overcome egocentric perspective.",
+    "location": "Anterior inferior parietal lobule of the right hemisphere.",
+    "connections": ["Angular_R", "Temporal_Sup_R", "Frontal_Inf_Oper_R", "Parietal_Inf_R"],
+    "clinical": "Damage can cause spatial neglect and body image disturbances. Involved in autism.",
+    "funFact": "When you try to see things from someone else's perspective, this region helps you step outside your own viewpoint."
+  },
+  "Temporal_Inf_L": {
+    "summary": "Inferior temporal cortex for object recognition.",
+    "function": "High-level visual processing for object recognition. Stores visual representations of objects. Part of the 'what' pathway for identifying things.",
+    "location": "Inferior surface and lateral aspect of the temporal lobe.",
+    "connections": ["Fusiform_L", "Temporal_Mid_L", "Occipital_Inf_L", "Hippocampus_L"],
+    "clinical": "Damage causes visual agnosia - inability to recognize objects. Important for semantic dementia.",
+    "funFact": "Different parts of this region represent different categories of objects - tools, animals, faces all have their spots."
+  },
+  "Temporal_Inf_R": {
+    "summary": "Right inferior temporal cortex for visual object processing.",
+    "function": "Processes complex visual information for object recognition. Stores visual knowledge about objects. Important for recognizing faces and scenes.",
+    "location": "Inferior temporal lobe of the right hemisphere.",
+    "connections": ["Fusiform_R", "Temporal_Mid_R", "Occipital_Inf_R", "Hippocampus_R"],
+    "clinical": "Damage impairs object recognition and visual memory. Can cause category-specific agnosia.",
+    "funFact": "Neurons here can be so specific that single cells respond to pictures of particular celebrities or landmarks."
+  },
+  "Temporal_Mid_L": {
+    "summary": "Middle temporal gyrus for semantic processing and language.",
+    "function": "Involved in semantic processing - understanding the meaning of words and concepts. Important for reading comprehension and word retrieval. Part of the language network.",
+    "location": "Middle temporal gyrus of the left temporal lobe.",
+    "connections": ["Temporal_Sup_L", "Temporal_Inf_L", "Angular_L", "Frontal_Inf_Tri_L"],
+    "clinical": "Damage causes word-finding difficulties and semantic deficits. Affected in semantic dementia.",
+    "funFact": "This region stores your mental dictionary - all the word meanings you've learned throughout life."
+  },
+  "Temporal_Mid_R": {
+    "summary": "Right middle temporal gyrus for visual and semantic processing.",
+    "function": "Involved in processing biological motion and social perception. Contributes to face processing and emotional understanding. Part of the social brain network.",
+    "location": "Middle temporal gyrus of the right temporal lobe.",
+    "connections": ["Temporal_Sup_R", "Temporal_Inf_R", "Angular_R", "Fusiform_R"],
+    "clinical": "Damage can impair social perception and motion processing. Important for autism research.",
+    "funFact": "This region is exquisitely sensitive to biological motion - you can recognize a walking person from just a few dots."
+  },
+  "Temporal_Pole_Mid_L": {
+    "summary": "Left middle temporal pole for semantic memory.",
+    "function": "Stores general semantic knowledge about the world. Important for conceptual knowledge and naming. Acts as a semantic hub connecting various types of information.",
+    "location": "Anterior portion of the temporal lobe, at the temporal pole.",
+    "connections": ["Temporal_Pole_Sup_L", "Amygdala_L", "OFCmed_L", "Hippocampus_L"],
+    "clinical": "Degenerates in semantic dementia, causing loss of word meanings. Important for naming disorders.",
+    "funFact": "This region links all your knowledge about concepts - it knows that a dog barks, has fur, and is an animal."
+  },
+  "Temporal_Pole_Mid_R": {
+    "summary": "Right middle temporal pole for social concepts.",
+    "function": "Involved in social and emotional conceptual knowledge. Processes knowledge about people and social situations. Important for understanding social context.",
+    "location": "Middle portion of the right temporal pole.",
+    "connections": ["Temporal_Pole_Sup_R", "Amygdala_R", "OFCmed_R", "Hippocampus_R"],
+    "clinical": "Affected in behavioral variant frontotemporal dementia. Important for social cognition disorders.",
+    "funFact": "This region stores your social knowledge - what you know about different types of people and social situations."
+  },
+  "Temporal_Pole_Sup_L": {
+    "summary": "Left superior temporal pole for social-emotional processing.",
+    "function": "Integrates emotional and social information. Involved in autobiographical memory and self-reference. Connects emotional processing with language.",
+    "location": "Superior aspect of the left temporal pole.",
+    "connections": ["Amygdala_L", "OFCmed_L", "ACC_pre_L", "Insula_L"],
+    "clinical": "Abnormalities in autism and schizophrenia. Important for emotional aspects of language.",
+    "funFact": "This region helps you understand the emotional connotations of words - why 'murder' feels different from 'killing.'"
+  },
+  "Temporal_Pole_Sup_R": {
+    "summary": "Right superior temporal pole for social cognition.",
+    "function": "Critical for social cognition and theory of mind. Processes emotional aspects of faces and voices. Important for understanding others' mental states.",
+    "location": "Anterior superior temporal lobe of the right hemisphere.",
+    "connections": ["Amygdala_R", "OFCmed_R", "ACC_pre_R", "Insula_R"],
+    "clinical": "Implicated in autism and psychopathy. Damage affects social understanding.",
+    "funFact": "When you watch a movie and feel what a character feels, this region is helping you empathize."
+  },
+  "Thal_AV_L": {
+    "summary": "Anterior ventral thalamus for memory and emotion circuits.",
+    "function": "Part of the Papez circuit for memory and emotion. Relays information between hippocampus and cingulate cortex. Important for memory consolidation.",
+    "location": "Anterior portion of the thalamus, near the midline.",
+    "connections": ["Hippocampus_L", "Cingulate_Mid_L", "Frontal_Sup_Medial_L"],
+    "clinical": "Damage causes memory problems. Involved in Korsakoff syndrome from alcohol abuse.",
+    "funFact": "This small nucleus is a critical relay station in the circuit that converts experiences into lasting memories."
+  },
+  "Thal_AV_R": {
+    "summary": "Right anterior ventral thalamus for limbic connections.",
+    "function": "Connects limbic structures for memory and emotional processing. Part of the episodic memory system. Relays between hippocampus and cortex.",
+    "location": "Anterior thalamus of the right hemisphere.",
+    "connections": ["Hippocampus_R", "Cingulate_Mid_R", "Frontal_Sup_Medial_R"],
+    "clinical": "Lesions cause anterograde amnesia. Important for understanding memory disorders.",
+    "funFact": "The anterior thalamus is highly active during REM sleep - it may help consolidate memories during dreams."
+  },
+  "Thal_IL_L": {
+    "summary": "Intralaminar thalamic nuclei for arousal and awareness.",
+    "function": "Regulates arousal, attention, and consciousness. Broadcasts signals widely to cortex. Part of the ascending reticular activating system.",
+    "location": "Within the internal medullary lamina of the thalamus.",
+    "connections": ["Caudate_L", "Putamen_L", "ACC_sup_L", "Frontal_Mid_2_L"],
+    "clinical": "Damage causes severe impairment of consciousness. Target for deep brain stimulation in disorders of consciousness.",
+    "funFact": "These tiny nuclei help keep you conscious - damage to both sides can cause coma."
+  },
+  "Thal_IL_R": {
+    "summary": "Right intralaminar thalamus for consciousness and attention.",
+    "function": "Maintains cortical arousal and awareness. Involved in attention and motor control via striatal connections. Important for sleep-wake regulation.",
+    "location": "Internal medullary lamina of the right thalamus.",
+    "connections": ["Caudate_R", "Putamen_R", "ACC_sup_R", "Frontal_Mid_2_R"],
+    "clinical": "Involved in disorders of consciousness. Potential DBS target for minimally conscious state.",
+    "funFact": "Stimulating these nuclei has helped some patients in minimally conscious state regain awareness."
+  },
+  "Thal_LGN_L": {
+    "summary": "Lateral geniculate nucleus - gateway for visual information.",
+    "function": "Relays visual information from the retina to the visual cortex. Processes and filters visual signals. First processing stage for conscious vision.",
+    "location": "Lateral and posterior thalamus, part of the metathalamus.",
+    "connections": ["Calcarine_L", "Occipital_Sup_L"],
+    "clinical": "Damage causes blindness in the contralateral visual field. Important for visual processing disorders.",
+    "funFact": "The LGN doesn't just relay - it actively processes visual information, separating color from motion from form."
+  },
+  "Thal_LGN_R": {
+    "summary": "Right lateral geniculate nucleus for left visual field.",
+    "function": "Transmits visual information from the left visual field to right visual cortex. Organizes visual input into layers for different aspects of vision.",
+    "location": "Lateral posterior thalamus of the right hemisphere.",
+    "connections": ["Calcarine_R", "Occipital_Sup_R"],
+    "clinical": "Lesions cause left-sided blindness. Important for visual field defects.",
+    "funFact": "The LGN has six distinct layers, each processing different aspects of vision like color and motion."
+  },
+  "Thal_LP_L": {
+    "summary": "Lateral posterior thalamus for visual attention.",
+    "function": "Involved in visual attention and spatial processing. Connects with parietal cortex for visuospatial functions. Part of the pulvinar complex.",
+    "location": "Posterior-lateral thalamus.",
+    "connections": ["Parietal_Sup_L", "Precuneus_L", "Occipital_Sup_L"],
+    "clinical": "Damage can cause visuospatial attention deficits. Important for understanding visual neglect.",
+    "funFact": "This region helps you pay attention to relevant visual information while ignoring distractions."
+  },
+  "Thal_LP_R": {
+    "summary": "Right lateral posterior thalamus for spatial attention.",
+    "function": "Critical for visuospatial attention. Connects occipital and parietal cortices. Involved in shifting attention to visual stimuli.",
+    "location": "Posterior-lateral aspect of the right thalamus.",
+    "connections": ["Parietal_Sup_R", "Precuneus_R", "Occipital_Sup_R"],
+    "clinical": "Lesions contribute to visual attention deficits. Important for spatial neglect.",
+    "funFact": "The pulvinar region is massively expanded in humans compared to other primates, suggesting roles in uniquely human cognition."
+  },
+  "Thal_MDl_L": {
+    "summary": "Mediodorsal thalamus lateral part for executive function.",
+    "function": "Connects with prefrontal cortex for executive functions. Involved in working memory, planning, and decision-making. Part of frontal-subcortical circuits.",
+    "location": "Medial dorsal thalamus, lateral subdivision.",
+    "connections": ["Frontal_Mid_2_L", "Frontal_Sup_2_L", "Caudate_L"],
+    "clinical": "Damage causes executive dysfunction and memory problems. Affected in schizophrenia.",
+    "funFact": "This thalamic nucleus is essentially the frontal lobe's main partner in the thalamus."
+  },
+  "Thal_MDl_R": {
+    "summary": "Right mediodorsal lateral thalamus for cognition.",
+    "function": "Supports executive functions through prefrontal connections. Involved in cognitive flexibility and working memory.",
+    "location": "Lateral mediodorsal thalamus of the right hemisphere.",
+    "connections": ["Frontal_Mid_2_R", "Frontal_Sup_2_R", "Caudate_R"],
+    "clinical": "Abnormalities in schizophrenia. Damage affects executive functions.",
+    "funFact": "The MD thalamus grows proportionally with the prefrontal cortex across evolution - bigger frontal lobe, bigger MD."
+  },
+  "Thal_MDm_L": {
+    "summary": "Mediodorsal medial thalamus for emotion and memory.",
+    "function": "Connects with orbitofrontal and medial prefrontal cortex. Involved in emotional processing and memory. Part of the limbic thalamus.",
+    "location": "Medial part of the mediodorsal nucleus.",
+    "connections": ["OFCmed_L", "ACC_sub_L", "Amygdala_L", "Hippocampus_L"],
+    "clinical": "Damage causes emotional and memory problems. Affected in Korsakoff syndrome.",
+    "funFact": "This region connects your emotions to your decisions - it's where feelings meet thinking."
+  },
+  "Thal_MDm_R": {
+    "summary": "Right mediodorsal medial thalamus for emotion-cognition integration.",
+    "function": "Integrates emotional and cognitive information. Connects limbic system with frontal cortex. Important for emotional aspects of memory.",
+    "location": "Medial mediodorsal thalamus of the right hemisphere.",
+    "connections": ["OFCmed_R", "ACC_sub_R", "Amygdala_R", "Hippocampus_R"],
+    "clinical": "Involved in mood disorders. Damage affects emotional processing.",
+    "funFact": "When you make a gut feeling decision, information is likely flowing through this nucleus."
+  },
+  "Thal_MGN_L": {
+    "summary": "Medial geniculate nucleus - gateway for hearing.",
+    "function": "Relays auditory information from the brainstem to auditory cortex. Processes sound features like frequency and timing. Essential for hearing.",
+    "location": "Posterior medial thalamus, part of the metathalamus.",
+    "connections": ["Heschl_L", "Temporal_Sup_L"],
+    "clinical": "Damage causes central hearing deficits. Important for auditory processing disorders.",
+    "funFact": "The MGN can distinguish sounds just milliseconds apart - essential for understanding speech."
+  },
+  "Thal_MGN_R": {
+    "summary": "Right medial geniculate nucleus for auditory processing.",
+    "function": "Transmits and processes auditory information for the right hemisphere. Important for processing music and spatial aspects of sound.",
+    "location": "Medial posterior thalamus of the right hemisphere.",
+    "connections": ["Heschl_R", "Temporal_Sup_R"],
+    "clinical": "Lesions affect sound localization and auditory processing.",
+    "funFact": "Sound information reaches here in under 10 milliseconds - faster than you can consciously perceive."
+  },
+  "Thal_PuA_L": {
+    "summary": "Anterior pulvinar for visual attention.",
+    "function": "Involved in visual attention and eye movements. Connects visual and parietal cortices. Important for filtering visual information.",
+    "location": "Anterior portion of the pulvinar nucleus.",
+    "connections": ["Parietal_Sup_L", "Frontal_Mid_2_L", "Occipital_Sup_L"],
+    "clinical": "Damage affects visual attention. Important for understanding neglect.",
+    "funFact": "The pulvinar helps you ignore irrelevant visual information - essential for focusing attention."
+  },
+  "Thal_PuA_R": {
+    "summary": "Right anterior pulvinar for attention control.",
+    "function": "Controls visual attention through connections with parietal and frontal cortex. Filters visual information based on relevance.",
+    "location": "Anterior pulvinar of the right thalamus.",
+    "connections": ["Parietal_Sup_R", "Frontal_Mid_2_R", "Occipital_Sup_R"],
+    "clinical": "Involved in visual attention deficits. Important for spatial neglect.",
+    "funFact": "When you search for something in a cluttered scene, the pulvinar helps spotlight the target."
+  },
+  "Thal_PuI_L": {
+    "summary": "Inferior pulvinar for visual motion processing.",
+    "function": "Processes visual motion and integrates visual information. Connects with motion-sensitive cortical areas. Important for tracking moving objects.",
+    "location": "Inferior portion of the pulvinar nucleus.",
+    "connections": ["Occipital_Mid_L", "Temporal_Mid_L", "Parietal_Sup_L"],
+    "clinical": "Damage can affect motion perception. Important for visual processing disorders.",
+    "funFact": "This region helps you track a moving ball or car - it's essential for perceiving motion."
+  },
+  "Thal_PuI_R": {
+    "summary": "Right inferior pulvinar for motion processing.",
+    "function": "Processes visual motion from the left visual field. Connects with motion-sensitive areas MT/V5. Important for smooth pursuit eye movements.",
+    "location": "Inferior pulvinar of the right thalamus.",
+    "connections": ["Occipital_Mid_R", "Temporal_Mid_R", "Parietal_Sup_R"],
+    "clinical": "Lesions affect motion perception in the left visual field.",
+    "funFact": "When you follow a moving target with your eyes, this region is guiding those smooth eye movements."
+  },
+  "Thal_PuL_L": {
+    "summary": "Lateral pulvinar for higher visual processing.",
+    "function": "Involved in higher-order visual processing and integration. Connects visual cortices with association areas. Important for object recognition.",
+    "location": "Lateral portion of the pulvinar nucleus.",
+    "connections": ["Temporal_Inf_L", "Parietal_Inf_L", "Occipital_Mid_L"],
+    "clinical": "Damage affects visual recognition and integration. Important for visual agnosia.",
+    "funFact": "The lateral pulvinar is massively expanded in humans, suggesting a role in our advanced visual cognition."
+  },
+  "Thal_PuL_R": {
+    "summary": "Right lateral pulvinar for visual cognition.",
+    "function": "Integrates visual information for higher cognition. Connects temporal and parietal visual areas. Important for complex visual processing.",
+    "location": "Lateral pulvinar of the right thalamus.",
+    "connections": ["Temporal_Inf_R", "Parietal_Inf_R", "Occipital_Mid_R"],
+    "clinical": "Involved in complex visual processing deficits.",
+    "funFact": "The pulvinar helps coordinate activity across distant visual areas - it's a visual traffic controller."
+  },
+  "Thal_PuM_L": {
+    "summary": "Medial pulvinar for multimodal integration.",
+    "function": "Integrates information from multiple sensory modalities. Connects with association cortices. Important for attention and multisensory processing.",
+    "location": "Medial portion of the pulvinar nucleus.",
+    "connections": ["Cingulate_Post_L", "Angular_L", "Precuneus_L"],
+    "clinical": "Damage affects multisensory integration and attention.",
+    "funFact": "This region helps combine what you see with what you hear into a unified perception."
+  },
+  "Thal_PuM_R": {
+    "summary": "Right medial pulvinar for association functions.",
+    "function": "Connects with association cortex for higher cognitive functions. Involved in multimodal integration and default mode network activity.",
+    "location": "Medial pulvinar of the right thalamus.",
+    "connections": ["Cingulate_Post_R", "Angular_R", "Precuneus_R"],
+    "clinical": "Involved in disorders affecting higher cognitive functions.",
+    "funFact": "The medial pulvinar is connected to the default mode network - it may play a role in mind-wandering."
+  },
+  "Thal_Re_L": {
+    "summary": "Reticular thalamic nucleus for attention gating.",
+    "function": "Controls information flow through the thalamus. Acts as a gatekeeper determining what reaches cortex. Critical for selective attention.",
+    "location": "Shell-like structure surrounding the lateral thalamus.",
+    "connections": ["Thal_VL_L", "Thal_PuM_L", "LC_L"],
+    "clinical": "Dysfunction linked to attention disorders and epilepsy. Important for understanding attention mechanisms.",
+    "funFact": "Unlike other thalamic nuclei, this one doesn't project to cortex - it controls other thalamic nuclei."
+  },
+  "Thal_Re_R": {
+    "summary": "Right reticular thalamus for thalamic gating.",
+    "function": "Inhibits and regulates thalamic relay nuclei. Controls attention by gating sensory information. Critical for sleep-wake regulation.",
+    "location": "Surrounds the right thalamus like a shell.",
+    "connections": ["Thal_VL_R", "Thal_PuM_R", "LC_R"],
+    "clinical": "Involved in absence seizures and attention disorders.",
+    "funFact": "During sleep, the reticular nucleus generates the sleep spindles that help consolidate memories."
+  },
+  "Thal_VA_L": {
+    "summary": "Ventral anterior thalamus for motor and cognitive functions.",
+    "function": "Relays information from basal ganglia to frontal cortex. Involved in motor planning and cognitive functions. Part of frontal-subcortical circuits.",
+    "location": "Anterior portion of the ventral thalamus.",
+    "connections": ["Pallidum_L", "Frontal_Mid_2_L", "Supp_Motor_Area_L"],
+    "clinical": "Target for deep brain stimulation in movement disorders. Involved in cognitive aspects of Parkinson's.",
+    "funFact": "This nucleus helps translate your intentions into planned actions through its frontal connections."
+  },
+  "Thal_VA_R": {
+    "summary": "Right ventral anterior thalamus for motor planning.",
+    "function": "Connects basal ganglia output with frontal cortex. Important for motor and cognitive functions. Part of parallel frontal-subcortical circuits.",
+    "location": "Ventral anterior thalamus of the right hemisphere.",
+    "connections": ["Pallidum_R", "Frontal_Mid_2_R", "Supp_Motor_Area_R"],
+    "clinical": "Involved in movement disorders and DBS targeting.",
+    "funFact": "Information from your basal ganglia must pass through here before reaching your frontal lobe for action."
+  },
+  "Thal_VPL_L": {
+    "summary": "Ventral posterolateral thalamus for body sensation.",
+    "function": "Relays somatosensory information from the body to cortex. Processes touch, pressure, pain, and temperature from contralateral body. Essential for tactile perception.",
+    "location": "Ventral posterior thalamus, lateral to VPM.",
+    "connections": ["Postcentral_L", "Parietal_Sup_L", "Insula_L"],
+    "clinical": "Damage causes contralateral sensory loss. Thalamic pain syndrome can cause chronic pain.",
+    "funFact": "All the touch information from your body must pass through this small region to reach consciousness."
+  },
+  "Thal_VPL_R": {
+    "summary": "Right ventral posterolateral thalamus for left body sensation.",
+    "function": "Transmits sensory information from left body to right somatosensory cortex. Processes fine touch, proprioception, and pain signals.",
+    "location": "Ventral posterior thalamus of the right hemisphere.",
+    "connections": ["Postcentral_R", "Parietal_Sup_R", "Insula_R"],
+    "clinical": "Lesions cause left body numbness. Can develop into painful thalamic syndrome.",
+    "funFact": "Stroke patients sometimes develop severe thalamic pain from damage here - the brain's relay gone wrong."
+  },
+  "VTA_L": {
+    "summary": "Ventral tegmental area - reward and motivation center.",
+    "function": "Major source of dopamine for reward and motivation circuits. Fires in response to unexpected rewards and reward predictions. Central to learning what's rewarding.",
+    "location": "Midbrain, medial to the substantia nigra.",
+    "connections": ["N_Acc_L", "OFCmed_L", "Hippocampus_L", "Amygdala_L"],
+    "clinical": "Dysfunction central to addiction and depression. Target for understanding reward-related disorders.",
+    "funFact": "The VTA dopamine signal doesn't just respond to rewards - it signals when reality is better than expected."
+  },
+  "VTA_R": {
+    "summary": "Right ventral tegmental area for reward signaling.",
+    "function": "Releases dopamine to signal rewarding events and motivate behavior. Projects to prefrontal cortex and limbic system. Essential for reward learning.",
+    "location": "Midbrain, right side of the ventral tegmentum.",
+    "connections": ["N_Acc_R", "OFCmed_R", "Hippocampus_R", "Amygdala_R"],
+    "clinical": "Central to understanding addiction mechanisms. Target for depression research.",
+    "funFact": "When something good happens unexpectedly, VTA neurons fire in a burst - that's the 'yes!' feeling."
+  },
+  "Vermis_10": {
+    "summary": "Cerebellar vermis lobule X for vestibular processing.",
+    "function": "Processes vestibular information for balance and spatial orientation. Part of the vestibulocerebellum. Critical for eye-head coordination.",
+    "location": "Most inferior portion of the cerebellar vermis, nodulus.",
+    "connections": ["Cerebellum_10_L", "Cerebellum_10_R", "Thal_VL_L"],
+    "clinical": "Damage causes severe balance problems and vertigo. Important for vestibular disorders.",
+    "funFact": "This tiny region keeps you from falling over - patients with damage here can barely stand."
+  },
+  "Vermis_1_2": {
+    "summary": "Anterior vermis for basic motor coordination.",
+    "function": "Involved in basic motor coordination and postural control. Receives proprioceptive information from the body. Part of the spinocerebellum.",
+    "location": "Most anterior portion of the cerebellar vermis.",
+    "connections": ["Cerebellum_3_L", "Cerebellum_3_R", "Thal_VL_L"],
+    "clinical": "Damage affects gait and posture. Early affected in alcoholic cerebellar degeneration.",
+    "funFact": "This ancient part of the cerebellum coordinates your basic ability to stand and walk."
+  },
+  "Vermis_3": {
+    "summary": "Cerebellar vermis lobule III for trunk control.",
+    "function": "Controls trunk and proximal limb coordination. Receives input from the spinal cord. Important for maintaining posture.",
+    "location": "Anterior superior vermis.",
+    "connections": ["Vermis_1_2", "Vermis_4_5", "Cerebellum_3_L", "Cerebellum_3_R"],
+    "clinical": "Damage causes truncal ataxia - difficulty with sitting and standing balance.",
+    "funFact": "Even when you're sitting still, this region is constantly adjusting your trunk to keep you balanced."
+  },
+  "Vermis_4_5": {
+    "summary": "Vermis lobules IV-V for upper body coordination.",
+    "function": "Coordinates upper body and arm movements. Integrates proprioceptive feedback. Part of the intermediate cerebellum.",
+    "location": "Superior vermis, between anterior and posterior lobes.",
+    "connections": ["Vermis_3", "Vermis_6", "Cerebellum_4_5_L", "Cerebellum_4_5_R"],
+    "clinical": "Lesions cause limb ataxia and coordination problems.",
+    "funFact": "This region contains a second body map in the cerebellum, complementing the one in the hemispheres."
+  },
+  "Vermis_6": {
+    "summary": "Vermis lobule VI for oculomotor and limb coordination.",
+    "function": "Involved in eye movements and limb coordination. Part of the oculomotor vermis. Important for gaze control.",
+    "location": "Superior posterior vermis.",
+    "connections": ["Vermis_4_5", "Vermis_7", "Cerebellum_6_L", "Cerebellum_6_R"],
+    "clinical": "Damage affects smooth pursuit eye movements and saccade accuracy.",
+    "funFact": "When your eyes smoothly follow a moving target, the vermis is fine-tuning those movements."
+  },
+  "Vermis_7": {
+    "summary": "Vermis lobule VII for cognitive cerebellum.",
+    "function": "Involved in cognitive functions including language and working memory. Part of the cognitive cerebellum. Connects with prefrontal cortex.",
+    "location": "Posterior vermis, between lobules VI and VIII.",
+    "connections": ["Vermis_6", "Vermis_8", "Cerebellum_7b_L", "Cerebellum_7b_R"],
+    "clinical": "Damage can cause cognitive deficits. Implicated in autism spectrum conditions.",
+    "funFact": "This part of the cerebellum is involved in thinking, not movement - a relatively recent discovery."
+  },
+  "Vermis_8": {
+    "summary": "Vermis lobule VIII for sensorimotor integration.",
+    "function": "Integrates sensory and motor information. Part of the default mode cerebellar network. Involved in body awareness.",
+    "location": "Inferior posterior vermis.",
+    "connections": ["Vermis_7", "Vermis_9", "Cerebellum_8_L", "Cerebellum_8_R"],
+    "clinical": "Involved in cerebellar contributions to non-motor functions.",
+    "funFact": "Recent research shows this region is active during mind-wandering, connecting cerebellum to consciousness."
+  },
+  "Vermis_9": {
+    "summary": "Vermis lobule IX for vestibular and default mode functions.",
+    "function": "Processes vestibular information and contributes to default mode network. Part of the posterior vermis. Involved in self-referential processing.",
+    "location": "Uvula of the cerebellar vermis.",
+    "connections": ["Vermis_8", "Vermis_10", "Cerebellum_9_L", "Cerebellum_9_R"],
+    "clinical": "Abnormalities linked to autism and social cognition deficits.",
+    "funFact": "This region connects with brain networks for self-reflection - the cerebellum may play a role in self-awareness."
+  }
+}

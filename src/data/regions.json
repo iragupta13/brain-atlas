@@ -1,0 +1,1828 @@
+{
+  "Precentral_L": {
+    "id": 1,
+    "displayName": "Precentral (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -38.4,
+      -7.5,
+      49.1
+    ]
+  },
+  "Precentral_R": {
+    "id": 2,
+    "displayName": "Precentral (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      41.6,
+      -10,
+      50.3
+    ]
+  },
+  "Frontal_Sup_2_L": {
+    "id": 3,
+    "displayName": "Frontal Superior 2 (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -19.7,
+      35.5,
+      34.7
+    ]
+  },
+  "Frontal_Sup_2_R": {
+    "id": 4,
+    "displayName": "Frontal Superior 2 (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      23.1,
+      32.7,
+      36.8
+    ]
+  },
+  "Frontal_Mid_2_L": {
+    "id": 5,
+    "displayName": "Frontal Middle 2 (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -35,
+      32.4,
+      29.4
+    ]
+  },
+  "Frontal_Mid_2_R": {
+    "id": 6,
+    "displayName": "Frontal Middle 2 (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      39.3,
+      32.4,
+      28.8
+    ]
+  },
+  "Frontal_Inf_Oper_L": {
+    "id": 7,
+    "displayName": "Frontal Inferior Opercular (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -48.3,
+      11,
+      17.3
+    ]
+  },
+  "Frontal_Inf_Oper_R": {
+    "id": 8,
+    "displayName": "Frontal Inferior Opercular (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      50.4,
+      13.2,
+      19.7
+    ]
+  },
+  "Frontal_Inf_Tri_L": {
+    "id": 9,
+    "displayName": "Frontal Inferior Triangular (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -45.4,
+      28.2,
+      12.1
+    ]
+  },
+  "Frontal_Inf_Tri_R": {
+    "id": 10,
+    "displayName": "Frontal Inferior Triangular (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      50.6,
+      28.4,
+      12.3
+    ]
+  },
+  "Frontal_Inf_Orb_2_L": {
+    "id": 11,
+    "displayName": "Frontal Inferior Orbital 2 (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -40.9,
+      30.6,
+      -8.6
+    ]
+  },
+  "Frontal_Inf_Orb_2_R": {
+    "id": 12,
+    "displayName": "Frontal Inferior Orbital 2 (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      46.3,
+      32.9,
+      -8.5
+    ]
+  },
+  "Rolandic_Oper_L": {
+    "id": 13,
+    "displayName": "Rolandic Opercular (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -46.9,
+      -10.3,
+      12.1
+    ]
+  },
+  "Rolandic_Oper_R": {
+    "id": 14,
+    "displayName": "Rolandic Opercular (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      52.9,
+      -8,
+      12.8
+    ]
+  },
+  "Supp_Motor_Area_L": {
+    "id": 15,
+    "displayName": "Supp Motor Area (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -5.2,
+      3.1,
+      59.6
+    ]
+  },
+  "Supp_Motor_Area_R": {
+    "id": 16,
+    "displayName": "Supp Motor Area (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      8.7,
+      -1.6,
+      60
+    ]
+  },
+  "Olfactory_L": {
+    "id": 17,
+    "displayName": "Olfactory (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -7.4,
+      13.5,
+      -12.6
+    ]
+  },
+  "Olfactory_R": {
+    "id": 18,
+    "displayName": "Olfactory (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      10.7,
+      14.1,
+      -13.2
+    ]
+  },
+  "Frontal_Sup_Medial_L": {
+    "id": 19,
+    "displayName": "Frontal Superior Medial (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -4.7,
+      47.4,
+      29.1
+    ]
+  },
+  "Frontal_Sup_Medial_R": {
+    "id": 20,
+    "displayName": "Frontal Superior Medial (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      9.3,
+      49,
+      28.4
+    ]
+  },
+  "Frontal_Med_Orb_L": {
+    "id": 21,
+    "displayName": "Frontal Medial Orbital (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -4.9,
+      52,
+      -9.4
+    ]
+  },
+  "Frontal_Med_Orb_R": {
+    "id": 22,
+    "displayName": "Frontal Medial Orbital (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      8.3,
+      49.9,
+      -9
+    ]
+  },
+  "Rectus_L": {
+    "id": 23,
+    "displayName": "Rectus (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -4.9,
+      35.2,
+      -20.1
+    ]
+  },
+  "Rectus_R": {
+    "id": 24,
+    "displayName": "Rectus (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      8.5,
+      34,
+      -19.9
+    ]
+  },
+  "OFCmed_L": {
+    "id": 25,
+    "displayName": "OFCmed (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -13.7,
+      35.1,
+      -21.6
+    ]
+  },
+  "OFCmed_R": {
+    "id": 26,
+    "displayName": "OFCmed (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      16.9,
+      36.6,
+      -21.8
+    ]
+  },
+  "OFCant_L": {
+    "id": 27,
+    "displayName": "OFCant (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -24.5,
+      46.3,
+      -16.6
+    ]
+  },
+  "OFCant_R": {
+    "id": 28,
+    "displayName": "OFCant (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      29.1,
+      48,
+      -16.7
+    ]
+  },
+  "OFCpost_L": {
+    "id": 29,
+    "displayName": "OFCpost (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -28.2,
+      22.9,
+      -20
+    ]
+  },
+  "OFCpost_R": {
+    "id": 30,
+    "displayName": "OFCpost (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      33.5,
+      24.4,
+      -19.9
+    ]
+  },
+  "OFClat_L": {
+    "id": 31,
+    "displayName": "OFClat (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -42,
+      39.4,
+      -15.6
+    ]
+  },
+  "OFClat_R": {
+    "id": 32,
+    "displayName": "OFClat (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      48.3,
+      36.2,
+      -16.7
+    ]
+  },
+  "Insula_L": {
+    "id": 33,
+    "displayName": "Insula (Left)",
+    "hemisphere": "left",
+    "group": "Other",
+    "centroid": [
+      -34.9,
+      4.9,
+      1.7
+    ]
+  },
+  "Insula_R": {
+    "id": 34,
+    "displayName": "Insula (Right)",
+    "hemisphere": "right",
+    "group": "Other",
+    "centroid": [
+      39.2,
+      4.5,
+      0.3
+    ]
+  },
+  "Cingulate_Mid_L": {
+    "id": 37,
+    "displayName": "Cingulate Middle (Left)",
+    "hemisphere": "left",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      -5.4,
+      -16.6,
+      39.7
+    ]
+  },
+  "Cingulate_Mid_R": {
+    "id": 38,
+    "displayName": "Cingulate Middle (Right)",
+    "hemisphere": "right",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      8.2,
+      -10.7,
+      37.9
+    ]
+  },
+  "Cingulate_Post_L": {
+    "id": 39,
+    "displayName": "Cingulate Posterior (Left)",
+    "hemisphere": "left",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      -4.7,
+      -44.7,
+      22.8
+    ]
+  },
+  "Cingulate_Post_R": {
+    "id": 40,
+    "displayName": "Cingulate Posterior (Right)",
+    "hemisphere": "right",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      7.7,
+      -43.6,
+      20
+    ]
+  },
+  "Hippocampus_L": {
+    "id": 41,
+    "displayName": "Hippocampus (Left)",
+    "hemisphere": "left",
+    "group": "Medial_Temporal",
+    "centroid": [
+      -24.8,
+      -22.5,
+      -11.9
+    ]
+  },
+  "Hippocampus_R": {
+    "id": 42,
+    "displayName": "Hippocampus (Right)",
+    "hemisphere": "right",
+    "group": "Medial_Temporal",
+    "centroid": [
+      29.4,
+      -21.5,
+      -12.1
+    ]
+  },
+  "ParaHippocampal_L": {
+    "id": 43,
+    "displayName": "ParaHippocampal (Left)",
+    "hemisphere": "left",
+    "group": "Medial_Temporal",
+    "centroid": [
+      -21,
+      -17.8,
+      -22.4
+    ]
+  },
+  "ParaHippocampal_R": {
+    "id": 44,
+    "displayName": "ParaHippocampal (Right)",
+    "hemisphere": "right",
+    "group": "Medial_Temporal",
+    "centroid": [
+      25.6,
+      -16.8,
+      -22.2
+    ]
+  },
+  "Amygdala_L": {
+    "id": 45,
+    "displayName": "Amygdala (Left)",
+    "hemisphere": "left",
+    "group": "Medial_Temporal",
+    "centroid": [
+      -23,
+      -2.4,
+      -19
+    ]
+  },
+  "Amygdala_R": {
+    "id": 46,
+    "displayName": "Amygdala (Right)",
+    "hemisphere": "right",
+    "group": "Medial_Temporal",
+    "centroid": [
+      27.6,
+      -1.1,
+      -19.3
+    ]
+  },
+  "Calcarine_L": {
+    "id": 47,
+    "displayName": "Calcarine (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -7,
+      -80.3,
+      4.6
+    ]
+  },
+  "Calcarine_R": {
+    "id": 48,
+    "displayName": "Calcarine (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      16.2,
+      -74.9,
+      7.5
+    ]
+  },
+  "Cuneus_L": {
+    "id": 49,
+    "displayName": "Cuneus (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -5.8,
+      -81.9,
+      25.4
+    ]
+  },
+  "Cuneus_R": {
+    "id": 50,
+    "displayName": "Cuneus (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      13.7,
+      -81.1,
+      26.4
+    ]
+  },
+  "Lingual_L": {
+    "id": 51,
+    "displayName": "Lingual (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -14.4,
+      -69.4,
+      -6.5
+    ]
+  },
+  "Lingual_R": {
+    "id": 52,
+    "displayName": "Lingual (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      16.6,
+      -68.6,
+      -5.7
+    ]
+  },
+  "Occipital_Sup_L": {
+    "id": 53,
+    "displayName": "Occipital Superior (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -16.3,
+      -86.1,
+      26.4
+    ]
+  },
+  "Occipital_Sup_R": {
+    "id": 54,
+    "displayName": "Occipital Superior (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      24.5,
+      -82.7,
+      28.8
+    ]
+  },
+  "Occipital_Mid_L": {
+    "id": 55,
+    "displayName": "Occipital Middle (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -32.1,
+      -82.5,
+      14.3
+    ]
+  },
+  "Occipital_Mid_R": {
+    "id": 56,
+    "displayName": "Occipital Middle (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      37.6,
+      -81.5,
+      17.6
+    ]
+  },
+  "Occipital_Inf_L": {
+    "id": 57,
+    "displayName": "Occipital Inferior (Left)",
+    "hemisphere": "left",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      -36,
+      -80.1,
+      -9.7
+    ]
+  },
+  "Occipital_Inf_R": {
+    "id": 58,
+    "displayName": "Occipital Inferior (Right)",
+    "hemisphere": "right",
+    "group": "Occipital_Lobe",
+    "centroid": [
+      38.4,
+      -83.7,
+      -9.5
+    ]
+  },
+  "Fusiform_L": {
+    "id": 59,
+    "displayName": "Fusiform (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -30.9,
+      -41.9,
+      -22.1
+    ]
+  },
+  "Fusiform_R": {
+    "id": 60,
+    "displayName": "Fusiform (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      34.2,
+      -40.7,
+      -22
+    ]
+  },
+  "Postcentral_L": {
+    "id": 61,
+    "displayName": "Postcentral (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -42.4,
+      -24.3,
+      47
+    ]
+  },
+  "Postcentral_R": {
+    "id": 62,
+    "displayName": "Postcentral (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      41.7,
+      -27.3,
+      50.8
+    ]
+  },
+  "Parietal_Sup_L": {
+    "id": 63,
+    "displayName": "Parietal Superior (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -23.2,
+      -61.3,
+      57.2
+    ]
+  },
+  "Parietal_Sup_R": {
+    "id": 64,
+    "displayName": "Parietal Superior (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      26.3,
+      -60.9,
+      60.2
+    ]
+  },
+  "Parietal_Inf_L": {
+    "id": 65,
+    "displayName": "Parietal Inferior (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -42.6,
+      -47.5,
+      44.9
+    ]
+  },
+  "Parietal_Inf_R": {
+    "id": 66,
+    "displayName": "Parietal Inferior (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      46.8,
+      -48.1,
+      47.7
+    ]
+  },
+  "SupraMarginal_L": {
+    "id": 67,
+    "displayName": "SupraMarginal (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -55.6,
+      -35.4,
+      28.6
+    ]
+  },
+  "SupraMarginal_R": {
+    "id": 68,
+    "displayName": "SupraMarginal (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      57.8,
+      -33.3,
+      32.6
+    ]
+  },
+  "Angular_L": {
+    "id": 69,
+    "displayName": "Angular (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -43.9,
+      -62.6,
+      33.8
+    ]
+  },
+  "Angular_R": {
+    "id": 70,
+    "displayName": "Angular (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      45.7,
+      -61.7,
+      36.8
+    ]
+  },
+  "Precuneus_L": {
+    "id": 71,
+    "displayName": "Precuneus (Left)",
+    "hemisphere": "left",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      -7.1,
+      -57.8,
+      46.1
+    ]
+  },
+  "Precuneus_R": {
+    "id": 72,
+    "displayName": "Precuneus (Right)",
+    "hemisphere": "right",
+    "group": "Parietal_Lobe",
+    "centroid": [
+      10.2,
+      -57.8,
+      41.9
+    ]
+  },
+  "Paracentral_Lobule_L": {
+    "id": 73,
+    "displayName": "Paracentral Lobule (Left)",
+    "hemisphere": "left",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      -7.5,
+      -27.2,
+      68.2
+    ]
+  },
+  "Paracentral_Lobule_R": {
+    "id": 74,
+    "displayName": "Paracentral Lobule (Right)",
+    "hemisphere": "right",
+    "group": "Frontal_Lobe",
+    "centroid": [
+      7.6,
+      -33.4,
+      66.3
+    ]
+  },
+  "Caudate_L": {
+    "id": 75,
+    "displayName": "Caudate (Left)",
+    "hemisphere": "left",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      -12.2,
+      8.6,
+      10.7
+    ]
+  },
+  "Caudate_R": {
+    "id": 76,
+    "displayName": "Caudate (Right)",
+    "hemisphere": "right",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      15.7,
+      10,
+      10.1
+    ]
+  },
+  "Putamen_L": {
+    "id": 77,
+    "displayName": "Putamen (Left)",
+    "hemisphere": "left",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      -23.9,
+      2,
+      0.7
+    ]
+  },
+  "Putamen_R": {
+    "id": 78,
+    "displayName": "Putamen (Right)",
+    "hemisphere": "right",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      28,
+      3.2,
+      0.7
+    ]
+  },
+  "Pallidum_L": {
+    "id": 79,
+    "displayName": "Pallidum (Left)",
+    "hemisphere": "left",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      -17.6,
+      -1.9,
+      -1.5
+    ]
+  },
+  "Pallidum_R": {
+    "id": 80,
+    "displayName": "Pallidum (Right)",
+    "hemisphere": "right",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      21.4,
+      -1.6,
+      -1.6
+    ]
+  },
+  "Heschl_L": {
+    "id": 83,
+    "displayName": "Heschl (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -41.8,
+      -20.5,
+      8.2
+    ]
+  },
+  "Heschl_R": {
+    "id": 84,
+    "displayName": "Heschl (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      46.4,
+      -18.6,
+      8.5
+    ]
+  },
+  "Temporal_Sup_L": {
+    "id": 85,
+    "displayName": "Temporal Superior (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -52.9,
+      -22.5,
+      5.3
+    ]
+  },
+  "Temporal_Sup_R": {
+    "id": 86,
+    "displayName": "Temporal Superior (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      58.3,
+      -23.5,
+      4.9
+    ]
+  },
+  "Temporal_Pole_Sup_L": {
+    "id": 87,
+    "displayName": "Temporal Pole Superior (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -39.7,
+      13.4,
+      -21.9
+    ]
+  },
+  "Temporal_Pole_Sup_R": {
+    "id": 88,
+    "displayName": "Temporal Pole Superior (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      48.4,
+      13,
+      -18.7
+    ]
+  },
+  "Temporal_Mid_L": {
+    "id": 89,
+    "displayName": "Temporal Middle (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -55.4,
+      -35.5,
+      -4.1
+    ]
+  },
+  "Temporal_Mid_R": {
+    "id": 90,
+    "displayName": "Temporal Middle (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      57.7,
+      -39.1,
+      -3.3
+    ]
+  },
+  "Temporal_Pole_Mid_L": {
+    "id": 91,
+    "displayName": "Temporal Pole Middle (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -36.2,
+      12.8,
+      -35.9
+    ]
+  },
+  "Temporal_Pole_Mid_R": {
+    "id": 92,
+    "displayName": "Temporal Pole Middle (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      44.5,
+      12.7,
+      -34
+    ]
+  },
+  "Temporal_Inf_L": {
+    "id": 93,
+    "displayName": "Temporal Inferior (Left)",
+    "hemisphere": "left",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      -49.5,
+      -29.8,
+      -25
+    ]
+  },
+  "Temporal_Inf_R": {
+    "id": 94,
+    "displayName": "Temporal Inferior (Right)",
+    "hemisphere": "right",
+    "group": "Temporal_Lobe",
+    "centroid": [
+      53.9,
+      -32.6,
+      -24.2
+    ]
+  },
+  "Cerebellum_Crus1_L": {
+    "id": 95,
+    "displayName": "Cerebellum Crus1 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -34.9,
+      -68.4,
+      -30.8
+    ]
+  },
+  "Cerebellum_Crus1_R": {
+    "id": 96,
+    "displayName": "Cerebellum Crus1 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      38.7,
+      -68.9,
+      -31.3
+    ]
+  },
+  "Cerebellum_Crus2_L": {
+    "id": 97,
+    "displayName": "Cerebellum Crus2 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -27.3,
+      -75.1,
+      -39.9
+    ]
+  },
+  "Cerebellum_Crus2_R": {
+    "id": 98,
+    "displayName": "Cerebellum Crus2 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      33.2,
+      -70.9,
+      -41.7
+    ]
+  },
+  "Cerebellum_3_L": {
+    "id": 99,
+    "displayName": "Cerebellum 3 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -7.6,
+      -38.9,
+      -20.3
+    ]
+  },
+  "Cerebellum_3_R": {
+    "id": 100,
+    "displayName": "Cerebellum 3 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      13.6,
+      -36.2,
+      -21.1
+    ]
+  },
+  "Cerebellum_4_5_L": {
+    "id": 101,
+    "displayName": "Cerebellum 4 5 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -13.8,
+      -45.2,
+      -18.8
+    ]
+  },
+  "Cerebellum_4_5_R": {
+    "id": 102,
+    "displayName": "Cerebellum 4 5 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      18.4,
+      -44.7,
+      -19.9
+    ]
+  },
+  "Cerebellum_6_L": {
+    "id": 103,
+    "displayName": "Cerebellum 6 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -22,
+      -60.8,
+      -24
+    ]
+  },
+  "Cerebellum_6_R": {
+    "id": 104,
+    "displayName": "Cerebellum 6 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      25.9,
+      -60,
+      -25.4
+    ]
+  },
+  "Cerebellum_7b_L": {
+    "id": 105,
+    "displayName": "Cerebellum 7b (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -31.1,
+      -61.5,
+      -47.3
+    ]
+  },
+  "Cerebellum_7b_R": {
+    "id": 106,
+    "displayName": "Cerebellum 7b (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      34.4,
+      -64.9,
+      -50.3
+    ]
+  },
+  "Cerebellum_8_L": {
+    "id": 107,
+    "displayName": "Cerebellum 8 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -24.5,
+      -56.3,
+      -49.6
+    ]
+  },
+  "Cerebellum_8_R": {
+    "id": 108,
+    "displayName": "Cerebellum 8 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      26.3,
+      -58.1,
+      -51.3
+    ]
+  },
+  "Cerebellum_9_L": {
+    "id": 109,
+    "displayName": "Cerebellum 9 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -9.8,
+      -50.7,
+      -47.7
+    ]
+  },
+  "Cerebellum_9_R": {
+    "id": 110,
+    "displayName": "Cerebellum 9 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      10.7,
+      -51.3,
+      -48.1
+    ]
+  },
+  "Cerebellum_10_L": {
+    "id": 111,
+    "displayName": "Cerebellum 10 (Left)",
+    "hemisphere": "left",
+    "group": "Cerebellum",
+    "centroid": [
+      -21.3,
+      -35.5,
+      -43.6
+    ]
+  },
+  "Cerebellum_10_R": {
+    "id": 112,
+    "displayName": "Cerebellum 10 (Right)",
+    "hemisphere": "right",
+    "group": "Cerebellum",
+    "centroid": [
+      27.3,
+      -35.5,
+      -43.1
+    ]
+  },
+  "Vermis_1_2": {
+    "id": 113,
+    "displayName": "Vermis 1 2",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2,
+      -40.7,
+      -21.9
+    ]
+  },
+  "Vermis_3": {
+    "id": 114,
+    "displayName": "Vermis 3",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.6,
+      -41.8,
+      -13.2
+    ]
+  },
+  "Vermis_4_5": {
+    "id": 115,
+    "displayName": "Vermis 4 5",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.3,
+      -54.1,
+      -7.9
+    ]
+  },
+  "Vermis_6": {
+    "id": 116,
+    "displayName": "Vermis 6",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.3,
+      -68.9,
+      -16.9
+    ]
+  },
+  "Vermis_7": {
+    "id": 117,
+    "displayName": "Vermis 7",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.4,
+      -73.7,
+      -26.9
+    ]
+  },
+  "Vermis_8": {
+    "id": 118,
+    "displayName": "Vermis 8",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.3,
+      -66.2,
+      -35.8
+    ]
+  },
+  "Vermis_9": {
+    "id": 119,
+    "displayName": "Vermis 9",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      2.1,
+      -56.7,
+      -36.8
+    ]
+  },
+  "Vermis_10": {
+    "id": 120,
+    "displayName": "Vermis 10",
+    "hemisphere": "bilateral",
+    "group": "Cerebellum",
+    "centroid": [
+      1.6,
+      -47.6,
+      -33.4
+    ]
+  },
+  "Thal_AV_L": {
+    "id": 121,
+    "displayName": "Thalamus Anteroventral (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -5.9,
+      -6.9,
+      8
+    ]
+  },
+  "Thal_AV_R": {
+    "id": 122,
+    "displayName": "Thalamus Anteroventral (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      5.3,
+      -5.6,
+      7.7
+    ]
+  },
+  "Thal_LP_L": {
+    "id": 123,
+    "displayName": "Thalamus Lateral Posterior (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -9.9,
+      -16.9,
+      14.8
+    ]
+  },
+  "Thal_LP_R": {
+    "id": 124,
+    "displayName": "Thalamus Lateral Posterior (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      8.4,
+      -14.7,
+      14.1
+    ]
+  },
+  "Thal_VA_L": {
+    "id": 125,
+    "displayName": "Thalamus Ventroanterior (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -10.7,
+      -5,
+      3.8
+    ]
+  },
+  "Thal_VA_R": {
+    "id": 126,
+    "displayName": "Thalamus Ventroanterior (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      10.3,
+      -3.8,
+      3.5
+    ]
+  },
+  "Thal_VL_L": {
+    "id": 127,
+    "displayName": "Thalamus Ventrolateral (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -13.4,
+      -12.3,
+      6.8
+    ]
+  },
+  "Thal_VL_R": {
+    "id": 128,
+    "displayName": "Thalamus Ventrolateral (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      12.9,
+      -11.1,
+      6.5
+    ]
+  },
+  "Thal_VPL_L": {
+    "id": 129,
+    "displayName": "Thalamus Ventral Posterolateral (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -17.8,
+      -21.4,
+      5.3
+    ]
+  },
+  "Thal_VPL_R": {
+    "id": 130,
+    "displayName": "Thalamus Ventral Posterolateral (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      16.8,
+      -20.4,
+      4.9
+    ]
+  },
+  "Thal_IL_L": {
+    "id": 131,
+    "displayName": "Thalamus Intralaminar (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -9.8,
+      -18,
+      -0.3
+    ]
+  },
+  "Thal_IL_R": {
+    "id": 132,
+    "displayName": "Thalamus Intralaminar (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      9.4,
+      -17.1,
+      -0.4
+    ]
+  },
+  "Thal_Re_L": {
+    "id": 133,
+    "displayName": "Thalamus Reuniens (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -5.5,
+      -8.9,
+      -4
+    ]
+  },
+  "Thal_Re_R": {
+    "id": 134,
+    "displayName": "Thalamus Reuniens (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      5.5,
+      -9.1,
+      -4.2
+    ]
+  },
+  "Thal_MDm_L": {
+    "id": 135,
+    "displayName": "Thalamus Mediodorsal medial (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -4.8,
+      -15.7,
+      4.3
+    ]
+  },
+  "Thal_MDm_R": {
+    "id": 136,
+    "displayName": "Thalamus Mediodorsal medial (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      4.3,
+      -15.1,
+      3.8
+    ]
+  },
+  "Thal_MDl_L": {
+    "id": 137,
+    "displayName": "Thalamus Mediodorsal lateral (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -7.6,
+      -14.6,
+      5.1
+    ]
+  },
+  "Thal_MDl_R": {
+    "id": 138,
+    "displayName": "Thalamus Mediodorsal lateral (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      7.2,
+      -13.7,
+      4.4
+    ]
+  },
+  "Thal_LGN_L": {
+    "id": 139,
+    "displayName": "Thalamus Lateral Geniculate Nucleus (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -22.7,
+      -24.7,
+      -5.6
+    ]
+  },
+  "Thal_LGN_R": {
+    "id": 140,
+    "displayName": "Thalamus Lateral Geniculate Nucleus (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      21.7,
+      -24.8,
+      -5
+    ]
+  },
+  "Thal_MGN_L": {
+    "id": 141,
+    "displayName": "Thalamus Medial Geniculate Nucleus (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -15.6,
+      -24.9,
+      -5.6
+    ]
+  },
+  "Thal_MGN_R": {
+    "id": 142,
+    "displayName": "Thalamus Medial Geniculate Nucleus (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      15.3,
+      -24.5,
+      -5.5
+    ]
+  },
+  "Thal_PuI_L": {
+    "id": 143,
+    "displayName": "Thalamus Pulvinar Inferior (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -17.7,
+      -29.8,
+      -0.3
+    ]
+  },
+  "Thal_PuI_R": {
+    "id": 144,
+    "displayName": "Thalamus Pulvinar Inferior (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      16.7,
+      -28.9,
+      -0.5
+    ]
+  },
+  "Thal_PuM_L": {
+    "id": 145,
+    "displayName": "Thalamus Pulvinar Medial (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -13.3,
+      -28.3,
+      6.4
+    ]
+  },
+  "Thal_PuM_R": {
+    "id": 146,
+    "displayName": "Thalamus Pulvinar Medial (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      12.3,
+      -27.1,
+      6.5
+    ]
+  },
+  "Thal_PuA_L": {
+    "id": 147,
+    "displayName": "Thalamus Pulvinar Anterior (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -12.3,
+      -23,
+      6.7
+    ]
+  },
+  "Thal_PuA_R": {
+    "id": 148,
+    "displayName": "Thalamus Pulvinar Anterior (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      11.3,
+      -21.8,
+      6.6
+    ]
+  },
+  "Thal_PuL_L": {
+    "id": 149,
+    "displayName": "Thalamus Pulvinar Lateral (Left)",
+    "hemisphere": "left",
+    "group": "Thalamus",
+    "centroid": [
+      -18.7,
+      -25.4,
+      10.4
+    ]
+  },
+  "Thal_PuL_R": {
+    "id": 150,
+    "displayName": "Thalamus Pulvinar Lateral (Right)",
+    "hemisphere": "right",
+    "group": "Thalamus",
+    "centroid": [
+      16.3,
+      -23.1,
+      11.8
+    ]
+  },
+  "ACC_sub_L": {
+    "id": 151,
+    "displayName": "Anterior Cingulate sub (Left)",
+    "hemisphere": "left",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      -3.6,
+      30.4,
+      -6
+    ]
+  },
+  "ACC_sub_R": {
+    "id": 152,
+    "displayName": "Anterior Cingulate sub (Right)",
+    "hemisphere": "right",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      6,
+      31.3,
+      -4.9
+    ]
+  },
+  "ACC_pre_L": {
+    "id": 153,
+    "displayName": "Anterior Cingulate pre (Left)",
+    "hemisphere": "left",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      -4.5,
+      43.2,
+      6.7
+    ]
+  },
+  "ACC_pre_R": {
+    "id": 154,
+    "displayName": "Anterior Cingulate pre (Right)",
+    "hemisphere": "right",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      9.3,
+      42.8,
+      12.2
+    ]
+  },
+  "ACC_sup_L": {
+    "id": 155,
+    "displayName": "Anterior Cingulate sup (Left)",
+    "hemisphere": "left",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      -3.3,
+      24.8,
+      22.6
+    ]
+  },
+  "ACC_sup_R": {
+    "id": 156,
+    "displayName": "Anterior Cingulate sup (Right)",
+    "hemisphere": "right",
+    "group": "Cingulate_Cortex",
+    "centroid": [
+      8.4,
+      27,
+      20.7
+    ]
+  },
+  "N_Acc_L": {
+    "id": 157,
+    "displayName": "N Accumbens (Left)",
+    "hemisphere": "left",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      -7.7,
+      12.3,
+      -7.7
+    ]
+  },
+  "N_Acc_R": {
+    "id": 158,
+    "displayName": "N Accumbens (Right)",
+    "hemisphere": "right",
+    "group": "Basal_Ganglia",
+    "centroid": [
+      10.2,
+      12.4,
+      -7.6
+    ]
+  },
+  "VTA_L": {
+    "id": 159,
+    "displayName": "Ventral Tegmental Area (Left)",
+    "hemisphere": "left",
+    "group": "Brainstem",
+    "centroid": [
+      -3.1,
+      -20.8,
+      -17.6
+    ]
+  },
+  "VTA_R": {
+    "id": 160,
+    "displayName": "Ventral Tegmental Area (Right)",
+    "hemisphere": "right",
+    "group": "Brainstem",
+    "centroid": [
+      4.9,
+      -20.8,
+      -17.5
+    ]
+  },
+  "SN_pc_L": {
+    "id": 161,
+    "displayName": "Substantia Nigra pars compacta (Left)",
+    "hemisphere": "left",
+    "group": "Brainstem",
+    "centroid": [
+      -8,
+      -18.5,
+      -14.6
+    ]
+  },
+  "SN_pc_R": {
+    "id": 162,
+    "displayName": "Substantia Nigra pars compacta (Right)",
+    "hemisphere": "right",
+    "group": "Brainstem",
+    "centroid": [
+      9.1,
+      -18.2,
+      -14.6
+    ]
+  },
+  "SN_pr_L": {
+    "id": 163,
+    "displayName": "Substantia Nigra pars reticulata (Left)",
+    "hemisphere": "left",
+    "group": "Brainstem",
+    "centroid": [
+      -9.8,
+      -15.3,
+      -13.8
+    ]
+  },
+  "SN_pr_R": {
+    "id": 164,
+    "displayName": "Substantia Nigra pars reticulata (Right)",
+    "hemisphere": "right",
+    "group": "Brainstem",
+    "centroid": [
+      11,
+      -14.9,
+      -14
+    ]
+  },
+  "Red_N_L": {
+    "id": 165,
+    "displayName": "Red Nucleus (Left)",
+    "hemisphere": "left",
+    "group": "Brainstem",
+    "centroid": [
+      -4.3,
+      -19.7,
+      -10.5
+    ]
+  },
+  "Red_N_R": {
+    "id": 166,
+    "displayName": "Red Nucleus (Right)",
+    "hemisphere": "right",
+    "group": "Brainstem",
+    "centroid": [
+      5.9,
+      -19.4,
+      -10.6
+    ]
+  },
+  "LC_L": {
+    "id": 167,
+    "displayName": "Locus Coeruleus (Left)",
+    "hemisphere": "left",
+    "group": "Brainstem",
+    "centroid": [
+      -4.4,
+      -35,
+      -27.1
+    ]
+  },
+  "LC_R": {
+    "id": 168,
+    "displayName": "Locus Coeruleus (Right)",
+    "hemisphere": "right",
+    "group": "Brainstem",
+    "centroid": [
+      6,
+      -35.3,
+      -27.7
+    ]
+  },
+  "Raphe_D": {
+    "id": 169,
+    "displayName": "Raphe D",
+    "hemisphere": "bilateral",
+    "group": "Brainstem",
+    "centroid": [
+      0.6,
+      -26.9,
+      -10.3
+    ]
+  },
+  "Raphe_M": {
+    "id": 170,
+    "displayName": "Raphe M",
+    "hemisphere": "bilateral",
+    "group": "Brainstem",
+    "centroid": [
+      0,
+      -30.1,
+      -22
+    ]
+  }
+}
