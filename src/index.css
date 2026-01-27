@@ -140,6 +140,26 @@ body::after {
   letter-spacing: 0.2px;
 }
 
+/* Responsive sidebar header */
+@media (max-width: 1200px) {
+  .sidebar-header {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+  }
+  .sidebar-header h1 {
+    font-size: 22px;
+  }
+  .sidebar-header p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-header h1 {
+    font-size: 20px;
+  }
+}
+
 /* Canvas container */
 .canvas-container {
   width: 100%;
@@ -147,6 +167,13 @@ body::after {
   max-width: 1400px;
   max-height: 900px;
   position: relative;
+}
+
+@media (max-width: 1024px) {
+  .canvas-container {
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 /* Focus styles */
@@ -198,4 +225,40 @@ button {
 
 .animate-slide-in {
   animation: slideIn 0.3s var(--ease-out-expo) forwards;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 1024px) {
+  /* Prevent text selection on interactive elements */
+  button, [role="button"] {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Better touch targets */
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Improve scrolling performance */
+  .scrollable {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Prevent body scroll when mobile panels are open */
+body.panel-open {
+  overflow: hidden;
+}
+
+/* Safe area insets for notched devices */
+@supports (padding: env(safe-area-inset-bottom)) {
+  @media (max-width: 1024px) {
+    .sidebar,
+    .rightPanel {
+      padding-bottom: calc(24px + env(safe-area-inset-bottom));
+    }
+  }
 }

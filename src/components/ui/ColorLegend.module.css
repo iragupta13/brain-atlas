@@ -85,3 +85,42 @@
 .item.active .label {
   color: var(--text-primary);
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    padding: 10px 12px;
+  }
+
+  .legend {
+    gap: 3px 6px;
+  }
+
+  .label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 12px 14px;
+  }
+
+  .legend {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .item {
+    padding: 6px 8px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .swatch {
+    width: 12px;
+    height: 12px;
+  }
+}

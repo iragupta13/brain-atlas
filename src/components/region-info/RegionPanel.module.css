@@ -222,3 +222,62 @@
   color: var(--glow-cyan-dim);
   font-weight: 500;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .container {
+    gap: 14px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .section {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .sectionContent {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    gap: 12px;
+  }
+
+  .panelHeader {
+    padding-bottom: 12px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .tag {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .section {
+    padding: 12px;
+    border-radius: 12px;
+  }
+
+  .sectionTitle {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .sectionContent {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+
+  .connectionChip {
+    padding: 5px 12px;
+    font-size: 10px;
+  }
+}

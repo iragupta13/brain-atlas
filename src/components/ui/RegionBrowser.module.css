@@ -178,3 +178,42 @@
   border-radius: 50%;
   box-shadow: 0 0 8px var(--glow-cyan);
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .groups.scrollable {
+    max-height: 300px;
+  }
+
+  .groupName {
+    font-size: 12px;
+  }
+
+  .regionItem {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .groups.scrollable {
+    max-height: 250px;
+  }
+
+  .groupHeader {
+    padding: 12px 14px;
+  }
+
+  .groupName {
+    font-size: 13px;
+  }
+
+  .regionItem {
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+
+  .regionList {
+    padding: 8px 8px 8px 20px;
+  }
+}

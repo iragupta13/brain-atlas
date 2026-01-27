@@ -207,3 +207,49 @@
 .regionButton.secondary.selected {
   opacity: 1;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .list {
+    max-height: 180px;
+  }
+
+  .item {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .functionCard {
+    padding: 14px;
+  }
+
+  .functionName {
+    font-size: 14px;
+  }
+
+  .functionExplanation {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list {
+    max-height: 160px;
+    padding: 3px;
+  }
+
+  .item {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .functionCard {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  .regionButton {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}

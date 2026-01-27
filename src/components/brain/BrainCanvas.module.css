@@ -57,3 +57,26 @@
   pointer-events: none;
   z-index: 2;
 }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .container {
+    border-radius: 16px;
+  }
+
+  .container::before,
+  .container::after {
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    border-radius: 12px;
+  }
+
+  .container::before,
+  .container::after {
+    border-radius: 12px;
+  }
+}
