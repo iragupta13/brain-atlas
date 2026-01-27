@@ -67,7 +67,7 @@ export function BrainModel({
   onMetrics,
   onMeshNames,
 }: BrainModelProps) {
-  const gltf = useGLTF('/models/brain_atlas.glb');
+  const gltf = useGLTF('./models/brain_atlas.glb')
 
   // Clone scene for safe manipulation
   const scene = useMemo(() => gltf.scene.clone(true), [gltf.scene]);
@@ -334,4 +334,5 @@ export function BrainModel({
   );
 }
 
-useGLTF.preload('/models/brain_atlas.glb');
+useGLTF('./models/brain_atlas.glb')
+
