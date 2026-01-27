@@ -7,9 +7,25 @@ interface AppLayoutProps {
   children: ReactNode;
 }
 
+// Breakpoint where right panel becomes overlay
+const RIGHT_PANEL_OVERLAY_BREAKPOINT = 1024;
+// Breakpoint where left sidebar becomes overlay
+const SIDEBAR_OVERLAY_BREAKPOINT = 700;
+
 export function AppLayout({ sidebar, rightPanel, children }: AppLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [rightPanelOpen, setRightPanelOpen] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
+
+  // Track window width for responsive behavior
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const isSidebarOverlay = windowWidth <= SIDEBAR_OVERLAY_BREAKPOINT;
+  const isRightPanelOverlay = windowWidth <= RIGHT_PANEL_OVERLAY_BREAKPOINT;
 
   // Close panels when clicking backdrop
   const handleBackdropClick = () => {
@@ -29,26 +45,24 @@ export function AppLayout({ sidebar, rightPanel, children }: AppLayoutProps) {
     return () => window.removeEventListener('keydown', handleEscape);
   }, []);
 
-  // Close sidebar when right panel opens and vice versa (on mobile)
+  // Close sidebar when right panel opens (only when both are overlays)
   useEffect(() => {
-    if (sidebarOpen) setRightPanelOpen(false);
-  }, [sidebarOpen]);
+    if (sidebarOpen && isSidebarOverlay) setRightPanelOpen(false);
+  }, [sidebarOpen, isSidebarOverlay]);
 
   useEffect(() => {
-    if (rightPanelOpen) setSidebarOpen(false);
-  }, [rightPanelOpen]);
+    if (rightPanelOpen && isSidebarOverlay) setSidebarOpen(false);
+  }, [rightPanelOpen, isSidebarOverlay]);
 
-  // Auto-open right panel on mobile when region is selected
+  // Auto-open right panel when region is selected (only when it's an overlay)
   useEffect(() => {
-    if (rightPanel) {
-      const isMobile = window.matchMedia('(max-width: 1024px)').matches;
-      if (isMobile) {
-        setRightPanelOpen(true);
-      }
+    if (rightPanel && isRightPanelOverlay) {
+      setRightPanelOpen(true);
     }
-  }, [rightPanel]);
+  }, [rightPanel, isRightPanelOverlay]);
 
-  const isAnyPanelOpen = sidebarOpen || rightPanelOpen;
+  // Backdrop is visible when any overlay panel is open
+  const isBackdropVisible = (isSidebarOverlay && sidebarOpen) || (isRightPanelOverlay && rightPanelOpen);
 
   return (
     <div className={`${styles.container} ${rightPanel ? styles.withRightPanel : ''}`}>
@@ -72,9 +86,9 @@ export function AppLayout({ sidebar, rightPanel, children }: AppLayoutProps) {
         </button>
       )}
 
-      {/* Backdrop for mobile */}
+      {/* Backdrop for mobile/tablet overlays */}
       <div
-        className={`${styles.backdrop} ${isAnyPanelOpen ? styles.visible : ''}`}
+        className={`${styles.backdrop} ${isBackdropVisible ? styles.visible : ''}`}
         onClick={handleBackdropClick}
       />
 

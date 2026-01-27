@@ -23,8 +23,28 @@
   }
 }
 
-/* Small tablets / large phones: stack layout */
+/* Medium screens: right panel becomes overlay, left sidebar stays */
 @media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 280px 1fr;
+  }
+  .container.withRightPanel {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+/* Smaller screens: narrower left sidebar */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 260px 1fr;
+  }
+  .container.withRightPanel {
+    grid-template-columns: 260px 1fr;
+  }
+}
+
+/* Small screens: left sidebar becomes overlay too */
+@media (max-width: 700px) {
   .container {
     grid-template-columns: 1fr;
   }
@@ -95,11 +115,16 @@
   box-shadow: 0 0 20px rgba(0, 240, 255, 0.15);
 }
 
+/* Show info button when right panel becomes overlay */
 @media (max-width: 1024px) {
-  .mobileMenuButton {
+  .mobileInfoButton {
     display: flex;
   }
-  .mobileInfoButton {
+}
+
+/* Show menu button only when left sidebar becomes overlay */
+@media (max-width: 700px) {
+  .mobileMenuButton {
     display: flex;
   }
 }
@@ -131,8 +156,23 @@
   }
 }
 
-/* Mobile: sidebar becomes overlay */
+/* Tablet adjustments for sidebar */
 @media (max-width: 1024px) {
+  .sidebar {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    padding: 16px 14px;
+    gap: 12px;
+  }
+}
+
+/* Small screens: sidebar becomes overlay */
+@media (max-width: 700px) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -190,8 +230,21 @@
 
 @media (max-width: 1024px) {
   .main {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .main {
     padding: 16px;
-    padding-top: 72px; /* Space for mobile header buttons */
+  }
+}
+
+/* Space for mobile header buttons when sidebar is overlay */
+@media (max-width: 700px) {
+  .main {
+    padding: 12px;
+    padding-top: 72px;
   }
 }
 
@@ -347,8 +400,16 @@
   color: var(--text-primary);
 }
 
+/* Right panel close button shows when right panel is overlay */
 @media (max-width: 1024px) {
-  .panelCloseButton {
+  .rightPanel .panelCloseButton {
+    display: flex;
+  }
+}
+
+/* Sidebar close button only shows when sidebar is overlay */
+@media (max-width: 700px) {
+  .sidebar .panelCloseButton {
     display: flex;
   }
 }
