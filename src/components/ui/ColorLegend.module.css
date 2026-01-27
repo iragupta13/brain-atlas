@@ -6,7 +6,7 @@
 }
 
 .title {
-  margin: 0 0 10px 0;
+  margin: 0 0 4px 0;
   font-family: 'Outfit', sans-serif;
   font-size: 11px;
   font-weight: 600;
@@ -15,16 +15,48 @@
   letter-spacing: 0.8px;
 }
 
+.hint {
+  margin: 0 0 10px 0;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  opacity: 0.7;
+}
+
 .legend {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px 12px;
+  gap: 4px 8px;
 }
 
 .item {
   display: flex;
   align-items: center;
   gap: 8px;
+  padding: 4px 6px;
+  margin: 0;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.item:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-subtle);
+}
+
+.item.active {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--accent-primary);
+}
+
+.item.dimmed {
+  opacity: 0.4;
+}
+
+.item.dimmed:hover {
+  opacity: 0.7;
 }
 
 .swatch {
@@ -32,10 +64,24 @@
   height: 10px;
   border-radius: 3px;
   flex-shrink: 0;
+  transition: transform 0.15s ease;
+}
+
+.item:hover .swatch {
+  transform: scale(1.2);
+}
+
+.item.active .swatch {
+  transform: scale(1.2);
+  box-shadow: 0 0 6px currentColor;
 }
 
 .label {
   font-size: 11px;
   color: var(--text-secondary);
   white-space: nowrap;
+}
+
+.item.active .label {
+  color: var(--text-primary);
 }

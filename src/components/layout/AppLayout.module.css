@@ -1,6 +1,6 @@
 .container {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 360px 1fr;
   height: 100vh;
   overflow: hidden;
   background: var(--bg-void);
@@ -9,7 +9,7 @@
 }
 
 .container.withRightPanel {
-  grid-template-columns: 320px 1fr 400px;
+  grid-template-columns: 360px 1fr 400px;
 }
 
 .sidebar {
@@ -21,7 +21,7 @@
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-right: 1px solid var(--border-subtle);
-  padding: 28px 24px;
+  padding: 28px 28px;
   overflow-y: auto;
   overflow-x: hidden;
   display: flex;

@@ -1,0 +1,288 @@
+{
+  "level0": {
+    "Frontal_Cortex": {
+      "summary": "The front portion of the brain, responsible for executive functions, decision-making, planning, and motor control.",
+      "function": "Houses the prefrontal cortex for higher-order thinking, the motor cortex for voluntary movement, Broca's area for speech production, and the cingulate cortex for emotional regulation and attention.",
+      "location": "Anterior portion of the brain, extending from the front of the skull to the central sulcus.",
+      "clinical": "Damage can cause personality changes, impaired judgment, difficulty planning, motor weakness, and speech problems. Common sites for tumors and traumatic brain injury effects.",
+      "childGroups": ["Frontal Lobe", "Cingulate Cortex", "Insula"]
+    },
+    "Posterior_Cortex": {
+      "summary": "The back and top portions of the brain handling sensory processing, spatial awareness, and visual perception.",
+      "function": "The parietal lobe processes touch, spatial orientation, and mathematical reasoning. The occipital lobe is dedicated to visual processing, from basic features to complex object recognition.",
+      "location": "Upper and posterior regions of the brain, behind the central sulcus.",
+      "clinical": "Damage can cause sensory deficits, spatial neglect (ignoring one side of space), visual agnosia (inability to recognize objects), and reading difficulties.",
+      "childGroups": ["Parietal Lobe", "Occipital Lobe"]
+    },
+    "Temporal_Cortex": {
+      "summary": "The side portions of the brain critical for memory, language comprehension, and emotional processing.",
+      "function": "Contains auditory cortex for hearing, Wernicke's area for language understanding, the hippocampus for memory formation, and the amygdala for emotional responses.",
+      "location": "Lateral portions of the brain, beneath the temples, extending inward to medial temporal structures.",
+      "clinical": "Damage can cause memory impairment (amnesia), difficulty understanding language, hearing problems, and emotional disturbances. Often affected in Alzheimer's disease and temporal lobe epilepsy.",
+      "childGroups": ["Temporal Lobe", "Medial Temporal"]
+    },
+    "Subcortical": {
+      "summary": "Deep brain structures beneath the cortex that control movement, relay sensory information, and regulate arousal.",
+      "function": "The basal ganglia coordinate movement and habit learning. The thalamus relays sensory and motor signals. The brainstem controls vital functions and arousal.",
+      "location": "Central and deep regions of the brain, surrounded by the cerebral cortex.",
+      "clinical": "Damage can cause movement disorders (Parkinson's, Huntington's), sensory disturbances, sleep problems, and in severe cases, coma.",
+      "childGroups": ["Basal Ganglia", "Thalamus", "Brainstem"]
+    },
+    "Cerebellum": {
+      "summary": "The 'little brain' at the back, essential for motor coordination, balance, and motor learning.",
+      "function": "Fine-tunes movements for precision and timing, maintains balance and posture, and is involved in motor learning like riding a bike. Recent research shows roles in cognition and emotion.",
+      "location": "Posterior and inferior to the cerebral hemispheres, attached to the brainstem.",
+      "clinical": "Damage causes ataxia (uncoordinated movements), tremor, slurred speech, and balance problems. Can be affected by alcohol abuse and certain genetic conditions.",
+      "childGroups": ["Cerebellum"]
+    }
+  },
+  "level1": {
+    "Frontal_Lobe": {
+      "summary": "The largest lobe, spanning the front of the brain, controlling executive function and voluntary movement.",
+      "function": "Contains the motor cortex for movement execution, prefrontal cortex for planning and decision-making, and Broca's area for speech production. Enables personality expression and impulse control.",
+      "location": "Anterior to the central sulcus, comprising about one-third of the cerebral cortex.",
+      "clinical": "Frontal lobe syndrome causes personality changes, poor judgment, and disinhibition. Damage to motor areas causes paralysis; to Broca's area causes speech production deficits.",
+      "childGroups": ["Motor Cortex", "Prefrontal Cortex", "Orbitofrontal Cortex"]
+    },
+    "Parietal_Lobe": {
+      "summary": "The sensory processing hub integrating touch, spatial awareness, and mathematical reasoning.",
+      "function": "Primary somatosensory cortex receives touch and proprioception. Association areas integrate sensory information for spatial awareness, attention, and numerical processing.",
+      "location": "Superior and posterior to the frontal lobe, above the temporal lobe, anterior to the occipital lobe.",
+      "clinical": "Damage can cause sensory loss, spatial neglect, difficulty with mathematics, and problems with hand-eye coordination. Gerstmann syndrome involves finger agnosia and writing difficulties.",
+      "childGroups": ["Somatosensory Cortex", "Parietal Association"]
+    },
+    "Temporal_Lobe": {
+      "summary": "The auditory and semantic processing center, critical for hearing, language, and object recognition.",
+      "function": "Contains primary auditory cortex, Wernicke's area for language comprehension, and regions for face and object recognition. Involved in semantic memory and emotional associations.",
+      "location": "Lateral portion of each hemisphere, below the lateral fissure, at the level of the temples.",
+      "clinical": "Wernicke's aphasia impairs language comprehension. Damage can cause auditory processing deficits, face recognition problems (prosopagnosia), and semantic memory loss.",
+      "childGroups": ["Superior Temporal", "Middle & Inferior Temporal", "Temporal Poles"]
+    },
+    "Occipital_Lobe": {
+      "summary": "The visual processing center at the back of the brain, dedicated entirely to vision.",
+      "function": "Primary visual cortex receives input from the eyes. Higher visual areas process color, motion, form, and object recognition through dorsal and ventral streams.",
+      "location": "Most posterior portion of the brain, above the cerebellum.",
+      "clinical": "Damage causes visual field deficits (cortical blindness) or higher visual processing problems like motion blindness or color blindness of central origin.",
+      "childGroups": ["Primary Visual Cortex", "Visual Association"]
+    },
+    "Cingulate_Cortex": {
+      "summary": "A limbic structure wrapping around the corpus callosum, involved in emotion, attention, and error detection.",
+      "function": "Anterior cingulate monitors errors and conflicts, regulates emotion, and drives motivation. Posterior cingulate is part of the default mode network, involved in self-reflection and memory retrieval.",
+      "location": "Medial surface of each hemisphere, arching over the corpus callosum.",
+      "clinical": "Dysfunction linked to depression, OCD, and ADHD. Damage can cause apathy, emotional blunting, and attention deficits.",
+      "childGroups": ["Anterior Cingulate", "Mid & Posterior Cingulate"]
+    },
+    "Insula": {
+      "summary": "The 'hidden fifth lobe' deep within the lateral sulcus, integrating bodily sensations with emotions.",
+      "function": "Processes interoception (awareness of internal body states), taste, disgust, empathy, and self-awareness. Critical for emotional experience and decision-making.",
+      "location": "Deep within the lateral fissure, covered by the frontal, parietal, and temporal opercula.",
+      "clinical": "Involved in addiction, anxiety disorders, and eating disorders. Damage can impair taste, emotional processing, and body awareness.",
+      "keyRegions": ["Insula_L", "Insula_R"]
+    },
+    "Medial_Temporal": {
+      "summary": "Deep temporal structures essential for memory formation and emotional processing.",
+      "function": "The hippocampus converts short-term to long-term memories. The amygdala processes emotional significance, especially fear. Together they link emotions to memories.",
+      "location": "Medial aspect of the temporal lobe, deep to the temporal cortex.",
+      "clinical": "Hippocampal damage causes amnesia. Amygdala dysfunction is linked to anxiety disorders and PTSD. Both are affected early in Alzheimer's disease.",
+      "childGroups": ["Hippocampal Formation", "Amygdala"]
+    },
+    "Basal_Ganglia": {
+      "summary": "Deep nuclei critical for movement initiation, habit learning, and reward processing.",
+      "function": "The striatum (caudate and putamen) receives cortical input. The pallidum provides output. Together they facilitate wanted movements and inhibit unwanted ones. Also involved in learning habits and processing rewards.",
+      "location": "Deep within the cerebral hemispheres, lateral to the thalamus.",
+      "clinical": "Degeneration causes Parkinson's disease (too little movement) or Huntington's disease (too much movement). Involved in OCD, Tourette's, and addiction.",
+      "childGroups": ["Striatum", "Pallidum & Accumbens"]
+    },
+    "Thalamus": {
+      "summary": "The brain's relay station, routing sensory and motor information to appropriate cortical areas.",
+      "function": "Nearly all sensory information (except smell) passes through thalamic nuclei before reaching cortex. Also relays motor signals and is involved in consciousness and sleep.",
+      "location": "Central brain structure, forming the walls of the third ventricle.",
+      "clinical": "Strokes can cause sensory loss, pain syndromes, or cognitive impairment. Involved in absence seizures and some psychiatric conditions.",
+      "childGroups": ["Anterior Thalamus", "Lateral Thalamus", "Medial Thalamus", "Pulvinar"]
+    },
+    "Brainstem": {
+      "summary": "The vital connection between brain and spinal cord, controlling life-sustaining functions.",
+      "function": "Contains nuclei for cranial nerves, regulates breathing and heart rate, controls arousal and sleep-wake cycles. Houses dopamine and serotonin-producing nuclei that project throughout the brain.",
+      "location": "Between the cerebral hemispheres and spinal cord, anterior to the cerebellum.",
+      "clinical": "Damage can be life-threatening, affecting breathing, consciousness, and cranial nerve function. Contains critical structures for Parkinson's disease (substantia nigra) and depression (raphe nuclei).",
+      "childGroups": ["Midbrain Nuclei", "Raphe Nuclei"]
+    },
+    "Cerebellum": {
+      "summary": "The coordination center containing more neurons than the rest of the brain combined.",
+      "function": "Coordinates movement timing and precision, maintains balance and posture, enables motor learning. Increasingly recognized for roles in cognition, language, and emotional processing.",
+      "location": "Posterior cranial fossa, beneath the occipital lobes, behind the brainstem.",
+      "clinical": "Damage causes cerebellar ataxia with uncoordinated movements, intention tremor, slurred speech, and balance problems. Can be affected by stroke, MS, or alcohol abuse.",
+      "childGroups": ["Cerebellar Hemispheres", "Vermis"]
+    }
+  },
+  "level2": {
+    "Frontal_Motor": {
+      "summary": "The motor strip and associated areas controlling voluntary movement execution.",
+      "function": "Primary motor cortex executes movements via direct connections to spinal cord. Supplementary motor area plans complex sequences. Premotor areas prepare movements based on sensory cues.",
+      "location": "Precentral gyrus and adjacent medial and lateral areas.",
+      "clinical": "Damage causes contralateral weakness or paralysis. Lesions in supplementary motor area can cause difficulty initiating movements.",
+      "keyRegions": ["Precentral_L", "Precentral_R", "Supp_Motor_Area_L", "Supp_Motor_Area_R"]
+    },
+    "Frontal_Prefrontal": {
+      "summary": "The seat of executive function, working memory, and cognitive control.",
+      "function": "Dorsolateral prefrontal cortex supports working memory and cognitive flexibility. Ventrolateral regions involved in response inhibition. Medial regions support self-reflection and social cognition.",
+      "location": "Anterior frontal lobe, in front of the motor areas.",
+      "clinical": "Damage impairs planning, decision-making, and personality. Target for TMS treatment in depression. Abnormal function in ADHD and schizophrenia.",
+      "keyRegions": ["Frontal_Sup_2_L", "Frontal_Mid_2_L", "Frontal_Inf_Oper_L", "Frontal_Sup_Medial_L"]
+    },
+    "Frontal_Orbital": {
+      "summary": "The ventral frontal surface involved in reward processing and emotional decision-making.",
+      "function": "Integrates emotional and reward information into decision-making. Involved in impulse control, social behavior, and representing the value of choices.",
+      "location": "Inferior surface of the frontal lobe, above the orbits of the eyes.",
+      "clinical": "Damage causes disinhibition, poor social judgment, and impulsive behavior. Involved in addiction and eating disorders.",
+      "keyRegions": ["OFCmed_L", "OFCant_L", "OFCpost_L", "Rectus_L"]
+    },
+    "Parietal_Somatosensory": {
+      "summary": "The primary receiving area for touch and body position sense.",
+      "function": "Receives and processes tactile information from the body in a somatotopic map. Integrates touch, pressure, temperature, and proprioception.",
+      "location": "Postcentral gyrus, immediately behind the central sulcus.",
+      "clinical": "Damage causes numbness and difficulty recognizing objects by touch (astereognosis). Sensory homunculus shows disproportionate hand and face representation.",
+      "keyRegions": ["Postcentral_L", "Postcentral_R"]
+    },
+    "Parietal_Association": {
+      "summary": "Higher-order areas integrating sensory information for spatial awareness and attention.",
+      "function": "Superior parietal regions process spatial relationships and guide movements. Inferior regions (angular and supramarginal gyri) involved in language, mathematics, and body schema.",
+      "location": "Posterior parietal cortex, behind the postcentral gyrus.",
+      "clinical": "Damage can cause spatial neglect, apraxia (difficulty with skilled movements), and Gerstmann syndrome (writing, calculation, finger recognition deficits).",
+      "keyRegions": ["Parietal_Sup_L", "Angular_L", "SupraMarginal_L", "Precuneus_L"]
+    },
+    "Temporal_Superior": {
+      "summary": "The auditory processing region containing primary auditory cortex and language areas.",
+      "function": "Heschl's gyrus is primary auditory cortex. Surrounding areas process complex sounds. Left hemisphere contains Wernicke's area for language comprehension.",
+      "location": "Superior temporal gyrus, forming the floor of the lateral fissure.",
+      "clinical": "Damage causes auditory processing deficits. Left-sided damage can cause Wernicke's aphasia with fluent but meaningless speech.",
+      "keyRegions": ["Temporal_Sup_L", "Heschl_L", "Temporal_Sup_R"]
+    },
+    "Temporal_Middle_Inferior": {
+      "summary": "Visual object recognition and semantic processing regions.",
+      "function": "Part of the ventral visual stream. Middle temporal gyrus involved in semantic processing. Inferior temporal and fusiform gyri recognize objects, faces, and words.",
+      "location": "Lateral and inferior surfaces of the temporal lobe.",
+      "clinical": "Damage can cause semantic dementia, prosopagnosia (face blindness), or visual agnosia. Fusiform face area damage specifically impairs face recognition.",
+      "keyRegions": ["Temporal_Mid_L", "Temporal_Inf_L", "Fusiform_L"]
+    },
+    "Temporal_Poles": {
+      "summary": "The anterior tips of the temporal lobes involved in semantic memory and social cognition.",
+      "function": "Store semantic knowledge and support social and emotional processing. Involved in naming and understanding concepts, especially for unique entities like famous people.",
+      "location": "Most anterior portion of the temporal lobe.",
+      "clinical": "Atrophy causes semantic dementia with loss of word and object knowledge. Involved in behavioral variant frontotemporal dementia.",
+      "keyRegions": ["Temporal_Pole_Sup_L", "Temporal_Pole_Mid_L"]
+    },
+    "Occipital_Primary": {
+      "summary": "The first cortical stage of visual processing, receiving direct input from the eyes.",
+      "function": "Calcarine cortex contains V1, which processes basic visual features like orientation and contrast. Cuneus and lingual gyrus contain V2 and V3 for further processing.",
+      "location": "Medial occipital surface around the calcarine sulcus.",
+      "clinical": "Damage causes cortical blindness in the corresponding visual field. Bilateral damage can cause complete cortical blindness with potential for 'blindsight'.",
+      "keyRegions": ["Calcarine_L", "Cuneus_L", "Lingual_L"]
+    },
+    "Occipital_Association": {
+      "summary": "Higher visual areas processing motion, color, and object features.",
+      "function": "Contains V3, V4, V5/MT and other visual areas. Processes specific features like color (V4) and motion (V5). Feeds into dorsal and ventral visual streams.",
+      "location": "Lateral and superior occipital cortex.",
+      "clinical": "Damage can cause selective deficits like motion blindness (akinetopsia) or color processing problems (cerebral achromatopsia).",
+      "keyRegions": ["Occipital_Sup_L", "Occipital_Mid_L", "Occipital_Inf_L"]
+    },
+    "Cingulate_Anterior": {
+      "summary": "The cognitive and emotional control center of the cingulate cortex.",
+      "function": "Monitors errors and conflicts, regulates emotional responses, drives motivation and goal-directed behavior. Subgenual region involved in mood regulation.",
+      "location": "Anterior portion of the cingulate gyrus, surrounding the genu of the corpus callosum.",
+      "clinical": "Hyperactivity linked to anxiety and OCD. Hypoactivity linked to apathy. Target for deep brain stimulation in treatment-resistant depression.",
+      "keyRegions": ["ACC_pre_L", "ACC_sup_L", "ACC_sub_L"]
+    },
+    "Cingulate_Mid_Post": {
+      "summary": "Regions involved in attention, memory retrieval, and self-reflection.",
+      "function": "Middle cingulate involved in motor planning and pain processing. Posterior cingulate is a hub of the default mode network, active during self-reflection and memory retrieval.",
+      "location": "Middle and posterior portions of the cingulate gyrus.",
+      "clinical": "Posterior cingulate dysfunction seen in Alzheimer's disease. Middle cingulate involved in chronic pain conditions.",
+      "keyRegions": ["Cingulate_Mid_L", "Cingulate_Post_L"]
+    },
+    "Hippocampal_Formation": {
+      "summary": "The memory encoding center converting experiences into lasting memories.",
+      "function": "Hippocampus proper encodes episodic and spatial memories. Parahippocampal cortex processes scenes and contexts. Together they form the medial temporal memory system.",
+      "location": "Medial temporal lobe, along the floor of the temporal horn of the lateral ventricle.",
+      "clinical": "Damage causes anterograde amnesia. First region affected in Alzheimer's disease. Can generate new neurons throughout life (neurogenesis).",
+      "keyRegions": ["Hippocampus_L", "Hippocampus_R", "ParaHippocampal_L"]
+    },
+    "Amygdala_Complex": {
+      "summary": "The emotional significance detector, especially for fear and threat.",
+      "function": "Rapidly evaluates stimuli for emotional significance. Modulates memory consolidation for emotional events. Involved in fear learning and social behavior.",
+      "location": "Anterior medial temporal lobe, in front of the hippocampus.",
+      "clinical": "Hyperactivity linked to anxiety and PTSD. Damage impairs fear recognition and emotional memory. Involved in autism and psychopathy.",
+      "keyRegions": ["Amygdala_L", "Amygdala_R"]
+    },
+    "Striatum": {
+      "summary": "The input nuclei of the basal ganglia, receiving cortical projections.",
+      "function": "Caudate nucleus involved in cognitive functions and goal-directed behavior. Putamen more involved in motor control and habit learning. Together they gate cortical signals.",
+      "location": "Deep in the cerebral hemispheres, lateral to the internal capsule.",
+      "clinical": "Caudate atrophy characteristic of Huntington's disease. Putamen affected in Parkinson's disease. Both involved in addiction circuitry.",
+      "keyRegions": ["Caudate_L", "Putamen_L", "Caudate_R", "Putamen_R"]
+    },
+    "Pallidum_Accumbens": {
+      "summary": "Output and reward nuclei of the basal ganglia system.",
+      "function": "Globus pallidus provides major output of basal ganglia to thalamus. Nucleus accumbens is central to reward and motivation, receiving dopamine from VTA.",
+      "location": "Medial to the putamen. Accumbens at the junction of caudate and putamen.",
+      "clinical": "Pallidum is target for deep brain stimulation in movement disorders. Accumbens central to addiction and depression pathophysiology.",
+      "keyRegions": ["Pallidum_L", "N_Acc_L", "Pallidum_R", "N_Acc_R"]
+    },
+    "Thalamus_Anterior": {
+      "summary": "Limbic thalamic nuclei involved in memory and emotion.",
+      "function": "Anterior nuclei part of Papez circuit for memory. Ventroanterior nucleus relays basal ganglia output to frontal cortex for motor planning.",
+      "location": "Anterior portion of the thalamus.",
+      "clinical": "Damage can cause memory impairment. Part of circuits affected in Korsakoff syndrome.",
+      "keyRegions": ["Thal_AV_L", "Thal_VA_L"]
+    },
+    "Thalamus_Lateral": {
+      "summary": "Sensory and motor relay nuclei of the thalamus.",
+      "function": "Ventral lateral nucleus relays motor information from cerebellum and basal ganglia. VPL relays somatosensory information. LGN relays visual information to occipital cortex.",
+      "location": "Lateral portion of the thalamus.",
+      "clinical": "Strokes can cause contralateral sensory loss or thalamic pain syndrome. LGN lesions cause visual field defects.",
+      "keyRegions": ["Thal_VL_L", "Thal_VPL_L", "Thal_LGN_L"]
+    },
+    "Thalamus_Medial": {
+      "summary": "Nuclei involved in cognition, attention, and arousal.",
+      "function": "Mediodorsal nucleus connects with prefrontal cortex for executive function. Intralaminar nuclei involved in arousal and attention. MGN relays auditory information.",
+      "location": "Medial portion of the thalamus.",
+      "clinical": "Mediodorsal damage can cause cognitive impairment and personality changes. Intralaminar lesions can affect consciousness.",
+      "keyRegions": ["Thal_MDm_L", "Thal_MDl_L", "Thal_IL_L", "Thal_MGN_L"]
+    },
+    "Thalamus_Pulvinar": {
+      "summary": "The largest thalamic nucleus, involved in visual attention and integration.",
+      "function": "Integrates visual, auditory, and somatosensory information. Critical for visual attention and filtering relevant information. Connects extensively with association cortex.",
+      "location": "Posterior thalamus, overhanging the midbrain.",
+      "clinical": "Damage can cause visual attention deficits and difficulty filtering distractions.",
+      "keyRegions": ["Thal_PuM_L", "Thal_PuA_L", "Thal_PuL_L", "Thal_PuI_L"]
+    },
+    "Midbrain_Nuclei": {
+      "summary": "Dopaminergic and motor control nuclei of the midbrain.",
+      "function": "Substantia nigra produces dopamine for movement control. VTA produces dopamine for reward and motivation. Red nucleus involved in motor coordination.",
+      "location": "Midbrain, between pons and diencephalon.",
+      "clinical": "Substantia nigra degeneration causes Parkinson's disease. VTA dysfunction linked to depression and addiction. Locus coeruleus involved in arousal and attention disorders.",
+      "keyRegions": ["SN_pc_L", "VTA_L", "Red_N_L", "LC_L"]
+    },
+    "Brainstem_Raphe": {
+      "summary": "Serotonin-producing nuclei projecting throughout the brain.",
+      "function": "Major source of serotonin in the brain. Dorsal raphe projects to cortex and limbic system. Median raphe projects to hippocampus. Regulate mood, sleep, and appetite.",
+      "location": "Midline of the brainstem, from midbrain through pons.",
+      "clinical": "Target of antidepressant medications. Dysfunction linked to depression, anxiety, and sleep disorders.",
+      "keyRegions": ["Raphe_D", "Raphe_M"]
+    },
+    "Cerebellum_Hemispheres": {
+      "summary": "The lateral cerebellar regions coordinating limb movements.",
+      "function": "Receive input from cerebral cortex via pons. Coordinate timing and precision of limb movements. Involved in motor learning and cognitive functions through connections with prefrontal cortex.",
+      "location": "Lateral portions of the cerebellum.",
+      "clinical": "Damage causes ipsilateral limb ataxia with uncoordinated reaching and intention tremor. Can also affect cognition and language.",
+      "keyRegions": ["Cerebellum_Crus1_L", "Cerebellum_6_L", "Cerebellum_8_L"]
+    },
+    "Cerebellum_Vermis": {
+      "summary": "The midline cerebellar structure controlling posture and balance.",
+      "function": "Receives vestibular and spinal input. Controls axial muscles for posture and balance. Coordinates eye movements and gait.",
+      "location": "Midline of the cerebellum, between the hemispheres.",
+      "clinical": "Damage causes truncal ataxia with difficulty sitting and standing, wide-based gait, and eye movement abnormalities.",
+      "keyRegions": ["Vermis_6", "Vermis_7", "Vermis_8", "Vermis_9"]
+    }
+  }
+}

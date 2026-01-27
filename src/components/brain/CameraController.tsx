@@ -52,12 +52,18 @@ export function CameraController({
         camera.position.set(0, dist, 0);
         camera.up.set(0, 0, -1);
         break;
+      case 'inferior':
+        camera.position.set(0, -dist, 0);
+        camera.up.set(0, 0, 1);
+        break;
       case 'anterior':
-        camera.position.set(0, 0, dist);
+        // Front view (face side) - swapped from original
+        camera.position.set(0, 0, -dist);
         camera.up.set(0, 1, 0);
         break;
       case 'posterior':
-        camera.position.set(0, 0, -dist);
+        // Back view (back of head) - swapped from original
+        camera.position.set(0, 0, dist);
         camera.up.set(0, 1, 0);
         break;
     }

@@ -16,7 +16,7 @@ export function BrainCanvas() {
   const {
     selectedRegion,
     hoveredRegion,
-    setSelectedRegion,
+    highlightedGroup,
     setHoveredRegion,
     setMeshNames,
     currentView,
@@ -24,6 +24,9 @@ export function BrainCanvas() {
     hemisphereView,
     showConnections,
     connectionThreshold,
+    detailLevel,
+    selection,
+    selectNode,
   } = useBrainStore();
 
   const r = modelRadius ?? 2.5;
@@ -86,10 +89,12 @@ export function BrainCanvas() {
 
           {/* Brain model */}
           <BrainModel
-            selectedRegion={selectedRegion}
             hoveredRegion={hoveredRegion}
+            highlightedGroup={highlightedGroup}
             hemisphereView={hemisphereView}
-            onSelect={setSelectedRegion}
+            detailLevel={detailLevel}
+            selection={selection}
+            onSelectNode={selectNode}
             onHover={setHoveredRegion}
             onMetrics={(m: ModelMetrics) => {
               setModelRadius((prev) => (prev === null ? m.radius : prev));

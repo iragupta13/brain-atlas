@@ -102,3 +102,108 @@
   from { opacity: 0; transform: translateY(-4px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Semantic Search - Function Cards */
+.functionCard {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  animation: fadeIn 0.3s var(--ease-out-expo);
+}
+
+.functionCard:last-child {
+  margin-bottom: 0;
+}
+
+.functionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.functionName {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--glow-cyan);
+  letter-spacing: 0.3px;
+}
+
+.functionExplanation {
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+  margin: 0 0 14px 0;
+}
+
+/* Region Sections */
+.regionSection {
+  margin-top: 12px;
+}
+
+.regionLabel {
+  display: block;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.regionList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.regionButton {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: rgba(255, 255, 255, 0.03);
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.regionButton.primary {
+  color: var(--text-primary);
+}
+
+.regionButton.primary:hover {
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--glow-cyan-dim);
+  color: var(--glow-cyan);
+}
+
+.regionButton.secondary {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.regionButton.secondary:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+}
+
+.regionButton.selected {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 240, 255, 0.15) 0%,
+    rgba(0, 196, 212, 0.08) 100%
+  );
+  border-color: var(--glow-cyan);
+  color: var(--glow-cyan);
+  font-weight: 500;
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+}
+
+.regionButton.secondary.selected {
+  opacity: 1;
+}

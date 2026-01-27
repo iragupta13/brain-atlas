@@ -355,7 +355,7 @@
     "id": 33,
     "displayName": "Insula (Left)",
     "hemisphere": "left",
-    "group": "Other",
+    "group": "Insula",
     "centroid": [
       -34.9,
       4.9,
@@ -366,7 +366,7 @@
     "id": 34,
     "displayName": "Insula (Right)",
     "hemisphere": "right",
-    "group": "Other",
+    "group": "Insula",
     "centroid": [
       39.2,
       4.5,

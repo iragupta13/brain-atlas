@@ -1,0 +1,263 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 14px 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(21, 27, 36, 0.6) 0%,
+    rgba(13, 17, 23, 0.8) 100%
+  );
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-family: 'Syne', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Camera Presets */
+.presets {
+  display: flex;
+  gap: 4px;
+  flex-wrap: nowrap;
+}
+
+.preset {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 4px;
+  background: linear-gradient(
+    180deg,
+    rgba(21, 27, 36, 0.6) 0%,
+    rgba(13, 17, 23, 0.8) 100%
+  );
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  transition: all 0.25s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.preset:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 34, 45, 0.8) 0%,
+    rgba(21, 27, 36, 0.9) 100%
+  );
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.preset.active {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 240, 255, 0.1) 0%,
+    rgba(0, 196, 212, 0.05) 100%
+  );
+  border-color: var(--glow-cyan);
+  color: var(--glow-cyan);
+  box-shadow: 0 0 12px rgba(0, 240, 255, 0.1);
+}
+
+.icon {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.text {
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  white-space: nowrap;
+}
+
+/* Hemisphere Buttons */
+.hemisphereButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.hemisphereButton {
+  flex: 1;
+  padding: 8px 6px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-tertiary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.hemisphereButton:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.hemisphereButton.active {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 240, 255, 0.12) 0%,
+    rgba(0, 196, 212, 0.06) 100%
+  );
+  border-color: var(--glow-cyan);
+  color: var(--glow-cyan);
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.1);
+}
+
+/* Detail Level Slider */
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider {
+  width: 100%;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: var(--border-subtle);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 8px var(--accent-primary);
+}
+
+.slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: var(--accent-primary);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.levelLabels {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.levelLabel {
+  flex: 1;
+  padding: 4px 2px;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.levelLabel:hover {
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.levelLabel.active {
+  color: var(--accent-primary);
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--accent-primary);
+}
+
+.description {
+  margin: 0;
+  font-size: 10px;
+  color: var(--text-tertiary);
+  text-align: center;
+}
+
+/* Reset Button */
+.resetButton {
+  margin-top: 4px;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-tertiary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.resetButton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(168, 85, 247, 0.1) 0%,
+    rgba(0, 240, 255, 0.1) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.resetButton:hover {
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.resetButton:hover::before {
+  opacity: 1;
+}
+
+.resetButton span {
+  position: relative;
+  z-index: 1;
+}

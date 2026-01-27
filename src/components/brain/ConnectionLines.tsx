@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import * as THREE from 'three';
 import regionsData from '../../data/regions.json';
 import connectivityData from '../../data/connectivity.json';
+import { MODEL_SCALE } from '../../constants/model';
 
 interface ConnectionLinesProps {
   selectedRegion: string;
@@ -42,10 +43,9 @@ export function ConnectionLines({ selectedRegion, threshold }: ConnectionLinesPr
 
       const otherCentroid = new THREE.Vector3(...otherData.centroid);
 
-      // Scale centroids to match model coordinates (must match MODEL_SCALE in BrainModel)
-      const scaleFactor = 0.02;
-      const start = selectedCentroid.clone().multiplyScalar(scaleFactor);
-      const end = otherCentroid.clone().multiplyScalar(scaleFactor);
+      // Scale centroids to match model coordinates
+      const start = selectedCentroid.clone().multiplyScalar(MODEL_SCALE);
+      const end = otherCentroid.clone().multiplyScalar(MODEL_SCALE);
 
       // Create curved path between points
       const midpoint = start.clone().add(end).multiplyScalar(0.5);

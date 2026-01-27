@@ -2,12 +2,12 @@ import { AppLayout } from './components/layout';
 import { BrainCanvas } from './components/brain';
 import { SearchInput, SearchResults } from './components/search';
 import { RegionPanel } from './components/region-info';
-import { ViewPresets, RegionBrowser, ColorLegend, HemisphereToggle } from './components/ui';
+import { ViewControls, RegionBrowser, ColorLegend } from './components/ui';
 import { useBrainStore } from './stores/useBrainStore';
 import './index.css';
 
 export default function App() {
-  const selectedRegion = useBrainStore((s) => s.selectedRegion);
+  const selection = useBrainStore((s) => s.selection);
 
   return (
     <AppLayout
@@ -23,11 +23,8 @@ export default function App() {
           <SearchInput />
           <SearchResults />
 
-          {/* View Controls */}
-          <ViewPresets />
-
-          {/* Hemisphere Toggle */}
-          <HemisphereToggle />
+          {/* View Controls (Camera, Internal View, Detail Level, Reset) */}
+          <ViewControls />
 
           {/* Color Legend */}
           <ColorLegend />
@@ -36,7 +33,7 @@ export default function App() {
           <RegionBrowser />
         </>
       }
-      rightPanel={selectedRegion ? <RegionPanel /> : null}
+      rightPanel={selection ? <RegionPanel /> : null}
     >
       {/* 3D Canvas */}
       <div className="canvas-container">

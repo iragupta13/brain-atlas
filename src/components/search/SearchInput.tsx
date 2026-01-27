@@ -2,11 +2,7 @@ import { useEffect, useState } from 'react';
 import { useBrainStore } from '../../stores/useBrainStore';
 import styles from './SearchInput.module.css';
 
-interface SearchInputProps {
-  onSearch?: (query: string) => void;
-}
-
-export function SearchInput({ onSearch }: SearchInputProps) {
+export function SearchInput() {
   const { searchQuery, setSearchQuery } = useBrainStore();
   const [localValue, setLocalValue] = useState(searchQuery);
 
@@ -14,11 +10,10 @@ export function SearchInput({ onSearch }: SearchInputProps) {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setSearchQuery(localValue);
-      onSearch?.(localValue);
     }, 150);
 
     return () => clearTimeout(timeout);
-  }, [localValue, setSearchQuery, onSearch]);
+  }, [localValue, setSearchQuery]);
 
   // Sync with external changes
   useEffect(() => {
@@ -30,7 +25,7 @@ export function SearchInput({ onSearch }: SearchInputProps) {
       <input
         type="text"
         className={styles.input}
-        placeholder="Search regions... (try 'left hippocampus')"
+        placeholder="Search regions or ask a question... (try 'memory' or 'motor control')"
         value={localValue}
         onChange={(e) => setLocalValue(e.target.value)}
       />

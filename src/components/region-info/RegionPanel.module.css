@@ -146,16 +146,8 @@
   font-size: 12px;
   font-weight: 600;
   color: var(--glow-cyan);
-  display: flex;
-  align-items: center;
-  gap: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.sectionIcon {
-  font-size: 14px;
-  opacity: 0.8;
 }
 
 .sectionContent {
@@ -202,18 +194,6 @@
   padding: 48px 24px;
   text-align: center;
   color: var(--text-muted);
-}
-
-.emptyIcon {
-  font-size: 56px;
-  margin-bottom: 20px;
-  opacity: 0.3;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
 }
 
 .empty p {

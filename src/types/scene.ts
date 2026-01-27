@@ -1,6 +1,6 @@
 import type * as THREE from 'three';
 
-export type ViewPreset = 'lateral-left' | 'lateral-right' | 'superior' | 'anterior' | 'posterior';
+export type ViewPreset = 'lateral-left' | 'lateral-right' | 'superior' | 'inferior' | 'anterior' | 'posterior';
 
 export interface ViewSnapshot {
   cameraPosition: THREE.Vector3;

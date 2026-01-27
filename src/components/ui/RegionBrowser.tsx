@@ -22,7 +22,7 @@ const groupNames: Record<string, string> = {
 };
 
 export function RegionBrowser() {
-  const { meshNames, selectedRegion, setSelectedRegion } = useBrainStore();
+  const { meshNames, selection, selectNode } = useBrainStore();
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set());
 
   // Group regions by category
@@ -100,8 +100,8 @@ export function RegionBrowser() {
                 {groupedRegions[group].map((name) => (
                   <button
                     key={name}
-                    className={`${styles.regionItem} ${selectedRegion === name ? styles.selected : ''}`}
-                    onClick={() => setSelectedRegion(name)}
+                    className={`${styles.regionItem} ${selection?.nodeId === name ? styles.selected : ''}`}
+                    onClick={() => selectNode(name, 2)}
                   >
                     {formatRegionName(name)}
                   </button>
