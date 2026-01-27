@@ -77,7 +77,7 @@ export function RegionBrowser() {
   return (
     <div className={styles.container}>
       <div className={styles.label}>Browse by Region</div>
-      <div className={styles.groups}>
+      <div className={`${styles.groups} ${expandedGroups.size > 0 ? styles.scrollable : ''}`}>
         {orderedGroups.map((group) => (
           <div key={group} className={styles.group}>
             <button
