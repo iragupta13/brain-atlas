@@ -171,8 +171,14 @@ export function BrainModel({
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;
-      } else if (highlightedGroup && !inHighlightedGroup) {
-        // Dim regions not in the highlighted group (ColorLegend click feature only)
+      } else if (highlightedGroup && inHighlightedGroup) {
+        // Meshes in the highlighted group stay at full opacity (even if there's a selection)
+        mat.color.set(levelColor);
+        mat.transparent = false;
+        mat.opacity = 1;
+        mat.depthWrite = true;
+      } else if (selection || highlightedGroup) {
+        // Dim non-selected regions when something is selected, or non-highlighted when group is highlighted
         mat.color.set(levelColor);
         mat.transparent = true;
         mat.opacity = DIMMED_OPACITY;
@@ -215,8 +221,8 @@ export function BrainModel({
         continue;
       }
 
-      // Only dim based on highlightedGroup (ColorLegend click), not selection
-      const shouldDim = highlightedGroup && !inHighlightedGroup;
+      // Dim when there's a selection (and this mesh isn't selected/in highlighted group) or when using ColorLegend highlight
+      const shouldDim = (selection && !(highlightedGroup && inHighlightedGroup)) || (highlightedGroup && !inHighlightedGroup);
 
       if (hemisphereView === 'both') {
         // Full brain - only dim if using ColorLegend highlight
