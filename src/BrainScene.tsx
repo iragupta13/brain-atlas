@@ -129,7 +129,7 @@ function ClickableModel({
   onMetrics?: (m: ModelMetrics) => void;
   onMeshNames?: (names: string[]) => void;
 }) {
-  const gltf = useGLTF('./models/brain_atlas.glb')
+  const gltf = useGLTF(`${import.meta.env.BASE_URL}models/brain_atlas.glb`)
 
   // Clone the scene so we can safely mutate materials and keep stable hierarchy
   const scene = useMemo(() => gltf.scene.clone(true), [gltf.scene]);
@@ -165,7 +165,7 @@ function ClickableModel({
 
   const meshes = useMemo(() => {
     const out: THREE.Mesh[] = [];
-    scene.traverse((obj) => {
+    scene.traverse((obj: THREE.Object3D) => {
       if ((obj as THREE.Mesh).isMesh) {
         if (HIDDEN_REGIONS.includes(obj.name)) {
           obj.visible = false;
@@ -308,5 +308,5 @@ export function BrainScene({
     </div>
   );
 }
-useGLTF('./models/brain_atlas.glb')
+useGLTF.preload(`${import.meta.env.BASE_URL}models/brain_atlas.glb`)
 
