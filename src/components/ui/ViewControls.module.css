@@ -218,6 +218,42 @@
   text-align: center;
 }
 
+.toggleButton {
+  width: 100%;
+  padding: 9px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-family: 'Outfit', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s var(--ease-out-expo);
+}
+
+.toggleButton:hover:enabled {
+  border-color: var(--border-default);
+  color: var(--text-primary);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.toggleButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.toggleButton.activeToggle {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 240, 255, 0.12) 0%,
+    rgba(0, 196, 212, 0.06) 100%
+  );
+  border-color: var(--glow-cyan);
+  color: var(--glow-cyan);
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.1);
+}
+
 /* Reset Button */
 .resetButton {
   margin-top: 4px;

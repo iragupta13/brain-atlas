@@ -1,10 +1,11 @@
 import { useThree } from '@react-three/fiber';
-import { useEffect, useRef } from 'react';
+import { useEffect, useEffectEvent, useRef } from 'react';
 import * as THREE from 'three';
+import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import type { ViewPreset, ViewSnapshot } from '../../types';
 
 interface CameraControllerProps {
-  controlsRef: React.MutableRefObject<any>;
+  controlsRef: React.MutableRefObject<OrbitControlsImpl | null>;
   snapshotRef: React.MutableRefObject<ViewSnapshot | null>;
   radius: number | null;
   view: ViewPreset;
@@ -23,17 +24,17 @@ export function CameraController({
   const lastView = useRef<ViewPreset | null>(null);
 
   // Calculate camera distance for a given radius
-  const calculateDistance = (r: number): number => {
+  const calculateDistance = useEffectEvent((r: number): number => {
     const vFov = THREE.MathUtils.degToRad((camera as THREE.PerspectiveCamera).fov);
     const aspect = (camera as THREE.PerspectiveCamera).aspect || size.width / size.height;
     const distV = r / Math.tan(vFov / 2);
     const hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
     const distH = r / Math.tan(hFov / 2);
     return Math.max(distV, distH) * 1.1;
-  };
+  });
 
   // Apply a specific view preset
-  const applyViewPreset = (preset: ViewPreset, dist: number) => {
+  const applyViewPreset = useEffectEvent((preset: ViewPreset, dist: number) => {
     const controls = controlsRef.current;
     if (!controls) return;
 
@@ -71,7 +72,7 @@ export function CameraController({
     camera.lookAt(0, 0, 0);
     camera.updateProjectionMatrix();
     controls.update();
-  };
+  });
 
   // Initialize camera on first load
   useEffect(() => {
@@ -92,7 +93,7 @@ export function CameraController({
 
     hasInitialized.current = true;
     lastView.current = view;
-  }, [radius, view]);
+  }, [radius, view, camera, controlsRef, snapshotRef]);
 
   // Handle view changes
   useEffect(() => {
@@ -119,7 +120,7 @@ export function CameraController({
 
     controls.target.copy(snap.target);
     controls.update();
-  }, [resetKey]);
+  }, [resetKey, camera, controlsRef, snapshotRef]);
 
   return null;
 }

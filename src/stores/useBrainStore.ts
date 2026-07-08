@@ -53,6 +53,7 @@ interface BrainState {
   setMeshNames: (names: string[]) => void;
   setHighlightedGroup: (group: string | null) => void;
   clearSelection: () => void;
+  clearSearch: () => void;
 
   // New actions for detail level
   setDetailLevel: (level: DetailLevel) => void;
@@ -107,9 +108,9 @@ export const useBrainStore = create<BrainState>((set, get) => ({
     selectedRegion: null,
     selection: null,
     highlightedGroup: null,
-    searchQuery: '',
     showConnections: false
   }),
+  clearSearch: () => set({ searchQuery: '' }),
 
   // New actions for detail level
   setDetailLevel: (level) => {
@@ -118,7 +119,7 @@ export const useBrainStore = create<BrainState>((set, get) => ({
 
     if (selection) {
       // Remap the selection to the new level
-      const newNodeId = remapSelectionToLevel(selection.nodeId, currentLevel, level);
+      const newNodeId = remapSelectionToLevel(selection.nodeId, selection.level, level);
       if (newNodeId) {
         const newMeshes = getMeshesForNode(newNodeId, level);
         set({
@@ -150,6 +151,7 @@ export const useBrainStore = create<BrainState>((set, get) => ({
     }
 
     set({
+      detailLevel: currentLevel,
       selection: { level: currentLevel, nodeId, meshes },
       // For backward compatibility with level 2 (detailed)
       selectedRegion: currentLevel === 2 ? nodeId : null,

@@ -67,6 +67,7 @@ export function RegionBrowser() {
     'Occipital_Lobe',
     'Medial_Temporal',
     'Cingulate_Cortex',
+    'Insula',
     'Basal_Ganglia',
     'Thalamus',
     'Cerebellum',

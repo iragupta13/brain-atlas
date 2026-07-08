@@ -34,6 +34,7 @@ export default function App() {
         </>
       }
       rightPanel={selection ? <RegionPanel /> : null}
+      rightPanelKey={selection ? `${selection.level}:${selection.nodeId}` : null}
     >
       {/* 3D Canvas */}
       <div className="canvas-container">

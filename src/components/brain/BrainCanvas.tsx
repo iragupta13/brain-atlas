@@ -1,6 +1,7 @@
 import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { Html, OrbitControls, useProgress } from '@react-three/drei';
 import { Suspense, useRef, useState } from 'react';
+import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import { BrainModel } from './BrainModel';
 import { ConnectionLines } from './ConnectionLines';
 import { CameraController } from './CameraController';
@@ -9,7 +10,7 @@ import type { ModelMetrics, ViewSnapshot } from '../../types';
 import styles from './BrainCanvas.module.css';
 
 export function BrainCanvas() {
-  const controlsRef = useRef<any>(null);
+  const controlsRef = useRef<OrbitControlsImpl | null>(null);
   const initialViewRef = useRef<ViewSnapshot | null>(null);
   const [modelRadius, setModelRadius] = useState<number | null>(null);
 
@@ -78,6 +79,8 @@ export function BrainCanvas() {
         />
 
         <Suspense fallback={null}>
+          <LoadingOverlay />
+
           {/* Camera controller for view presets and reset */}
           <CameraController
             controlsRef={controlsRef}
@@ -128,5 +131,19 @@ export function BrainCanvas() {
         />
       </Canvas>
     </div>
+  );
+}
+
+function LoadingOverlay() {
+  const { active, progress } = useProgress();
+
+  if (!active) {
+    return null;
+  }
+
+  return (
+    <Html center>
+      <div className={styles.loading}>Loading brain atlas... {Math.round(progress)}%</div>
+    </Html>
   );
 }

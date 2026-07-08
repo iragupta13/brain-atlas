@@ -1,5 +1,6 @@
 import { useGLTF } from '@react-three/drei';
-import { useEffect, useMemo } from 'react';
+import { type ThreeEvent } from '@react-three/fiber';
+import { useEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
 import type { ModelMetrics } from '../../types';
 import type { HemisphereView, Selection } from '../../stores/useBrainStore';
@@ -68,6 +69,7 @@ export function BrainModel({
   onMeshNames,
 }: BrainModelProps) {
   const gltf = useGLTF(`${import.meta.env.BASE_URL}models/brain_atlas.glb`)
+  const meshesRef = useRef<THREE.Mesh[]>([]);
 
   // Clone scene for safe manipulation
   const scene = useMemo(() => gltf.scene.clone(true), [gltf.scene]);
@@ -97,28 +99,21 @@ export function BrainModel({
   }, [onMetrics, radius]);
 
   // Collect meshes
-  const meshes = useMemo(() => {
-    const out: THREE.Mesh[] = [];
+  useEffect(() => {
+    const nextMeshes: THREE.Mesh[] = [];
+
     scene.traverse((obj) => {
-      if ((obj as THREE.Mesh).isMesh) {
-        if (HIDDEN_REGIONS.includes(obj.name)) {
-          obj.visible = false;
-        } else {
-          out.push(obj as THREE.Mesh);
-        }
+      if (!(obj as THREE.Mesh).isMesh) {
+        return;
       }
-    });
-    return out;
-  }, [scene]);
 
-  // Report mesh names
-  useEffect(() => {
-    onMeshNames?.(meshes.map((m) => m.name));
-  }, [meshes, onMeshNames]);
+      const mesh = obj as THREE.Mesh;
+      if (HIDDEN_REGIONS.includes(mesh.name)) {
+        mesh.visible = false;
+        return;
+      }
 
-  // Initialize materials with lobe-based coloring and store original raycast
-  useEffect(() => {
-    for (const mesh of meshes) {
+      nextMeshes.push(mesh);
       const region = regions[mesh.name];
       const groupColor = LOBE_GROUPS[region?.group]?.color || LOBE_GROUPS.Insula.color;
 
@@ -134,12 +129,25 @@ export function BrainModel({
       if (!mesh.userData.originalRaycast) {
         mesh.userData.originalRaycast = mesh.raycast.bind(mesh);
       }
-    }
-  }, [meshes]);
+    });
+
+    meshesRef.current = nextMeshes;
+    onMeshNames?.(nextMeshes.map((mesh) => mesh.name));
+
+    return () => {
+      for (const mesh of nextMeshes) {
+        if (mesh.material instanceof THREE.Material) {
+          mesh.material.dispose();
+        }
+      }
+    };
+  }, [scene, onMeshNames]);
 
 
   // Update highlighting and group filtering based on detail level
   useEffect(() => {
+    const meshes = meshesRef.current;
+    /* eslint-disable react-hooks/immutability */
     for (const mesh of meshes) {
       const mat = mesh.material as THREE.MeshStandardMaterial;
       const region = regions[mesh.name];
@@ -192,10 +200,13 @@ export function BrainModel({
       }
       mat.needsUpdate = true;
     }
-  }, [meshes, selection, hoveredRegion, highlightedGroup, detailLevel]);
+    /* eslint-enable react-hooks/immutability */
+  }, [selection, hoveredRegion, highlightedGroup, detailLevel]);
 
   // Update hemisphere visibility with transparency for interior view
   useEffect(() => {
+    const meshes = meshesRef.current;
+    /* eslint-disable react-hooks/immutability */
     for (const mesh of meshes) {
       if (HIDDEN_REGIONS.includes(mesh.name)) {
         mesh.visible = false;
@@ -261,10 +272,13 @@ export function BrainModel({
       }
       mat.needsUpdate = true;
     }
-  }, [meshes, hemisphereView, highlightedGroup, selection, hoveredRegion, detailLevel]);
+    /* eslint-enable react-hooks/immutability */
+  }, [hemisphereView, highlightedGroup, selection, hoveredRegion, detailLevel]);
 
   // Update raycasting - disable on hidden/dimmed meshes so clicks pass through
   useEffect(() => {
+    const meshes = meshesRef.current;
+    /* eslint-disable react-hooks/immutability */
     for (const mesh of meshes) {
       const mat = mesh.material as THREE.MeshStandardMaterial;
       const originalRaycast = mesh.userData.originalRaycast;
@@ -278,7 +292,8 @@ export function BrainModel({
         mesh.raycast = originalRaycast;
       }
     }
-  }, [meshes, hemisphereView, selection, hoveredRegion, detailLevel]);
+    /* eslint-enable react-hooks/immutability */
+  }, [hemisphereView, selection, hoveredRegion, detailLevel]);
 
   return (
     <group
@@ -288,7 +303,7 @@ export function BrainModel({
     >
       <primitive
         object={scene}
-        onPointerDown={(e: any) => {
+        onPointerDown={(e: ThreeEvent<PointerEvent>) => {
           e.stopPropagation();
           const name = e.object?.name;
           if (!name) return;
@@ -308,7 +323,7 @@ export function BrainModel({
             onSelectNode(nodeId);
           }
         }}
-        onPointerOver={(e: any) => {
+        onPointerOver={(e: ThreeEvent<PointerEvent>) => {
           e.stopPropagation();
           const name = e.object?.name;
           if (name) {
@@ -335,4 +350,3 @@ export function BrainModel({
 }
 
 useGLTF.preload(`${import.meta.env.BASE_URL}models/brain_atlas.glb`)
-
