@@ -3,10 +3,9 @@ import { Html, OrbitControls, useProgress } from '@react-three/drei';
 import { Component, Suspense, useRef, useState, type ReactNode } from 'react';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import { BrainModel } from './BrainModel';
-import { ConnectionLines } from './ConnectionLines';
 import { CameraController } from './CameraController';
 import { useBrainStore } from '../../stores/useBrainStore';
-import type { ModelMetrics, ViewSnapshot } from '../../types';
+import type { ViewSnapshot } from '../../types';
 import styles from './BrainCanvas.module.css';
 
 export function BrainCanvas() {
@@ -16,7 +15,6 @@ export function BrainCanvas() {
   const [webglSupported] = useState(checkWebGLSupport);
 
   const {
-    selectedRegion,
     hoveredRegion,
     highlightedGroup,
     setHoveredRegion,
@@ -24,8 +22,6 @@ export function BrainCanvas() {
     currentView,
     resetViewTrigger,
     hemisphereView,
-    showConnections,
-    connectionThreshold,
     detailLevel,
     selection,
     selectNode,
@@ -103,18 +99,11 @@ export function BrainCanvas() {
               selection={selection}
               onSelectNode={selectNode}
               onHover={setHoveredRegion}
-              onMetrics={(m: ModelMetrics) => {
+              onMetrics={(m) => {
                 setModelRadius((prev) => (prev === null ? m.radius : prev));
               }}
               onMeshNames={setMeshNames}
             />
-
-            {showConnections && selectedRegion && (
-              <ConnectionLines
-                selectedRegion={selectedRegion}
-                threshold={connectionThreshold}
-              />
-            )}
           </Suspense>
 
           <OrbitControls

@@ -27,11 +27,6 @@ export function ViewControls() {
     setHemisphereView,
     detailLevel,
     setDetailLevel,
-    selectedRegion,
-    showConnections,
-    toggleConnections,
-    connectionThreshold,
-    setConnectionThreshold,
     resetView,
     clearSelection,
     clearSearch,
@@ -43,7 +38,6 @@ export function ViewControls() {
   };
 
   const levelInfo = DETAIL_LEVEL_LABELS[detailLevel];
-  const connectivityEnabled = Boolean(selectedRegion) && detailLevel === 2;
 
   return (
     <div className={styles.container}>
@@ -110,40 +104,6 @@ export function ViewControls() {
           </div>
         </div>
         <p className={styles.description}>{levelInfo.description}</p>
-      </div>
-
-      <div className={styles.section}>
-        <div className={styles.label}>Connections</div>
-        <button
-          className={`${styles.toggleButton} ${showConnections ? styles.activeToggle : ''}`}
-          onClick={() => {
-            if (connectivityEnabled) {
-              toggleConnections();
-            }
-          }}
-          disabled={!connectivityEnabled}
-        >
-          {showConnections ? 'Hide connection map' : 'Show connection map'}
-        </button>
-        {connectivityEnabled ? (
-          <>
-            <input
-              type="range"
-              min={0.2}
-              max={0.9}
-              step={0.1}
-              value={connectionThreshold}
-              onChange={(e) => setConnectionThreshold(parseFloat(e.target.value))}
-              className={styles.slider}
-              aria-label="Connection strength threshold"
-            />
-            <p className={styles.description}>
-              Connection strength threshold: {connectionThreshold.toFixed(1)}
-            </p>
-          </>
-        ) : (
-          <p className={styles.description}>Select an individual region to explore its strongest connections.</p>
-        )}
       </div>
 
       {/* Reset Button */}

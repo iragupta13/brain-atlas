@@ -30,10 +30,6 @@ interface BrainState {
   resetViewTrigger: number;
   hemisphereView: HemisphereView;
 
-  // Connectivity
-  showConnections: boolean;
-  connectionThreshold: number;
-
   // UI
   regionPanelExpanded: boolean;
 
@@ -47,8 +43,6 @@ interface BrainState {
   setCurrentView: (view: ViewPreset) => void;
   resetView: () => void;
   setHemisphereView: (view: HemisphereView) => void;
-  toggleConnections: () => void;
-  setConnectionThreshold: (threshold: number) => void;
   setRegionPanelExpanded: (expanded: boolean) => void;
   setMeshNames: (names: string[]) => void;
   setHighlightedGroup: (group: string | null) => void;
@@ -71,8 +65,6 @@ export const useBrainStore = create<BrainState>((set, get) => ({
   currentView: 'lateral-left',
   resetViewTrigger: 0,
   hemisphereView: 'both',
-  showConnections: false,
-  connectionThreshold: 0.5,
   regionPanelExpanded: true,
   meshNames: [],
 
@@ -99,16 +91,13 @@ export const useBrainStore = create<BrainState>((set, get) => ({
     hemisphereView: 'both'
   })),
   setHemisphereView: (view) => set({ hemisphereView: view }),
-  toggleConnections: () => set((state) => ({ showConnections: !state.showConnections })),
-  setConnectionThreshold: (threshold) => set({ connectionThreshold: threshold }),
   setRegionPanelExpanded: (expanded) => set({ regionPanelExpanded: expanded }),
   setMeshNames: (names) => set({ meshNames: names }),
   setHighlightedGroup: (group) => set({ highlightedGroup: group }),
   clearSelection: () => set({
     selectedRegion: null,
     selection: null,
-    highlightedGroup: null,
-    showConnections: false
+    highlightedGroup: null
   }),
   clearSearch: () => set({ searchQuery: '' }),
 

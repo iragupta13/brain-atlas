@@ -6,8 +6,28 @@ import {
   type DetailLevel,
 } from '../data/hierarchy';
 import regionsData from '../data/regions.json';
+import * as THREE from 'three';
 
 const regions = regionsData as Record<string, { group: string; hemisphere: string; displayName?: string }>;
+
+function getRegionVariantColor(meshName: string, groupColor: string, hemisphere: string): string {
+  const color = new THREE.Color(groupColor);
+  const hsl = { h: 0, s: 0, l: 0 };
+  color.getHSL(hsl);
+
+  let hash = 0;
+  for (let i = 0; i < meshName.length; i += 1) {
+    hash = (hash * 31 + meshName.charCodeAt(i)) >>> 0;
+  }
+
+  const offset = ((hash % 9) - 4) * 0.02;
+  const hemisphereOffset = hemisphere === 'left' ? -0.025 : hemisphere === 'right' ? 0.025 : 0;
+
+  hsl.l = THREE.MathUtils.clamp(hsl.l + offset + hemisphereOffset, 0.28, 0.78);
+  hsl.s = THREE.MathUtils.clamp(hsl.s + 0.03, 0.2, 0.85);
+
+  return color.setHSL(hsl.h, hsl.s, hsl.l).getStyle();
+}
 
 // Get all individual mesh names
 export function getAllMeshNames(): string[] {
@@ -73,8 +93,13 @@ export function getColorForMesh(meshName: string, level: DetailLevel): string {
     return SUPER_REGIONS[superRegionId]?.color || '#808080';
   }
 
-  // Level 1 and 2: use the group color
-  return LOBE_GROUPS[region.group]?.color || '#808080';
+  const groupColor = LOBE_GROUPS[region.group]?.color || '#808080';
+
+  if (level === 1) {
+    return groupColor;
+  }
+
+  return getRegionVariantColor(meshName, groupColor, region.hemisphere);
 }
 
 // Get all nodes at a given detail level

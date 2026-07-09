@@ -95,8 +95,8 @@ export function BrainModel({
   }, [scene]);
 
   useEffect(() => {
-    onMetrics?.({ radius, center: new THREE.Vector3(0, 0, 0) });
-  }, [onMetrics, radius]);
+    onMetrics?.({ radius, center: centerOffset.clone() });
+  }, [centerOffset, onMetrics, radius]);
 
   // Collect meshes
   useEffect(() => {
