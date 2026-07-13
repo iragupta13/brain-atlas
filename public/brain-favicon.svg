@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="brain" x1="13" y1="12" x2="52" y2="51" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#71bac3"/>
+      <stop offset="0.52" stop-color="#6579a7"/>
+      <stop offset="1" stop-color="#8d6c9f"/>
+    </linearGradient>
+    <radialGradient id="space" cx="0" cy="0" r="1" gradientTransform="translate(23 18) rotate(47) scale(51)">
+      <stop stop-color="#11233c"/>
+      <stop offset="1" stop-color="#030814"/>
+    </radialGradient>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#space)" stroke="#274157" stroke-width="2"/>
+
+  <path
+    d="M31.5 17c-2.1-4.2-8.1-5.5-11.5-2.1-4.7-.1-7.8 4.1-6.7 8.4-3.7 2.4-4.1 8-.8 11 0 4.8 3.9 8.5 8.6 8.4 2.3 4.4 8.2 5.3 10.4 1.4V17Z"
+    fill="url(#brain)"
+    stroke="#b8e1e3"
+    stroke-width="2.2"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M32.5 17c2.1-4.2 8.1-5.5 11.5-2.1 4.7-.1 7.8 4.1 6.7 8.4 3.7 2.4 4.1 8 .8 11 0 4.8-3.9 8.5-8.6 8.4-2.3 4.4-8.2 5.3-10.4 1.4V17Z"
+    fill="url(#brain)"
+    stroke="#b8e1e3"
+    stroke-width="2.2"
+    stroke-linejoin="round"
+  />
+
+  <g fill="none" stroke="#d7eff0" stroke-width="1.8" stroke-linecap="round" opacity=".82">
+    <path d="M21 20c5-1 7 2 7 5-4-1-7 1-8 4"/>
+    <path d="M15 34c4-3 9-1 10 3-3 0-5 2-5 5"/>
+    <path d="M43 20c-5-1-7 2-7 5 4-1 7 1 8 4"/>
+    <path d="M49 34c-4-3-9-1-10 3 3 0 5 2 5 5"/>
+  </g>
+
+  <circle cx="17" cy="18" r="1.5" fill="#d6ba7d"/>
+  <circle cx="48" cy="43" r="1.25" fill="#d6ba7d"/>
+</svg>
