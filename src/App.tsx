@@ -14,7 +14,6 @@ export default function App() {
       sidebar={
         <>
           <div className="sidebar-header">
-            <span className="sidebar-eyebrow">Interactive neural map · 01</span>
             <h1>Explore the universe <em>inside your head.</em></h1>
             <p>Navigate the structures, systems, and signals that make you human.</p>
           </div>
@@ -31,7 +30,6 @@ export default function App() {
       rightPanelKey={selection ? `${selection.level}:${selection.nodeId}` : null}
     >
       <div className="canvas-container">
-        <div className="canvas-kicker"><i /> HUMAN NEURAL CARTOGRAPHY</div>
         <BrainCanvas />
         <div className="canvas-instructions">Drag to rotate <i /> Scroll to zoom <i /> Select a region</div>
         <div className="brain-stats" aria-label="Brain atlas statistics">

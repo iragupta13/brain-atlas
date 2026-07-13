@@ -25,7 +25,7 @@ export function SearchInput() {
       <input
         type="text"
         className={styles.input}
-        placeholder="Search regions or ask a question... (try 'memory' or 'motor control')"
+        placeholder="Search brain regions..."
         value={localValue}
         onChange={(e) => setLocalValue(e.target.value)}
       />
