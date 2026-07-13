@@ -25,8 +25,8 @@ function getRegionVariantColor(meshName: string, groupColor: string, hemisphere:
   const hemisphereOffset = hemisphere === 'left' ? -0.018 : hemisphere === 'right' ? 0.018 : 0;
 
   hsl.h = (hsl.h + hueOffset + 1) % 1;
-  hsl.l = THREE.MathUtils.clamp(hsl.l + lightnessOffset + hemisphereOffset, 0.38, 0.72);
-  hsl.s = THREE.MathUtils.clamp(hsl.s + 0.04, 0.62, 0.94);
+  hsl.l = THREE.MathUtils.clamp(hsl.l + lightnessOffset + hemisphereOffset, 0.36, 0.66);
+  hsl.s = THREE.MathUtils.clamp(hsl.s + 0.02, 0.34, 0.58);
 
   return color.setHSL(hsl.h, hsl.s, hsl.l).getStyle();
 }

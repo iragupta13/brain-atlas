@@ -9,17 +9,17 @@ export type DetailLevel = 0 | 1 | 2;
 // The hues follow the visual language of mapped infrared/emission data while
 // remaining separated enough to work as an anatomical legend.
 export const NASA_NEBULA_PALETTE = {
-  ionCyan: '#22D3EE',
-  oxygenBlue: '#3B82F6',
-  heliumIndigo: '#6366F1',
-  webbViolet: '#A855F7',
-  nebulaMagenta: '#D946EF',
-  infraredPink: '#EC4899',
-  nitrogenRose: '#F43F5E',
-  sulfurOrange: '#F97316',
-  stellarGold: '#FACC15',
-  filterGreen: '#84CC16',
-  hydrogenTeal: '#2DD4BF',
+  ionCyan: '#4FA6B5',
+  oxygenBlue: '#4F73A6',
+  heliumIndigo: '#6667A5',
+  webbViolet: '#8665A1',
+  nebulaMagenta: '#9C608F',
+  infraredPink: '#AA647E',
+  nitrogenRose: '#AD6268',
+  sulfurOrange: '#B2744F',
+  stellarGold: '#B09A55',
+  filterGreen: '#7C965A',
+  hydrogenTeal: '#4E9488',
 } as const;
 
 // Level 0: 5 Super-regions

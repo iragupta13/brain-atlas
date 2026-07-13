@@ -51,11 +51,6 @@ export default function App() {
           <SearchInput />
           <SearchResults />
 
-          <div className="cosmic-note">
-            <span>NEURAL COSMOS</span>
-            <p>Neural networks and cosmic filaments can look strikingly alike. Explore the pattern—then learn where the science differs.</p>
-          </div>
-
           <ViewControls />
           <ColorLegend />
           <RegionBrowser />

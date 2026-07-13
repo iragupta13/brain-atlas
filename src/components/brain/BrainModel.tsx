@@ -119,11 +119,11 @@ export function BrainModel({
 
       mesh.material = new THREE.MeshStandardMaterial({
         color: groupColor,
-        roughness: 0.34,
-        metalness: 0.14,
+        roughness: 0.39,
+        metalness: 0.12,
         emissive: groupColor,
-        emissiveIntensity: 0.13,
-        envMapIntensity: 0.92,
+        emissiveIntensity: 0.08,
+        envMapIntensity: 0.88,
       });
       mesh.geometry.computeVertexNormals();
 
@@ -172,14 +172,14 @@ export function BrainModel({
       if (isSelected) {
         mat.color.set(SELECTED_COLOR);
         mat.emissive.set('#7d6031');
-        mat.emissiveIntensity = 0.52;
+        mat.emissiveIntensity = 0.42;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;
       } else if (isHovered) {
         mat.color.set(HOVER_COLOR);
         mat.emissive.set('#245760');
-        mat.emissiveIntensity = 0.38;
+        mat.emissiveIntensity = 0.28;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;
@@ -187,7 +187,7 @@ export function BrainModel({
         // Meshes in the highlighted group stay at full opacity (even if there's a selection)
         mat.color.set(levelColor);
         mat.emissive.set(levelColor);
-        mat.emissiveIntensity = 0.28;
+        mat.emissiveIntensity = 0.18;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;
@@ -203,7 +203,7 @@ export function BrainModel({
         // Normal state - use level-appropriate color, fully visible
         mat.color.set(levelColor);
         mat.emissive.set(levelColor);
-        mat.emissiveIntensity = 0.13;
+        mat.emissiveIntensity = 0.08;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;

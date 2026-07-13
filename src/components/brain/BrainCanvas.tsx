@@ -40,45 +40,45 @@ export function BrainCanvas() {
           <color attach="background" args={['#010611']} />
           <fog attach="fog" args={['#010611', 14, 48]} />
           <Stars radius={38} depth={24} count={1400} factor={2} saturation={0} fade speed={0.22} />
-          <Sparkles count={56} scale={[10, 7, 10]} size={1.25} speed={0.22} opacity={0.48} color="#FACC15" />
+          <Sparkles count={56} scale={[10, 7, 10]} size={1.25} speed={0.22} opacity={0.42} color="#C4A45F" />
 
           {/* Cinematic lighting setup */}
-          <ambientLight intensity={0.5} color="#899CDB" />
+          <ambientLight intensity={0.52} color="#8090B8" />
 
           {/* Key light - from upper front right */}
           <directionalLight
             position={[5, 8, 5]}
             intensity={1.55}
-            color="#D9F2FF"
+            color="#D7E5ED"
             castShadow
           />
 
           {/* Fill light - from lower left */}
           <directionalLight
             position={[-6, -4, -4]}
-            intensity={0.82}
-            color="#9B5DE5"
+            intensity={0.62}
+            color="#756B9A"
           />
 
           {/* Bottom fill light - illuminates underside of brain */}
           <directionalLight
             position={[0, -8, 2]}
-            intensity={0.9}
-            color="#FFAD5C"
+            intensity={0.7}
+            color="#C99768"
           />
 
           {/* Rim light - subtle glow from behind */}
           <directionalLight
             position={[0, 2, -8]}
-            intensity={1.05}
-            color="#24D7E8"
+            intensity={0.9}
+            color="#5EAAB7"
           />
 
           {/* Hemisphere for balanced ambient fill */}
           <hemisphereLight
             intensity={0.58}
-            color="#83C5FF"
-            groundColor="#1C0F32"
+            color="#769EB5"
+            groundColor="#151326"
           />
 
           <Suspense fallback={null}>
