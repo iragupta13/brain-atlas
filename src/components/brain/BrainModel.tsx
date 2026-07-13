@@ -39,8 +39,8 @@ function isInHighlightedGroup(meshGroup: string, highlightedGroup: string | null
     (SUPER_REGIONS[highlightedGroup]?.groups.includes(meshGroup) ?? false);
 }
 
-const SELECTED_COLOR = '#e7cca0';
-const HOVER_COLOR = '#9be4d6';
+const SELECTED_COLOR = '#FFF1B8';
+const HOVER_COLOR = '#B8F7FF';
 
 // No-op raycast function for hidden/dimmed meshes
 const noopRaycast = () => {};
@@ -119,11 +119,11 @@ export function BrainModel({
 
       mesh.material = new THREE.MeshStandardMaterial({
         color: groupColor,
-        roughness: 0.42,
-        metalness: 0.2,
-        emissive: '#06182a',
-        emissiveIntensity: 0.16,
-        envMapIntensity: 0.85,
+        roughness: 0.34,
+        metalness: 0.14,
+        emissive: groupColor,
+        emissiveIntensity: 0.13,
+        envMapIntensity: 0.92,
       });
       mesh.geometry.computeVertexNormals();
 
@@ -186,24 +186,24 @@ export function BrainModel({
       } else if (highlightedGroup && inHighlightedGroup) {
         // Meshes in the highlighted group stay at full opacity (even if there's a selection)
         mat.color.set(levelColor);
-        mat.emissive.set('#0a2636');
-        mat.emissiveIntensity = 0.2;
+        mat.emissive.set(levelColor);
+        mat.emissiveIntensity = 0.28;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;
       } else if (selection || highlightedGroup) {
         // Dim non-selected regions when something is selected, or non-highlighted when group is highlighted
         mat.color.set(levelColor);
-        mat.emissive.set('#020812');
-        mat.emissiveIntensity = 0.05;
+        mat.emissive.set(levelColor);
+        mat.emissiveIntensity = 0.025;
         mat.transparent = true;
         mat.opacity = DIMMED_OPACITY;
         mat.depthWrite = false;
       } else {
         // Normal state - use level-appropriate color, fully visible
         mat.color.set(levelColor);
-        mat.emissive.set('#06182a');
-        mat.emissiveIntensity = 0.16;
+        mat.emissive.set(levelColor);
+        mat.emissiveIntensity = 0.13;
         mat.transparent = false;
         mat.opacity = 1;
         mat.depthWrite = true;

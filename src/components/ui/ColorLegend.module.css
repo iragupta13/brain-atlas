@@ -65,6 +65,9 @@
   border-radius: 3px;
   flex-shrink: 0;
   transition: transform 0.15s ease;
+  box-shadow:
+    0 0 10px color-mix(in srgb, currentColor 46%, transparent),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22);
 }
 
 .item:hover .swatch {

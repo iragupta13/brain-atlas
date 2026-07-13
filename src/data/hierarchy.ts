@@ -5,6 +5,23 @@
 
 export type DetailLevel = 0 | 1 | 2;
 
+// Inspired by NASA imagery of Webb's Cosmic Cliffs and Hubble's Ring Nebula.
+// The hues follow the visual language of mapped infrared/emission data while
+// remaining separated enough to work as an anatomical legend.
+export const NASA_NEBULA_PALETTE = {
+  ionCyan: '#22D3EE',
+  oxygenBlue: '#3B82F6',
+  heliumIndigo: '#6366F1',
+  webbViolet: '#A855F7',
+  nebulaMagenta: '#D946EF',
+  infraredPink: '#EC4899',
+  nitrogenRose: '#F43F5E',
+  sulfurOrange: '#F97316',
+  stellarGold: '#FACC15',
+  filterGreen: '#84CC16',
+  hydrogenTeal: '#2DD4BF',
+} as const;
+
 // Level 0: 5 Super-regions
 export const SUPER_REGIONS: Record<string, {
   id: string;
@@ -15,31 +32,31 @@ export const SUPER_REGIONS: Record<string, {
   Frontal_Cortex: {
     id: 'Frontal_Cortex',
     displayName: 'Frontal Cortex',
-    color: '#2d7482',
+    color: NASA_NEBULA_PALETTE.ionCyan,
     groups: ['Frontal_Lobe', 'Cingulate_Cortex', 'Insula'],
   },
   Posterior_Cortex: {
     id: 'Posterior_Cortex',
     displayName: 'Posterior Cortex',
-    color: '#385f7b',
+    color: NASA_NEBULA_PALETTE.oxygenBlue,
     groups: ['Parietal_Lobe', 'Occipital_Lobe'],
   },
   Temporal_Cortex: {
     id: 'Temporal_Cortex',
     displayName: 'Temporal Cortex',
-    color: '#355f73',
+    color: NASA_NEBULA_PALETTE.webbViolet,
     groups: ['Temporal_Lobe', 'Medial_Temporal'],
   },
   Subcortical: {
     id: 'Subcortical',
     displayName: 'Subcortical',
-    color: '#6d6f68',
+    color: NASA_NEBULA_PALETTE.sulfurOrange,
     groups: ['Basal_Ganglia', 'Thalamus', 'Brainstem'],
   },
   Cerebellum: {
     id: 'Cerebellum',
     displayName: 'Cerebellum',
-    color: '#716552',
+    color: NASA_NEBULA_PALETTE.hydrogenTeal,
     groups: ['Cerebellum'],
   },
 };
@@ -50,17 +67,17 @@ export const LOBE_GROUPS: Record<string, {
   displayName: string;
   color: string;
 }> = {
-  Frontal_Lobe: { id: 'Frontal_Lobe', displayName: 'Frontal Lobe', color: '#2d7482' },
-  Parietal_Lobe: { id: 'Parietal_Lobe', displayName: 'Parietal Lobe', color: '#3d6f7d' },
-  Temporal_Lobe: { id: 'Temporal_Lobe', displayName: 'Temporal Lobe', color: '#365c72' },
-  Occipital_Lobe: { id: 'Occipital_Lobe', displayName: 'Occipital Lobe', color: '#425f7a' },
-  Cingulate_Cortex: { id: 'Cingulate_Cortex', displayName: 'Cingulate Cortex', color: '#667692' },
-  Insula: { id: 'Insula', displayName: 'Insula', color: '#3f7778' },
-  Medial_Temporal: { id: 'Medial_Temporal', displayName: 'Medial Temporal', color: '#756858' },
-  Basal_Ganglia: { id: 'Basal_Ganglia', displayName: 'Basal Ganglia', color: '#70694f' },
-  Thalamus: { id: 'Thalamus', displayName: 'Thalamus', color: '#63747d' },
-  Brainstem: { id: 'Brainstem', displayName: 'Brainstem', color: '#486875' },
-  Cerebellum: { id: 'Cerebellum', displayName: 'Cerebellum', color: '#716552' },
+  Frontal_Lobe: { id: 'Frontal_Lobe', displayName: 'Frontal Lobe', color: NASA_NEBULA_PALETTE.ionCyan },
+  Parietal_Lobe: { id: 'Parietal_Lobe', displayName: 'Parietal Lobe', color: NASA_NEBULA_PALETTE.oxygenBlue },
+  Temporal_Lobe: { id: 'Temporal_Lobe', displayName: 'Temporal Lobe', color: NASA_NEBULA_PALETTE.heliumIndigo },
+  Occipital_Lobe: { id: 'Occipital_Lobe', displayName: 'Occipital Lobe', color: NASA_NEBULA_PALETTE.webbViolet },
+  Cingulate_Cortex: { id: 'Cingulate_Cortex', displayName: 'Cingulate Cortex', color: NASA_NEBULA_PALETTE.nebulaMagenta },
+  Insula: { id: 'Insula', displayName: 'Insula', color: NASA_NEBULA_PALETTE.infraredPink },
+  Medial_Temporal: { id: 'Medial_Temporal', displayName: 'Medial Temporal', color: NASA_NEBULA_PALETTE.nitrogenRose },
+  Basal_Ganglia: { id: 'Basal_Ganglia', displayName: 'Basal Ganglia', color: NASA_NEBULA_PALETTE.sulfurOrange },
+  Thalamus: { id: 'Thalamus', displayName: 'Thalamus', color: NASA_NEBULA_PALETTE.stellarGold },
+  Brainstem: { id: 'Brainstem', displayName: 'Brainstem', color: NASA_NEBULA_PALETTE.filterGreen },
+  Cerebellum: { id: 'Cerebellum', displayName: 'Cerebellum', color: NASA_NEBULA_PALETTE.hydrogenTeal },
 };
 
 // Map from group to super-region

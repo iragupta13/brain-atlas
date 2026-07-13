@@ -51,7 +51,7 @@ export function ColorLegend() {
             className={`${styles.item} ${highlightedGroup === key ? styles.active : ''} ${highlightedGroup && highlightedGroup !== key ? styles.dimmed : ''}`}
             onClick={() => handleClick(key)}
           >
-            <span className={styles.swatch} style={{ backgroundColor: color }} />
+            <span className={styles.swatch} style={{ backgroundColor: color, color }} />
             <span className={styles.label}>{name}</span>
           </button>
         ))}
