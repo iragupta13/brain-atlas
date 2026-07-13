@@ -8,38 +8,9 @@ import './index.css';
 
 export default function App() {
   const selection = useBrainStore((s) => s.selection);
-  const detailLevel = useBrainStore((s) => s.detailLevel);
-  const setDetailLevel = useBrainStore((s) => s.setDetailLevel);
-  const resetView = useBrainStore((s) => s.resetView);
 
   return (
     <AppLayout
-      header={
-        <header className="cosmic-header">
-          <button className="nexus-brand" onClick={resetView} aria-label="Reset brain atlas view">
-            <span className="nexus-mark" aria-hidden="true"><i /><b /></span>
-            <span><strong>NEXUS</strong><small>/ HUMAN BRAIN ATLAS</small></span>
-          </button>
-
-          <nav className="atlas-levels" aria-label="Atlas detail level">
-            {([
-              [0, 'Overview'],
-              [1, 'Lobes'],
-              [2, 'Detailed'],
-            ] as const).map(([level, label]) => (
-              <button
-                key={level}
-                className={detailLevel === level ? 'active' : ''}
-                onClick={() => setDetailLevel(level)}
-              >
-                {label}
-              </button>
-            ))}
-          </nav>
-
-          <div className="model-status"><i /><span>Live model</span><small>170 regions</small></div>
-        </header>
-      }
       sidebar={
         <>
           <div className="sidebar-header">
