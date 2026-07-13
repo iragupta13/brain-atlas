@@ -2,6 +2,7 @@ import { useState, useEffect, type ReactNode } from 'react';
 import styles from './AppLayout.module.css';
 
 interface AppLayoutProps {
+  header?: ReactNode;
   sidebar: ReactNode;
   rightPanel?: ReactNode | null;
   rightPanelKey?: null | string;
@@ -13,7 +14,7 @@ const RIGHT_PANEL_OVERLAY_BREAKPOINT = 1024;
 // Breakpoint where left sidebar becomes overlay
 const SIDEBAR_OVERLAY_BREAKPOINT = 700;
 
-export function AppLayout({ sidebar, rightPanel, rightPanelKey = null, children }: AppLayoutProps) {
+export function AppLayout({ header, sidebar, rightPanel, rightPanelKey = null, children }: AppLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [dismissedRightPanelKey, setDismissedRightPanelKey] = useState<null | string>(null);
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 1200);
@@ -68,6 +69,7 @@ export function AppLayout({ sidebar, rightPanel, rightPanelKey = null, children 
 
   return (
     <div className={`${styles.container} ${rightPanel ? styles.withRightPanel : ''}`}>
+      {header && <div className={styles.topbar}>{header}</div>}
       {/* Mobile menu button */}
       <button
         className={styles.mobileMenuButton}

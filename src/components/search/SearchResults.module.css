@@ -77,8 +77,8 @@
 .item.selected {
   background: linear-gradient(
     135deg,
-    rgba(0, 240, 255, 0.08) 0%,
-    rgba(0, 196, 212, 0.04) 100%
+    rgba(155, 228, 214, 0.08) 0%,
+    rgba(111, 216, 223, 0.04) 100%
   );
   color: var(--glow-cyan);
   padding-left: 18px;
@@ -176,7 +176,7 @@
 }
 
 .regionButton.primary:hover {
-  background: rgba(0, 240, 255, 0.1);
+  background: rgba(155, 228, 214, 0.1);
   border-color: var(--glow-cyan-dim);
   color: var(--glow-cyan);
 }
@@ -195,13 +195,13 @@
 .regionButton.selected {
   background: linear-gradient(
     135deg,
-    rgba(0, 240, 255, 0.15) 0%,
-    rgba(0, 196, 212, 0.08) 100%
+    rgba(155, 228, 214, 0.15) 0%,
+    rgba(111, 216, 223, 0.08) 100%
   );
   border-color: var(--glow-cyan);
   color: var(--glow-cyan);
   font-weight: 500;
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 12px rgba(155, 228, 214, 0.2);
 }
 
 .regionButton.secondary.selected {

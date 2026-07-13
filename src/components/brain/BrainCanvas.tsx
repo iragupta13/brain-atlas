@@ -1,5 +1,5 @@
 import { Canvas } from '@react-three/fiber';
-import { Html, OrbitControls, useProgress } from '@react-three/drei';
+import { Html, OrbitControls, Sparkles, Stars, useProgress } from '@react-three/drei';
 import { Component, Suspense, useRef, useState, type ReactNode } from 'react';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import { BrainModel } from './BrainModel';
@@ -37,47 +37,48 @@ export function BrainCanvas() {
     <div className={styles.container}>
       <CanvasErrorBoundary fallback={<CanvasFallback />}>
         <Canvas camera={{ position: [-6, 0, 0], fov: 45 }}>
-          {/* Deep void background */}
-          <color attach="background" args={['#030508']} />
-          <fog attach="fog" args={['#030508', 15, 50]} />
+          <color attach="background" args={['#010611']} />
+          <fog attach="fog" args={['#010611', 14, 48]} />
+          <Stars radius={38} depth={24} count={1400} factor={2} saturation={0} fade speed={0.22} />
+          <Sparkles count={56} scale={[10, 7, 10]} size={1.25} speed={0.22} opacity={0.48} color="#e7cca0" />
 
           {/* Cinematic lighting setup */}
-          <ambientLight intensity={0.5} color="#9aa5b1" />
+          <ambientLight intensity={0.62} color="#7eb8c7" />
 
           {/* Key light - from upper front right */}
           <directionalLight
             position={[5, 8, 5]}
-            intensity={1.4}
-            color="#f0f4f8"
+            intensity={1.55}
+            color="#bfe8ee"
             castShadow
           />
 
           {/* Fill light - from lower left */}
           <directionalLight
             position={[-6, -4, -4]}
-            intensity={1.0}
-            color="#e8e0f0"
+            intensity={0.9}
+            color="#4f91ad"
           />
 
           {/* Bottom fill light - illuminates underside of brain */}
           <directionalLight
             position={[0, -8, 2]}
-            intensity={1.2}
-            color="#e0e8f0"
+            intensity={1.05}
+            color="#e7cca0"
           />
 
           {/* Rim light - subtle glow from behind */}
           <directionalLight
             position={[0, 2, -8]}
-            intensity={0.8}
-            color="#b8d4e8"
+            intensity={1.05}
+            color="#6fd8df"
           />
 
           {/* Hemisphere for balanced ambient fill */}
           <hemisphereLight
-            intensity={0.6}
-            color="#d0d8e0"
-            groundColor="#a0a8b0"
+            intensity={0.58}
+            color="#7fbed0"
+            groundColor="#09182c"
           />
 
           <Suspense fallback={null}>
